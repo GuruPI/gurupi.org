@@ -1,0 +1,73 @@
+/* CSS Reset */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  font-size:100%;
+  font:inherit;
+  vertical-align:baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display:block;
+}
+
+body { font:13px/1.231 sans-serif; }
+select, input, textarea, button { font:99% sans-serif; }
+table { border-collapse:collapse; border-spacing:0; }
+hr { display:block; height:1px; border:0; border-top:1px solid #ccc; margin:1em 0; padding:0; }
+input, select { vertical-align:middle; }
+pre, code, kbd, samp { font-family:monospace, sans-serif; }
+a:hover, a:active { outline:none; }
+ul, ol { margin-left:2em; }
+ol { list-style-type:decimal; }
+nav ul, nav li { margin:0; list-style:none; list-style-image:none; }
+small { font-size:85%; }
+strong, th { font-weight:bold; }
+td { vertical-align:top; }
+pre { white-space:pre; white-space:pre-wrap; word-wrap:break-word; padding:15px; }
+textarea { overflow:auto; }
+input[type="radio"] { vertical-align:text-bottom; }
+input[type="checkbox"] { vertical-align:bottom; }
+label, input[type="button"], input[type="submit"], input[type="image"], button { cursor:pointer; }
+button, input, select, textarea { margin:0; }
+button {  width:auto; overflow:visible; }
+body, select, input, textarea { color:#2d2d2d; font-family:Arial, sans-serif; }
+h1, h2, h3, h4, h5, h6 { font-weight:bold; }
+a, a:active, a:visited { color:#9a1010; }
+a:hover { color:#a53b3b; }
+.hidden { display:none; visibility:hidden; }
+.clearfix:before, .clearfix:after { content:"\0020"; display:block; height:0; overflow:hidden; }
+.clearfix:after { clear:both; }
+.clearfix { zoom:1; }
+
+
+
+/* Custom CSS Start Here */
+#top {background-color:#e8e8e8; padding:20px 0 26px; overflow:hidden;}
+#logo {margin:15px 0 7px; float:left;}
+#top nav ul {float:right; overflow:hidden; background:url("../img/menu.png") right center no-repeat;}
+#top nav li {float:left; height:80px;}
+#top nav li a {color:#3b3b3b; font-size:0.95em; text-decoration:none; font-weight:bold; display:block; text-transform:uppercase;
+  background:url("../img/menu.png") left center no-repeat; height:32px; line-height:32px; padding:48px 28px 0 28px;}
+#top nav li a:hover {color:#696969;}
+.container {width:960px; padding:0 10px; margin:0 auto;}
+#profile {background:#3b3b3b url("../img/bg-profile.png") left bottom repeat-x; border-bottom:1px solid #646464; min-height:40px;}
+#intro {background:#3f3f3f url("../img/bg-main.png") left bottom repeat-x; padding:20px 0;}
+#intro .topic {background:#a40001 url("../img/bg-topic.png") left bottom repeat-x; color:#fff; padding:30px; border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px;}
+#intro .topic img {float:right; border:1px solid #b33236; margin-left:20px;}
+#intro .topic h2, #intro .topic p, #intro .topic ul {float:left; width:380px;}
+#intro .topic h2 {font-size:2em;}
+#intro .topic ul {width:360px;}
+#extra section {width:300px; float:left;}
+
+
