@@ -3,27 +3,49 @@
   <head>
     <meta charset="utf-8">
     <title>GuruPI - Grupo de Usuários de Ruby do Piauí</title>
+    <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+    <script type="text/javascript" src="js/cufon-yui.js"></script>
+    <script type="text/javascript" src="js/cufon-replace.js"></script>
+    <script type="text/javascript" src="js/Myriad_Pro_300.font.js"></script>
+    <script type="text/javascript" src="js/Myriad_Pro_400.font.js"></script>
   </head>
 
   <body>
-    <header>
-      <h1>GuruPI</h1>
-      <h2>Grupo de Usuários de Ruby do Piauí</h2>
-      <nav>
-        <ul>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#agenda">Agenda</a></li>
-          <li><a href="#usuarios">Usuários</a></li>
-          <li><a href="#blogs">Blogs</a></li>
-          <li><a href="#imprensa">Imprensa</a></li>
-          <li><a href="#contatos">Contatos</a></li>
-        </ul>
-      </nav>
-    </header>
+	<header>
+		<div class="container">
+			<div class="header-box">
+				<div class="left">
+					<div class="right">
+						<nav>
+							<ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#agenda">Agenda</a></li>
+                <li><a href="#usuarios">Usuários</a></li>
+                <li><a href="#blogs">Blogs</a></li>
+                <li><a href="#imprensa">Imprensa</a></li>
+                <li><a href="#contatos">Contatos</a></li>
+              </ul>
+            </nav>
+            <h1><a href="index.html"><span>guru</span>pi</a></h1>
+					</div>
+				</div>
+			</div>
+			<form action="" id="login-form">
+				<fieldset>
+					<span class="text">
+						<input type="text" value="seu e-mail" onFocus="if(this.value=='seu e-mail'){this.value=''}" onBlur="if(this.value==''){this.value='seu e-mail'}">
+					</span>
+					<span class="text">
+						<input type="password" value="senha" onFocus="if(this.value=='senha'){this.value=''}" onBlur="if(this.value==''){this.value='senha'}">
+					</span>
+					<a href="#" class="login" onClick="document.getElementById('login-form').submit()"><span><span>Entrar/Cadastrar</span></span></a>
 
-    <div id="profile">
-      <small>Login com Facebook</small>
-    </div>
+				</fieldset>
+			</form>
+		</div>
+	</header>
+
 
     <article>
       <h2>4º Encontro do GuruPI</h2>
@@ -188,3 +210,4 @@
     </footer>
   </body>
 </html>
+
