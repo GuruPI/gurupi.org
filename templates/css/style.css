@@ -1,3 +1,4 @@
+
 /* CSS Reset */
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -63,7 +64,7 @@ a:hover { color:#a53b3b; }
 .container {width:960px; padding:0 10px; margin:0 auto; overflow:hidden;}
 #profile {background:#3b3b3b url("../img/bg-profile.png") left bottom repeat-x; border-bottom:1px solid #646464; min-height:40px;}
 #intro {background:#3f3f3f url("../img/bg-main.png") left bottom repeat-x; padding:20px 0;}
-#intro .topic {background:#a40001 url("../img/bg-topic.png") left bottom repeat-x; color:#fff; padding:30px; overflow:hidden; 
+#intro .topic {background:#a40001 url("../img/bg-topic.png") left bottom repeat-x; color:#fff; padding:30px; overflow:hidden;
   border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px;}
 #intro .topic img {float:right; border:1px solid #b33236; margin-left:20px;}
 #intro .topic h2, #intro .topic p, #intro .topic ul {float:left; width:380px;}
