@@ -24,7 +24,20 @@
 
     <div id="profile">
       <div class="container">
-        <small>Login com Facebook</small>
+
+      			<form action="" id="login-form">
+				<fieldset>
+					<span class="text">
+						<input type="text" value="seu e-mail" onFocus="if(this.value=='seu e-mail'){this.value=''}" onBlur="if(this.value==''){this.value='seu e-mail'}">
+					</span>
+					<span class="text">
+						<input type="password" value="senha" onFocus="if(this.value=='senha'){this.value=''}" onBlur="if(this.value==''){this.value='senha'}">
+					</span>
+					<a href="#" class="login" onClick="document.getElementById('login-form').submit()"><span><span>Entrar/Cadastrar</span></span></a>
+
+				</fieldset>
+			</form>
+       <!-- <small>Login com Facebook</small>-->
       </div>
     </div>
 
@@ -214,8 +227,19 @@
 
     <footer id="footer">
       <div class="container">
-        Rodapé
+              <div class="links fb" align="center">
+			            <ul>
+				            <li><a href="#">Gurupi</a></li>
+		                <li><a href="#">Sobre</a></li>
+				            <li><a href="#">Agenda</a></li>
+                    <li><a href="#">Usuários</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Imprensa</a></li>
+				            <li><a href="#" style="border: 0px none">Contatos</a></li>
+			            </ul>
+              </div>
       </div>
+      <div class="rights">Copyright 2011 - <a href="/" target="_blank">Gurupi</a></div>
     </footer>
   </body>
 </html>

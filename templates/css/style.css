@@ -28,6 +28,7 @@ table { border-collapse:collapse; border-spacing:0; }
 hr { display:block; height:1px; border:0; border-top:1px solid #ccc; margin:1em 0; padding:0; }
 input, select { vertical-align:middle; }
 pre, code, kbd, samp { font-family:monospace, sans-serif; }
+a{ text-decoration:none; }
 a:hover, a:active { outline:none; }
 ul, ol { margin-left:2em; }
 ol { list-style-type:decimal; }
@@ -78,5 +79,25 @@ a:hover { color:#a53b3b; }
 #extra section li {border-bottom:1px solid #ccc; padding:18px 0; overflow:hidden;}
 #extra #atividades li {padding:10px 0;}
 #extra .photo {float:left; margin:0 10px 0 0;}
+/* form login */
+#login-form fieldset {position:absolute;top:138px;}
+#login-form span.text {float:left;width:140px;height:23px;margin-left:5px;}
+#login-form input {border:none;padding:4px 10px;vertical-align:top;color:#999999;width:120px; -moz-border-radius: 5px; -webkit-border-radius: 5px;}
+*+ html #login-form input {padding-top:3px}
+#login-form a.login {color:#fff;text-decoration:none;text-shadow:1px 1px #000;float:left;background:url(../img/button-carpo1.gif) repeat-x left top;position:relative;top:-2px;margin-left:3px}
+#login-form a.login span {display:block;background:url(../img/button-left1.gif) no-repeat left top}
+#login-form a.login span span {padding:5px 22px 6px 22px;background:url(../img/button-right1.gif) no-repeat right top}
+#login-form span.links {font-size:.923em;line-height:1.2em;float:left;padding-left:8px;position:relative;top:-2px}
+#login-form span.links a {color:#000}
+
+/* footer */
 #footer {height:100px; margin-top:20px; background-color:#e5e5e5; border-top:1px solid #bdbdbd; overflow:hidden;}
+#footer .in{ margin:auto }
+#footer a{ color:#3b3b3b; }
+#footer .rights{width:100%;	margin-bottom:10px;	text-align:center;	color:#3b3b3b;	font-size:12px;	margin-top:-5px;}
+#footer .fb{ margin-top:30px;}
+#footer .links{ font-size:12px; line-height:normal; color:#3b3b3b }
+#footer .links ul { display:inline-block; margin:0 0 13px; padding:0 0 13px; }
+#footer .links ul li { float:left; list-style: none outside none; margin:0; }
+#footer .links ul li a{ border-right: 1px solid #3b3b3b; font-weight: normal; padding: 0 7px; }
 
