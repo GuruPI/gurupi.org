@@ -104,12 +104,13 @@ a:hover { color:#a53b3b; }
 #atividades .hat .icon {background-position:-96px 0;}
 #atividades li {padding:10px 0;}
 #atividades p {line-height:1.5em;}
+#atividades .user {display:block;}
 .liked,.disliked {width:83px;height:48px;display:inline-block;background:url(../img/sprite.png) no-repeat;text-align:center;}
 .liked {background-position:0 -96px;margin-right:7px;}
 .disliked {background-position:-87px -96px;}
 .count {line-height:48px;font-size:1.7em;color:#fff;margin-left:35px;text-shadow:1px 1px #000;}
-.button-add {background:url(../img/sprite.png) 0 -146px no-repeat;width:215px;height:48px;display:inline-block;margin-top:18px;
-  font-size:1.3em;color:#fff;line-height:48px;padding-left:85px;text-shadow:1px 1px #000;}
+.button-add {background:url(../img/sprite.png) 0 -146px no-repeat; width:215px; height:48px; display:inline-block; text-transform:lowercase;
+  margin-top:18px; font-size:1.3em;color:#fff; line-height:48px; padding-left:85px; text-shadow:1px 1px #000;}
 .button-add:hover {color:#ddd;}
 
 /* slider*/
