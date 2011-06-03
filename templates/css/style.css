@@ -118,7 +118,7 @@ a:hover { color:#a53b3b; }
 #slideshow img.active { z-index:10; }
 #slideshow img.last-active { z-index:9; }
 /* footer */
-#footer {height:100px; margin-top:20px; background-color:#e5e5e5; border-top:1px solid #bdbdbd; overflow:hidden;}
+#footer {height:110px; margin-top:20px; background-color:#e5e5e5; border-top:1px solid #bdbdbd; overflow:hidden;}
 #footer .in{ margin:auto }
 #footer a{ color:#3b3b3b; }
 #footer .rights{width:100%;	margin-bottom:10px;	text-align:center;	color:#3b3b3b;	font-size:12px;	margin-top:-5px;}
