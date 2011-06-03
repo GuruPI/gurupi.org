@@ -9,6 +9,30 @@
     <title>GuruPI - Grupo de Usuários de Ruby do Piauí</title>
     <link rel="stylesheet" href="css/style.css?v=1">
     <script type='text/javascript' src='js/modernizr-2.0.js'></script>
+    <script src="scripts/jquery.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        function slideSwitch() {
+            var $active = $('#slideshow img.active');
+
+	        $active.addClass('last-active');
+
+	        // verifica se existe um próximo objeto na div #slideshow, caso ele nao exista, retorna para o primeiro
+            var $next =  $active.next().length ? $active.next() : $('#slideshow img:first');
+
+	        // Codigo que define as transicoes entre as imagens
+            $next.css({opacity: 0.0})
+                .addClass('active')
+                .animate({opacity: 1.0}, 1000, function() {
+                    $active.removeClass('active last-active');
+                });
+        }
+
+        $(function() {
+	        //Executa a função a cada 5 segundos
+	        setInterval( "slideSwitch()", 5000 );
+        });
+    </script>
   </head>
 
   <body>
@@ -29,7 +53,20 @@
 
     <div id="profile">
       <div class="container">
-        <small>Login com Facebook</small>
+
+      	<form action="" id="login-form">
+				 <fieldset>
+					<span class="text">
+						<input type="text" value="seu e-mail" onFocus="if(this.value=='seu e-mail'){this.value=''}" onBlur="if(this.value==''){this.value='seu e-mail'}">
+					</span>
+					<span class="text">
+						<input type="password" value="senha" onFocus="if(this.value=='senha'){this.value=''}" onBlur="if(this.value==''){this.value='senha'}">
+					</span>
+					<a href="#" class="login" onClick="document.getElementById('login-form').submit()"><span><span>Entrar/Cadastrar</span></span></a>
+
+				 </fieldset>
+			 </form>
+       <!-- <small>Login com Facebook</small>-->
       </div>
     </div>
 
@@ -37,7 +74,15 @@
       <div class="container">
         <article class="topic">
           <h2>4º Encontro do GuruPI</h2>
-          <img src="img/4-encontro-gurupi-rafael-marques.jpg" alt="Rafael Marques palestrando no 4º Encontro do GuruPI">
+
+              <div id="slideshow">
+                  	<img class="active" src="image1.jpg" alt="Rafael Marques palestrando no 4º Encontro do GuruPI" title="" />
+                      <img src="img/image2.jpg" alt="" title="" />
+                      <img src="img/image3.jpg" alt="" title="" />
+                      <img src="img/image4.jpg" alt="" title="" />
+              </div>
+
+       <!--   <img src="img/4-encontro-gurupi-rafael-marques.jpg" alt="Rafael Marques palestrando no 4º Encontro do GuruPI">-->
           <p>All API calls (besides /user/login) require some form of authentication. You have two options available to you: OAuth 1.0 and AdaptiveBlue's token authentication.</p>
           <ul>
             <li class="talks"><a href="#palestras"><span class="icon"></span>Palestras</a></li>
@@ -57,7 +102,7 @@
             <li>
               <p>
                 <img src="http://a2.twimg.com/profile_images/534258280/Photo_46_normal.jpg" alt="Dmitry Nix" class="photo">
-                <a href="http://twitter.com/dmitrynix">@dmitrynix</a> falando sobre: 
+                <a href="http://twitter.com/dmitrynix">@dmitrynix</a> falando sobre:
               </p>
               <h4><a href="#ruby">Ruby: do básico ao avançado</a></h4>
               <div>
@@ -68,7 +113,7 @@
             <li>
               <p>
                 <img src="http://a2.twimg.com/profile_images/534258280/Photo_46_normal.jpg" alt="Dmitry Nix" class="photo">
-                <a href="http://twitter.com/dmitrynix">@dmitrynix</a> falando sobre: 
+                <a href="http://twitter.com/dmitrynix">@dmitrynix</a> falando sobre:
               </p>
               <h4><a href="#ruby">Ruby: do básico ao avançado</a></h4>
               <div>
@@ -79,7 +124,7 @@
             <li>
               <p>
                 <img src="http://a2.twimg.com/profile_images/534258280/Photo_46_normal.jpg" alt="Dmitry Nix" class="photo">
-                <a href="http://twitter.com/dmitrynix">@dmitrynix</a> falando sobre: 
+                <a href="http://twitter.com/dmitrynix">@dmitrynix</a> falando sobre:
               </p>
               <h4><a href="#ruby">Ruby: do básico ao avançado</a></h4>
               <div>
@@ -219,8 +264,20 @@
 
     <footer id="footer">
       <div class="container">
-        Rodapé
+              <div class="links fb" align="center">
+			            <ul>
+				            <li><a href="#">Gurupi</a></li>
+		                <li><a href="#">Sobre</a></li>
+				            <li><a href="#">Agenda</a></li>
+                    <li><a href="#">Usuários</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Imprensa</a></li>
+				            <li><a href="#" style="border: 0px none">Contatos</a></li>
+			            </ul>
+              </div>
       </div>
+      <div class="rights">Copyright 2011 - <a href="/" target="_blank">Gurupi</a></div>
     </footer>
   </body>
 </html>
+

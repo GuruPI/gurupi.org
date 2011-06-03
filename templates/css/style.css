@@ -27,6 +27,7 @@ table { border-collapse:collapse; border-spacing:0; }
 hr { display:block; height:1px; border:0; border-top:1px solid #ccc; margin:1em 0; padding:0; }
 input, select { vertical-align:middle; }
 pre, code, kbd, samp { font-family:monospace, sans-serif; }
+a{ text-decoration:none; }
 a:hover, a:active { outline:none; }
 ul, ol { margin-left:2em; }
 ol { list-style-type:decimal; }
@@ -70,10 +71,11 @@ a:hover { color:#a53b3b; }
 
 .container {width:960px; padding:0 10px; margin:0 auto; overflow:hidden;}
 #profile {background:#393939 url("../img/bg-profile.png") left bottom repeat-x; border-bottom:1px solid #646464; min-height:40px;}
+#profile h4 {color:#ccc;}
 #intro {background:#3f3f3f url("../img/bg-intro.png") left bottom repeat-x; padding:20px 0;}
 #intro .topic {background:#a20000 url("../img/bg-topic.png") left bottom repeat-x; color:#fff; padding:30px; overflow:hidden; 
   border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px;}
-#intro .topic img {float:right; border:1px solid #b33236; margin-left:20px;}
+/*#intro .topic img {float:right; border:1px solid #b33236; margin-left:20px;}*/
 #intro .topic h2, #intro .topic p, #intro .topic ul {float:left; width:380px;}
 #intro .topic h2 {font-size:2em;}
 #intro .topic ul {list-style-type:none; margin:0;}
@@ -96,5 +98,19 @@ a:hover { color:#a53b3b; }
 #atividades .hat .icon {background-position:-96px 0;}
 #atividades li {padding:10px 0;}
 
+/* slider*/
+#slideshow { float:right; position:relative; height:268px; width:485px; margin:0 auto;border:3px solid #b33236; margin-left:20px; }
+#slideshow img { position:absolute; top:0; left:0; z-index:8; }
+#slideshow img.active { z-index:10; }
+#slideshow img.last-active { z-index:9; }
+/* footer */
 #footer {height:100px; margin-top:20px; background-color:#e5e5e5; border-top:1px solid #bdbdbd; overflow:hidden;}
+#footer .in{ margin:auto }
+#footer a{ color:#3b3b3b; }
+#footer .rights{width:100%;	margin-bottom:10px;	text-align:center;	color:#3b3b3b;	font-size:12px;	margin-top:-5px;}
+#footer .fb{ margin-top:30px;}
+#footer .links{ font-size:12px; line-height:normal; color:#3b3b3b }
+#footer .links ul { display:inline-block; margin:0 0 13px; padding:0 0 13px; }
+#footer .links ul li { float:left; list-style: none outside none; margin:0; }
+#footer .links ul li a{ border-right: 1px solid #3b3b3b; font-weight: normal; padding: 0 7px; }
 
