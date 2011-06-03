@@ -78,26 +78,36 @@ a:hover { color:#a53b3b; }
 /*#intro .topic img {float:right; border:1px solid #b33236; margin-left:20px;}*/
 #intro .topic h2, #intro .topic p, #intro .topic ul {float:left; width:380px;}
 #intro .topic h2 {font-size:2em;}
+#intro .topic p {line-height:1.92em;margin:10px 0;}
 #intro .topic ul {list-style-type:none; margin:0;}
 #intro .topic li {font-size:1.1em; margin:5px 0;}
 #intro .topic li .icon        {margin:0 9px; display:inline-block; vertical-align:middle;}
 #intro .topic li.talks .icon  {background-position:-32px -64px;}
 #intro .topic li.photos .icon {background-position:-64px -64px;}
 #intro .topic li.videos .icon {background-position:0 -64px;}
-#intro .topic a {background-color:#4e0101; color:#fff; text-decoration:none; padding:6px 0; display:block; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;}
+#intro .topic a {background-color:#4e0101; color:#fff; text-decoration:none; padding:6px 0; display:block; border-radius:5px; 
+  -moz-border-radius:5px; -webkit-border-radius:5px;}
 #intro .topic a:hover {background-color:#5e0101;}
 
 #extra {clear:both; width:100%;}
 #extra .photo {float:left; margin:0 10px 0 0;}
 .column {width:300px; float:left; padding-top:20px; margin:0 10px;}
 .column ul {margin:0; list-style-type:none;}
-.column li {border-bottom:1px solid #ccc; padding:18px 0; overflow:hidden;}
+.column li, .column p.title {border-bottom:1px solid #ccc; padding:18px 0; overflow:hidden;}
+.column p.title {line-height:1.5em;font-size:1.1em;}
+.column a {font-weight:bold;}
+.column h4 {margin:5px 0;font-size:1.1em;}
 .hat {background-color:#444; color:#fff; font-size:1.4em; font-weight:normal; line-height:47px;}
 .hat .icon {margin:0 9px; display:inline-block; vertical-align:middle;}
 #encontros .hat .icon  {background-position:-96px -64px;}
 #blogs .hat .icon      {background-position:-96px -32px;}
 #atividades .hat .icon {background-position:-96px 0;}
 #atividades li {padding:10px 0;}
+#atividades p {line-height:1.5em;}
+.liked,.disliked {width:83px;height:48px;display:inline-block;background:url(../img/sprite.png) no-repeat;text-align:center;}
+.liked {background-position:0 -96px;margin-right:7px;}
+.disliked {background-position:-87px -96px;}
+.count {line-height:48px;font-size:1.7em;color:#fff;margin-left:35px;text-shadow:1px 1px #000;}
 
 /* slider*/
 #slideshow { float:right; position:relative; height:268px; width:485px; margin:0 auto;border:3px solid #b33236; margin-left:20px; }
