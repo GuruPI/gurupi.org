@@ -55,27 +55,46 @@ a:hover { color:#a53b3b; }
 /* Custom CSS Start Here */
 #top {background-color:#e8e8e8; padding:20px 0 26px; overflow:hidden;}
 #logo {margin:15px 0 7px; float:left;}
-#top nav ul {float:right; overflow:hidden; background:url("../img/menu.png") right center no-repeat;}
-#top nav li {float:left; height:80px;}
-#top nav li a {color:#3b3b3b; font-size:0.95em; text-decoration:none; font-weight:bold; display:block; text-transform:uppercase;
-  background:url("../img/menu.png") left center no-repeat; height:32px; line-height:32px; padding:48px 28px 0 28px;}
-#top nav li a:hover {color:#696969;}
+.icon {background:url("../img/sprite.png") left top no-repeat; width:32px; height:32px;}
+#menu {float:right; overflow:hidden; background:url("../img/menu.png") right center no-repeat;}
+.menuli {float:left; height:80px;}
+.menuli a {color:#3b3b3b; font-size:0.95em; text-decoration:none; font-weight:bold; text-transform:uppercase; text-align:center;
+  display:block; background:url("../img/menu.png") left center no-repeat; height:65px; line-height:32px; padding:15px 28px 0 28px;}
+.menuli a:hover {color:#696969;}
+.menuli .icon   {margin:0 auto; display:block; vertical-align:top;}
+.about .icon    {background-position:0 0;}
+.schedule .icon {background-position:-32px 0;}
+.users .icon    {background-position:-64px 0;}
+.blogs .icon    {background-position:0 -32px;}
+.contact .icon  {background-position:-64px -32px;}
+
 .container {width:960px; padding:0 10px; margin:0 auto; overflow:hidden;}
-#profile {background:#3b3b3b url("../img/bg-profile.png") left bottom repeat-x; border-bottom:1px solid #646464; min-height:40px;}
-#intro {background:#3f3f3f url("../img/bg-main.png") left bottom repeat-x; padding:20px 0;}
-#intro .topic {background:#a40001 url("../img/bg-topic.png") left bottom repeat-x; color:#fff; padding:30px; overflow:hidden; 
+#profile {background:#393939 url("../img/bg-profile.png") left bottom repeat-x; border-bottom:1px solid #646464; min-height:40px;}
+#intro {background:#3f3f3f url("../img/bg-intro.png") left bottom repeat-x; padding:20px 0;}
+#intro .topic {background:#a20000 url("../img/bg-topic.png") left bottom repeat-x; color:#fff; padding:30px; overflow:hidden; 
   border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px;}
 #intro .topic img {float:right; border:1px solid #b33236; margin-left:20px;}
 #intro .topic h2, #intro .topic p, #intro .topic ul {float:left; width:380px;}
 #intro .topic h2 {font-size:2em;}
-#intro .topic ul {width:360px;}
+#intro .topic ul {list-style-type:none; margin:0;}
+#intro .topic li {background-color:#4e0101; font-size:1.1em; margin:5px 0; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;}
+#intro .topic li .icon        {margin:0 9px; display:inline-block; vertical-align:middle;}
+#intro .topic li.talks .icon  {background-position:-32px -64px;}
+#intro .topic li.photos .icon {background-position:-64px -64px;}
+#intro .topic li.videos .icon {background-position:0 -64px;}
+#intro .topic a {color:#fff; text-decoration:none; padding:6px 0; display:block;}
+
 #extra {clear:both; width:100%;}
-#extra section {width:300px; float:left; padding-top:20px; margin:0 10px;}
-#extra section h3 {padding-left:50px; background-color:#444; color:#fff; font-size:1.4em; font-weight:normal; line-height:47px;}
-/*#extra #blogs {margin:0 20px;}*/
-#extra section ul {margin:0; list-style-type:none;}
-#extra section li {border-bottom:1px solid #ccc; padding:18px 0; overflow:hidden;}
-#extra #atividades li {padding:10px 0;}
 #extra .photo {float:left; margin:0 10px 0 0;}
+.column {width:300px; float:left; padding-top:20px; margin:0 10px;}
+.column ul {margin:0; list-style-type:none;}
+.column li {border-bottom:1px solid #ccc; padding:18px 0; overflow:hidden;}
+.hat {background-color:#444; color:#fff; font-size:1.4em; font-weight:normal; line-height:47px;}
+.hat .icon {margin:0 9px; display:inline-block; vertical-align:middle;}
+#encontros .hat .icon  {background-position:-96px -64px;}
+#blogs .hat .icon      {background-position:-96px -32px;}
+#atividades .hat .icon {background-position:-96px 0;}
+#atividades li {padding:10px 0;}
+
 #footer {height:100px; margin-top:20px; background-color:#e5e5e5; border-top:1px solid #bdbdbd; overflow:hidden;}
 
