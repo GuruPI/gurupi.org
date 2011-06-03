@@ -2,6 +2,7 @@
 
 ## Como contribuir?
 
-* Fazer um fork do projeto
-* Fazer os devidos ajustes com os respectivos testes (Rspec se possível)
-* Fazer pull request
+* Faça um fork do projeto
+* Faça as alterações com os respectivos testes (Este projeto utiliza o RSpec)
+* Faça um pull request
+* Código sem testes serão mais difíceis de ser aceitos ;)
