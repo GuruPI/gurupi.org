@@ -70,7 +70,13 @@ a:hover { color:#a53b3b; }
 /*#intro .topic img {float:right; border:1px solid #b33236; margin-left:20px;}*/
 #intro .topic h2, #intro .topic p, #intro .topic ul {float:left; width:380px;}
 #intro .topic h2 {font-size:2em;}
-#intro .topic ul {width:360px;}
+/* menu ao lado do slider */
+#intro .topic ul {width:360px; padding:6px; margin:0; }
+#intro .topic ul li { list-style: none; padding:12px 44px; background:#660000; margin-bottom:10px;  -moz-border-radius: 5px; -webkit-border-radius: 5px;}
+#intro .topic ul li a { display:block; color: #ffffff; text-decoration: none; }
+#intro .topic ul li a:visited { color: #ffffff; }
+#intro .topic ul li a:hover { color: #999999; }
+
 #extra {clear:both; width:100%;}
 #extra section {width:300px; float:left; padding-top:20px; margin:0 10px;}
 #extra section h3 {padding-left:50px; background-color:#444; color:#fff; font-size:1.4em; font-weight:normal; line-height:47px;}
@@ -89,7 +95,7 @@ a:hover { color:#a53b3b; }
 #login-form a.login span span {padding:5px 22px 6px 22px;background:url(../img/button-right1.gif) no-repeat right top}
 #login-form span.links {font-size:.923em;line-height:1.2em;float:left;padding-left:8px;position:relative;top:-2px}
 #login-form span.links a {color:#000}
-/* slider*/
+/* slider */
 #slideshow { float:right; position:relative; height:268px; width:485px; margin:0 auto;border:3px solid #b33236; margin-left:20px; }
 #slideshow img { position:absolute; top:0; left:0; z-index:8; }
 #slideshow img.active { z-index:10; }
