@@ -3,6 +3,8 @@ source 'http://rubygems.org'
 gem 'rails', '3.0.7'
 
 gem 'sqlite3'
+gem 'rake', '0.8.7'
+gem 'omniauth'
 
 group :test do
   gem 'rspec-rails', '~> 2.4'
@@ -13,3 +15,4 @@ group :test do
     gem 'growl'
   end
 end
+
