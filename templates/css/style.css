@@ -1,4 +1,3 @@
-
 /* CSS Reset */
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -57,51 +56,75 @@ a:hover { color:#a53b3b; }
 /* Custom CSS Start Here */
 #top {background-color:#e8e8e8; padding:20px 0 26px; overflow:hidden;}
 #logo {margin:15px 0 7px; float:left;}
-#top nav ul {float:right; overflow:hidden; background:url("../img/menu.png") right center no-repeat;}
-#top nav li {float:left; height:80px;}
-#top nav li a {color:#3b3b3b; font-size:0.95em; text-decoration:none; font-weight:bold; display:block; text-transform:uppercase;
-  background:url("../img/menu.png") left center no-repeat; height:32px; line-height:32px; padding:48px 28px 0 28px;}
-#top nav li a:hover {color:#696969;}
+.icon {background:url("../img/sprite.png") left top no-repeat; width:32px; height:32px;}
+#menu {float:right; overflow:hidden; background:url("../img/menu.png") right center no-repeat;}
+.menuli {float:left; height:80px;}
+.menuli a {color:#3b3b3b; font-size:0.95em; text-decoration:none; font-weight:bold; text-transform:uppercase; text-align:center;
+  display:block; background:url("../img/menu.png") left center no-repeat; height:65px; line-height:32px; padding:15px 28px 0 28px;}
+.menuli a:hover {color:#696969;}
+.menuli .icon   {margin:0 auto; display:block; vertical-align:top;}
+.about .icon    {background-position:0 0;}
+.schedule .icon {background-position:-32px 0;}
+.users .icon    {background-position:-64px 0;}
+.blogs .icon    {background-position:0 -32px;}
+.contact .icon  {background-position:-64px -32px;}
+
 .container {width:960px; padding:0 10px; margin:0 auto; overflow:hidden;}
-#profile {background:#3b3b3b url("../img/bg-profile.png") left bottom repeat-x; border-bottom:1px solid #646464; min-height:40px;}
-#intro {background:#3f3f3f url("../img/bg-main.png") left bottom repeat-x; padding:20px 0;}
-#intro .topic {background:#a40001 url("../img/bg-topic.png") left bottom repeat-x; color:#fff; padding:30px; overflow:hidden;
+#profile {background:#393939 url("../img/bg-profile.png") left bottom repeat-x; border-bottom:1px solid #646464; min-height:40px;}
+#profile h4 {color:#ccc;}
+#intro {background:#3f3f3f url("../img/bg-intro.png") left bottom repeat-x; padding:20px 0;}
+#intro .topic {background:#a20000 url("../img/bg-topic.png") left bottom repeat-x; color:#fff; padding:30px; overflow:hidden;
   border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px;}
 /*#intro .topic img {float:right; border:1px solid #b33236; margin-left:20px;}*/
 #intro .topic h2, #intro .topic p, #intro .topic ul {float:left; width:380px;}
 #intro .topic h2 {font-size:2em;}
+
 /* menu ao lado do slider */
-#intro .topic ul {width:360px; padding:6px; margin:0; }
-#intro .topic ul li { list-style: none; padding:12px 44px; background:#660000; margin-bottom:10px;  -moz-border-radius: 5px; -webkit-border-radius: 5px;}
-#intro .topic ul li a { display:block; color: #ffffff; text-decoration: none; }
-#intro .topic ul li a:visited { color: #ffffff; }
-#intro .topic ul li a:hover { color: #999999; }
+
+#intro .topic p {line-height:1.92em;margin:10px 0;}
+#intro .topic ul {list-style-type:none; margin:0;}
+#intro .topic li {font-size:1.1em; margin:5px 0;}
+#intro .topic li .icon        {margin:0 9px; display:inline-block; vertical-align:middle;}
+#intro .topic li.talks .icon  {background-position:-32px -64px;}
+#intro .topic li.photos .icon {background-position:-64px -64px;}
+#intro .topic li.videos .icon {background-position:0 -64px;}
+#intro .topic a {background-color:#4e0101; color:#fff; text-decoration:none; padding:6px 0; display:block; border-radius:5px;
+  -moz-border-radius:5px; -webkit-border-radius:5px;}
+#intro .topic a:hover {background-color:#5e0101;}
+
 
 #extra {clear:both; width:100%;}
-#extra section {width:300px; float:left; padding-top:20px; margin:0 10px;}
-#extra section h3 {padding-left:50px; background-color:#444; color:#fff; font-size:1.4em; font-weight:normal; line-height:47px;}
-/*#extra #blogs {margin:0 20px;}*/
-#extra section ul {margin:0; list-style-type:none;}
-#extra section li {border-bottom:1px solid #ccc; padding:18px 0; overflow:hidden;}
-#extra #atividades li {padding:10px 0;}
 #extra .photo {float:left; margin:0 10px 0 0;}
-/* form login */
-#login-form fieldset {position:absolute;top:138px;}
-#login-form span.text {float:left;width:140px;height:23px;margin-left:5px;}
-#login-form input {border:none;padding:4px 10px;vertical-align:top;color:#999999;width:120px; -moz-border-radius: 5px; -webkit-border-radius: 5px;}
-*+ html #login-form input {padding-top:3px}
-#login-form a.login {color:#fff;text-decoration:none;text-shadow:1px 1px #000;float:left;background:url(../img/button-carpo1.gif) repeat-x left top;position:relative;top:-2px;margin-left:3px}
-#login-form a.login span {display:block;background:url(../img/button-left1.gif) no-repeat left top}
-#login-form a.login span span {padding:5px 22px 6px 22px;background:url(../img/button-right1.gif) no-repeat right top}
-#login-form span.links {font-size:.923em;line-height:1.2em;float:left;padding-left:8px;position:relative;top:-2px}
-#login-form span.links a {color:#000}
-/* slider */
+
+.column {width:300px; float:left; padding-top:20px; margin:0 10px;}
+.column ul {margin:0; list-style-type:none;}
+.column li, .column p.title {border-bottom:1px solid #ccc; padding:18px 0; overflow:hidden;}
+.column p.title {line-height:1.5em;font-size:1.1em;}
+.column a {font-weight:bold;}
+.column h4 {margin:5px 0;font-size:1.1em;}
+.hat {background-color:#444; color:#fff; font-size:1.4em; font-weight:normal; line-height:47px;}
+.hat .icon {margin:0 9px; display:inline-block; vertical-align:middle;}
+#encontros .hat .icon  {background-position:-96px -64px;}
+#blogs .hat .icon      {background-position:-96px -32px;}
+#atividades .hat .icon {background-position:-96px 0;}
+#atividades li {padding:10px 0;}
+#atividades p {line-height:1.5em;}
+#atividades .user {display:block;}
+.liked,.disliked {width:83px;height:48px;display:inline-block;background:url(../img/sprite.png) no-repeat;text-align:center;}
+.liked {background-position:0 -96px;margin-right:7px;}
+.disliked {background-position:-87px -96px;}
+.count {line-height:48px;font-size:1.7em;color:#fff;margin-left:35px;text-shadow:1px 1px #000;}
+.button-add {background:url(../img/sprite.png) 0 -146px no-repeat; width:215px; height:48px; display:inline-block; text-transform:lowercase;
+  margin-top:18px; font-size:1.3em;color:#fff; line-height:48px; padding-left:85px; text-shadow:1px 1px #000;}
+.button-add:hover {color:#ddd;}
+
+/* slider*/
 #slideshow { float:right; position:relative; height:268px; width:485px; margin:0 auto;border:3px solid #b33236; margin-left:20px; }
 #slideshow img { position:absolute; top:0; left:0; z-index:8; }
 #slideshow img.active { z-index:10; }
 #slideshow img.last-active { z-index:9; }
 /* footer */
-#footer {height:100px; margin-top:20px; background-color:#e5e5e5; border-top:1px solid #bdbdbd; overflow:hidden;}
+#footer {height:110px; margin-top:20px; background-color:#e5e5e5; border-top:1px solid #bdbdbd; overflow:hidden;}
 #footer .in{ margin:auto }
 #footer a{ color:#3b3b3b; }
 #footer .rights{width:100%;	margin-bottom:10px;	text-align:center;	color:#3b3b3b;	font-size:12px;	margin-top:-5px;}
