@@ -3,6 +3,7 @@ source 'http://rubygems.org'
 gem 'rails', '3.0.7'
 
 gem 'sqlite3'
+gem 'omniauth', '>= 0.2.6'
 
 group :test do
   gem 'rspec-rails', '~> 2.4'
