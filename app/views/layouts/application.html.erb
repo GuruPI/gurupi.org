@@ -29,7 +29,14 @@
 
     <div id="profile">
       <div class="container">
-       <a href="#facebook" class="login_facebook">Conectar com Facebook</a>
+      <% if current_user %>
+        <p>
+          <% if current_user.image -%><img src="<%= current_user.image %>" alt="<%= current_user.name %>" class="user_image"><% end -%>
+          Olá, <strong><%= current_user.name %></strong> &nbsp;|&nbsp; <%= link_to "Sair", signout_path %>
+        </p>
+      <% else %>
+        <%= link_to "Conectar com Facebook", "/auth/facebook", :class => "login_facebook" %>
+      <% end %>
       </div>
     </div>
 

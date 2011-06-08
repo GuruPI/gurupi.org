@@ -71,7 +71,10 @@ a:hover { color:#a53b3b; }
 
 .container {width:960px; padding:0 10px; margin:0 auto; overflow:hidden;}
 #profile {background:#393939 url("/images/bg-profile.png") left bottom repeat-x; border-bottom:1px solid #646464; min-height:40px;}
-#profile h4 {color:#ccc;}
+#profile p, #profile a {color:#bababa;}
+#profile p {text-align:right; line-height:38px;}
+#profile .user_image {width:32px; height:32px; float:right; vertical-align:top; margin:3px 0 3px 10px; border:1px solid #606060;}
+.login_facebook {background:url("/images/connect.png") no-repeat; width:176px; height:25px; display:block; text-indent:-999em; margin:7px 0; float:right;}
 #intro {background:#3f3f3f url("/images/bg-intro.png") left bottom repeat-x; padding:20px 0;}
 #intro .topic {background:#a20000 url("/images/bg-topic.png") left bottom repeat-x; color:#fff; padding:30px; overflow:hidden; 
   border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px;}
