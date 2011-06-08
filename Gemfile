@@ -8,7 +8,7 @@ group :test do
   gem 'rspec-rails', '~> 2.4'
   gem 'guard'
   gem 'guard-rspec'
-  if RUBY_PLATFORM =~ /Darwin/
+  if RUBY_PLATFORM =~ /Darwin/i
     gem 'rb-fsevent'
     gem 'growl'
   end
