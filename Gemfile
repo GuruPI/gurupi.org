@@ -1,10 +1,15 @@
 source 'http://rubygems.org'
 
+gem 'bundler'
 gem 'rake', '~> 0.8.7'
-gem 'rails', '3.0.7'
+gem 'rails', '~> 3.0.7'
 
 gem 'sqlite3'
 gem 'omniauth', '>= 0.2.6'
+
+group :development do
+  gem 'capistrano'
+end
 
 group :test do
   gem 'rspec-rails', '~> 2.4'
