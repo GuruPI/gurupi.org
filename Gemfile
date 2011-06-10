@@ -18,8 +18,4 @@ group :test do
   gem 'database_cleaner'
   gem 'guard'
   gem 'guard-rspec'
-  if RUBY_PLATFORM =~ /Darwin/i
-    gem 'rb-fsevent'
-    gem 'growl'
-  end
 end
