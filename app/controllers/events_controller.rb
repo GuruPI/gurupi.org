@@ -1,3 +1,4 @@
+# encoding: UTF-8
 class EventsController < ApplicationController
 
   respond_to :html

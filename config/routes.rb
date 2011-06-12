@@ -1,4 +1,5 @@
 GurupiOrg::Application.routes.draw do
+
   resources :events
 
   get "posts/show"
@@ -7,4 +8,6 @@ GurupiOrg::Application.routes.draw do
   match "/signout"                 => "sessions#destroy", :as => :signout
   resources :posts, only: :show
   root :to => "welcome#index"
+
 end
+
