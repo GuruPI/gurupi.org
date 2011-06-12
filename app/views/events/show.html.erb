@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @event.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <p>
+    <%= @event.description.gsub(/\n/,"<br />").html_safe %>
+  </p>
+</p>
+
+<p>
+  <b>Event date:</b>
+  <%=l @event.event_date %>
+</p>
+
+<p>
+  <b>Hour:</b>
+  <%= @event.hour %>
+</p>
+
+<p>
+  <b>Place:</b>
+  <%= @event.place %>
+</p>
+
+<%= link_to 'Edit', edit_event_path(@event) %> |
+<%= link_to 'Back', events_path %>
+

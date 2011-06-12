@@ -1,4 +1,6 @@
 GurupiOrg::Application.routes.draw do
+  resources :events
+
   get "posts/show"
 
   match "/auth/:provider/callback" => "sessions#create"

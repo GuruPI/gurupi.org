@@ -76,7 +76,7 @@ a:hover { color:#a53b3b; }
 #profile .user_image {width:32px; height:32px; float:right; vertical-align:top; margin:3px 0 3px 10px; border:1px solid #606060;}
 .login_facebook {background:url("/images/connect.png") no-repeat; width:176px; height:25px; display:block; text-indent:-999em; margin:7px 0; float:right;}
 #intro {background:#3f3f3f url("/images/bg-intro.png") left bottom repeat-x; padding:20px 0;}
-#intro .topic {background:#a20000 url("/images/bg-topic.png") left bottom repeat-x; color:#fff; padding:30px; overflow:hidden; 
+#intro .topic {background:#a20000 url("/images/bg-topic.png") left bottom repeat-x; color:#fff; padding:30px; overflow:hidden;
   border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px;}
 /*#intro .topic img {float:right; border:1px solid #b33236; margin-left:20px;}*/
 #intro .topic h2, #intro .topic p, #intro .topic ul {float:left; width:380px;}
@@ -88,9 +88,11 @@ a:hover { color:#a53b3b; }
 #intro .topic li.talks .icon  {background-position:-32px -64px;}
 #intro .topic li.photos .icon {background-position:-64px -64px;}
 #intro .topic li.videos .icon {background-position:0 -64px;}
-#intro .topic a {background-color:#4e0101; color:#fff; text-decoration:none; padding:6px 0; display:block; border-radius:5px; 
+#intro .topic a { color:#3b3b3b; padding-left: 0px !important;}
+#intro .topic a:hover { color:#fff}
+#intro .topic li a {background-color:#4e0101; color:#fff; text-decoration:none; padding:6px 0; display:block; border-radius:5px;
   -moz-border-radius:5px; -webkit-border-radius:5px;}
-#intro .topic a:hover {background-color:#5e0101;}
+#intro .topic li a:hover {background-color:#5e0101;}
 
 #extra {clear:both; width:100%;}
 #extra .photo {float:left; margin:0 10px 0 0;}
@@ -131,4 +133,45 @@ a:hover { color:#a53b3b; }
 #footer .links ul { display:inline-block; margin:0 0 13px; padding:0 0 13px; }
 #footer .links ul li { float:left; list-style: none outside none; margin:0; }
 #footer .links ul li a{ border-right: 1px solid #3b3b3b; font-weight: normal; padding: 0 7px; }
+
+/* error messages rails */
+
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+#notice {
+  color: green;
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
 

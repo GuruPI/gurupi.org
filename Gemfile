@@ -6,6 +6,7 @@ gem 'rails', '~> 3.0.7'
 
 gem 'sqlite3'
 gem 'omniauth', '>= 0.2.6'
+gem 'jquery-rails'
 
 group :development do
   gem 'capistrano'
@@ -19,3 +20,4 @@ group :test do
   gem 'guard'
   gem 'guard-rspec'
 end
+

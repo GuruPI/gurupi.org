@@ -31,7 +31,7 @@ module GurupiOrg
     config.i18n.default_locale = 'pt-BR'.to_sym
 
     # JavaScript files you want as :defaults (application.js is always included).
-    # config.action_view.javascript_expansions[:defaults] = %w(jquery rails)
+    config.action_view.javascript_expansions[:defaults] = %w(jquery jquery_ujs)
 
     # Configure the default encoding used in templates for Ruby 1.9.
     config.encoding = "utf-8"
@@ -43,3 +43,4 @@ module GurupiOrg
     end
   end
 end
+

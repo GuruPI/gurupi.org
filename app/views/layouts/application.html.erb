@@ -7,6 +7,8 @@
   <head>
     <meta charset="utf-8">
     <title>GuruPI - Grupo de Usuários de Ruby do Piauí</title>
+    <%= javascript_include_tag :defaults %>
+    <%= csrf_meta_tag %>
     <link rel="stylesheet" href="/stylesheets/style.css?v=1">
     <script src="/javascripts/modernizr-2.0.js"></script>
   </head>
@@ -14,7 +16,7 @@
   <body>
     <header id="top">
       <div class="container">
-        <h1 id="logo"><a href="#" title="GuruPI - Grupo de Usuários de Ruby do Piauí"><img src="/images/logo.gif" alt="GuruPI - Grupo de Usuários de Ruby do Piauí"></a></h1>
+        <h1 id="logo"><a href="/" title="GuruPI - Grupo de Usuários de Ruby do Piauí"><img src="/images/logo.gif" alt="GuruPI - Grupo de Usuários de Ruby do Piauí"></a></h1>
         <nav>
           <ul id="menu">
             <li class="menuli about"><a href="#sobre"><span class="icon"></span>Sobre</a></li>
@@ -81,3 +83,4 @@
     </script>
   </body>
 </html>
+
