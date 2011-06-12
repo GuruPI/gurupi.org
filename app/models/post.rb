@@ -1,4 +1,6 @@
 class Post < ActiveRecord::Base
+  belongs_to :user
+
   before_save :slugify
 
   def to_param
