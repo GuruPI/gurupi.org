@@ -199,3 +199,20 @@
       full_messages:
         format: "%{attribute} %{message}"
 
+    models:
+      event: "Evento"
+
+  attributes:
+    name: "Nome"
+    description: "Descrição"
+    place: "Local"
+    hour: "Horário"
+    event_date: "Data do Evento"
+
+  confirm: "Apagar?"
+  show: "Mostrar"
+  edit: "Editar"
+  destroy: "Deletar"
+  new: "Novo"
+  back: "Voltar"
+
