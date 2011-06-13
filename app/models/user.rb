@@ -1,5 +1,34 @@
 class User < ActiveRecord::Base
+  has_many :roles
   has_many :posts
+
+  attr_reader :role
+
+  def role_symbols
+    (roles || []).map { |r| r.title.to_sym }
+  end
+
+  def admin?
+    role_symbols.include?(:admin)
+  end
+
+  def member?
+    !admin? && role_symbols.include?(:member)
+  end
+
+  def guest?
+    !admin? && !member?
+  end
+
+  def role
+    @role = admin? ? "admin" : (member? ? "member" : "guest")
+  end
+
+  def change_role(value)
+    role = Role.create(:title => value)
+    self.roles = [role]
+  end
+
   def self.create_with_omniauth(auth)
     create! do |user|
       user.provider = auth["provider"]

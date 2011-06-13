@@ -1,0 +1,27 @@
+<div id="content">
+  <div class="container">
+    <h1>Usuários</h1>
+<% if @users %>
+    <ul class="list">
+  <% @users.each do |user| %>
+    <% permitted_to? :read, user do %>
+      <li class="clearfix">
+        <% if user.image -%><img src="<%= user.image %>" alt="<%= user.name %>" class="user_photo"><% end -%>
+        <strong><%= user.name %></strong> <%= user_role(user) %><br>
+        <%= link_to "Facebook", user.link, :class => "facebook" if user.link.present? %>
+        <% permitted_to? :edit, :users do %>
+        <div>
+          Mudar para: 
+          <%= link_to 'Visitante', change_user_path(user, 'guest'), :class => "user_role" if !user.guest? %>
+          <%= link_to 'Membro', change_user_path(user, 'member'), :class => "user_role" if !user.member? %>
+          <%= link_to 'Admin', change_user_path(user, 'admin'), :class => "user_role" if !user.admin? %>
+        </div>
+        <% end %>
+      </li>
+    <% end %>
+  <% end %>
+    </ul>
+<% end %>
+
+  </div>
+</div>

@@ -22,7 +22,7 @@
           <ul id="menu">
             <li class="menuli about"><a href="#sobre"><span class="icon"></span>Sobre</a></li>
             <li class="menuli schedule"><a href="#agenda"><span class="icon"></span>Agenda</a></li>
-            <li class="menuli users"><a href="#usuarios"><span class="icon"></span>Usuários</a></li>
+            <li class="menuli users"><%= link_to %{<span class="icon"></span>Usuários}.html_safe, users_path %></li>
             <li class="menuli blogs"><a href="#blogs"><span class="icon"></span>Blogs</a></li>
             <li class="menuli contact"><a href="#contatos"><span class="icon"></span>Contatos</a></li>
           </ul>
@@ -33,10 +33,10 @@
     <div id="profile">
       <div class="container">
       <% if current_user %>
-        <p>
+        <div>
           <% if current_user.image -%><img src="<%= current_user.image %>" alt="<%= current_user.name %>" class="user_image"><% end -%>
-          Olá, <strong><%= current_user.name %></strong> &nbsp;|&nbsp; <%= link_to "Sair", signout_path %>
-        </p>
+          <p class="account">Olá, <strong><%= current_user.name %></strong> <%= user_role(current_user) %> <span class="spacer">|</span> <%= link_to "Sair", signout_path, :class => "signout" %></p>
+        </div>
       <% else %>
         <%= link_to "Conectar com Facebook", "/auth/facebook", :class => "login_facebook" %>
       <% end %>
@@ -62,6 +62,7 @@
       </div>
       <div class="rights">Copyright 2011 - <a href="/">Gurupi</a></div>
     </footer>
+    <%= csrf_meta_tag %>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
     <script>window.jQuery || document.write("<script src='/javascripts/jquery-1.6.1.min.js'>\x3C/script>")</script>
     <script>
