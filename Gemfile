@@ -7,10 +7,7 @@ gem 'rails', '~> 3.0.7'
 gem 'sqlite3'
 
 gem 'omniauth', '>= 0.2.6'
-<<<<<<< HEAD
-=======
 gem 'declarative_authorization'
->>>>>>> 1fbfec8526f4c6c79327d6de7b72bc0e8860aebb
 gem 'jquery-rails'
 
 group :development do
