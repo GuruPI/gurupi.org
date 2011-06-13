@@ -70,11 +70,20 @@ a:hover { color:#a53b3b; }
 .contact .icon  {background-position:-64px -32px;}
 
 .container {width:960px; padding:0 10px; margin:0 auto; overflow:hidden;}
+
 #profile {background:#393939 url("/images/bg-profile.png") left bottom repeat-x; border-bottom:1px solid #646464; min-height:40px;}
-#profile p, #profile a {color:#bababa;}
-#profile p {text-align:right; line-height:38px;}
+#profile p {color:#ccc; text-align:right; float:right; display:inline; padding:4px 8px; margin-top:7px; border-width:1px; border-style:solid; border-color:#111 #333 #333 #111; 
+  background-color:#000; border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px;}
 #profile .user_image {width:32px; height:32px; float:right; vertical-align:top; margin:3px 0 3px 10px; border:1px solid #606060;}
+#profile .spacer {padding:0 5px;}
+#profile .spacer, #profile .signout {color:#888; font:0.8em verdana, sans-serif;}
+#profile .signout:hover {color:#e0e0e0;}
 .login_facebook {background:url("/images/connect.png") no-repeat; width:176px; height:25px; display:block; text-indent:-999em; margin:7px 0; float:right;}
+.user_role {border-radius:2px; -moz-border-radius:2px; -webkit-border-radius:2px; padding:2px 4px; font:0.8em verdana, sans-serif; background-color:#dadada; color:#444 !important;}
+.user_role.admin {background-color:#4e8e00; color:#eee !important;}
+.user_role.member {background-color:#a20000; color:#eee !important;}
+.user_role.guest {background-color:#0746a8; color:#eee !important;}
+
 #intro {background:#3f3f3f url("/images/bg-intro.png") left bottom repeat-x; padding:20px 0;}
 #intro .topic {background:#a20000 url("/images/bg-topic.png") left bottom repeat-x; color:#fff; padding:30px; overflow:hidden; 
   border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px;}
