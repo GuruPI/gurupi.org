@@ -6,6 +6,8 @@ GurupiOrg::Application.routes.draw do
 
   resources :users, only: [:index]
   resources :posts, only: [:show]
+  match "/users/:id/change/:role" => "users#change", :as => :change_user
 
   root :to => "welcome#index"
+  match '/:controller(/:action(/:id))'
 end

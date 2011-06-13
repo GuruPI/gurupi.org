@@ -1,5 +1,14 @@
 class User < ActiveRecord::Base
   has_many :roles
+  attr_reader :role
+
+  def role_symbols
+    (roles || []).map { |r| r.title.to_sym }
+  end
+
+  def role
+    @role = admin? ? "admin" : (member? ? "member" : "guest")
+  end
 
   def self.create_with_omniauth(auth)
     create! do |user|
