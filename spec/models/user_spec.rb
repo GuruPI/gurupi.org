@@ -5,6 +5,10 @@ describe User do
     @user = User.make!
   end
 
+  it "should have many posts" do
+    User.new.should be_respond_to :posts
+  end
+
   it "should not have roles (default)" do
     @user.roles.should be_empty
   end
