@@ -53,6 +53,7 @@ GEM
       ffi (~> 1.0.6)
     configuration (1.2.0)
     database_cleaner (0.6.7)
+    declarative_authorization (0.5.1)
     diff-lcs (1.1.2)
     erubis (2.6.6)
       abstract (>= 1.0.0)
@@ -191,6 +192,7 @@ DEPENDENCIES
   capistrano
   capybara!
   database_cleaner
+  declarative_authorization
   guard
   guard-rspec
   launchy
