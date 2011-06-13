@@ -40,6 +40,7 @@ module GurupiOrg
     config.filter_parameters += [:password]
     config.generators do |g|
       g.test_framework :rspec
+      g.fixture_replacement :machinist
     end
   end
 end

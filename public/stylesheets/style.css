@@ -92,6 +92,11 @@ a:hover { color:#a53b3b; }
   -moz-border-radius:5px; -webkit-border-radius:5px;}
 #intro .topic a:hover {background-color:#5e0101;}
 
+#content {clear:both; width:100%;}
+.list {list-style-type:none; margin:0; column-width:300px; -moz-column-width:300px; -webkit-column-width:300px; 
+  column-gap:20px; -webkit-column-gap:20px; -moz-column-gap:20px;}
+.user_photo {margin:0 6px 6px 0; width:58px; height:58px; float:left; padding:3px; border:1px solid #ddd; background-color:#fff;}
+
 #extra {clear:both; width:100%;}
 #extra .photo {float:left; margin:0 10px 0 0;}
 .column {width:300px; float:left; padding-top:20px; margin:0 10px;}
