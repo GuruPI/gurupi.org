@@ -17,8 +17,3 @@ Role.blueprint(:admin) do
   title { "admin" }
 end
 
-
-Lecture.blueprint do
-
-end
-

@@ -7,4 +7,3 @@ Rails.application.config.middleware.use OmniAuth::Builder do
     provider :facebook, '217866758240238', '22c31e695d0fb7f5cf2358e4a00741b3'
   end
 end
-

@@ -73,14 +73,11 @@ a:hover { color:#a53b3b; }
 #profile {background:#393939 url("../img/bg-profile.png") left bottom repeat-x; border-bottom:1px solid #646464; min-height:40px;}
 #profile h4 {color:#ccc;}
 #intro {background:#3f3f3f url("../img/bg-intro.png") left bottom repeat-x; padding:20px 0;}
-#intro .topic {background:#a20000 url("../img/bg-topic.png") left bottom repeat-x; color:#fff; padding:30px; overflow:hidden;
+#intro .topic {background:#a20000 url("../img/bg-topic.png") left bottom repeat-x; color:#fff; padding:30px; overflow:hidden; 
   border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px;}
 /*#intro .topic img {float:right; border:1px solid #b33236; margin-left:20px;}*/
 #intro .topic h2, #intro .topic p, #intro .topic ul {float:left; width:380px;}
 #intro .topic h2 {font-size:2em;}
-
-/* menu ao lado do slider */
-
 #intro .topic p {line-height:1.92em;margin:10px 0;}
 #intro .topic ul {list-style-type:none; margin:0;}
 #intro .topic li {font-size:1.1em; margin:5px 0;}
@@ -88,14 +85,12 @@ a:hover { color:#a53b3b; }
 #intro .topic li.talks .icon  {background-position:-32px -64px;}
 #intro .topic li.photos .icon {background-position:-64px -64px;}
 #intro .topic li.videos .icon {background-position:0 -64px;}
-#intro .topic a {background-color:#4e0101; color:#fff; text-decoration:none; padding:6px 0; display:block; border-radius:5px;
+#intro .topic a {background-color:#4e0101; color:#fff; text-decoration:none; padding:6px 0; display:block; border-radius:5px; 
   -moz-border-radius:5px; -webkit-border-radius:5px;}
 #intro .topic a:hover {background-color:#5e0101;}
 
-
 #extra {clear:both; width:100%;}
 #extra .photo {float:left; margin:0 10px 0 0;}
-
 .column {width:300px; float:left; padding-top:20px; margin:0 10px;}
 .column ul {margin:0; list-style-type:none;}
 .column li, .column p.title {border-bottom:1px solid #ccc; padding:18px 0; overflow:hidden;}

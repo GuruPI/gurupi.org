@@ -1,11 +1,4 @@
 GurupiOrg::Application.routes.draw do
-
-  resources :lectures
-
-  resources :events do
-    resources :lectures
-  end
-
   match "/auth/:provider/callback" => "sessions#create"
   match "/signout"                 => "sessions#destroy", :as => :signout
 
@@ -16,6 +9,4 @@ GurupiOrg::Application.routes.draw do
 
   root :to => "welcome#index"
   match '/:controller(/:action(/:id))'
-
 end
-

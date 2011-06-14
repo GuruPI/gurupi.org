@@ -1,4 +1,3 @@
-# encoding: UTF-8
 class PostsController < ApplicationController
   respond_to :html
   def show
@@ -15,4 +14,3 @@ class PostsController < ApplicationController
     respond_with @post
   end
 end
-

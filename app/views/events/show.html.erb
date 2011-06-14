@@ -1,34 +1,32 @@
+<p id="notice"><%= notice %></p>
+
 <p>
-  <b><%=Event.human_attribute_name(:name)%>:</b>
+  <b>Name:</b>
   <%= @event.name %>
 </p>
 
 <p>
-  <b><%=Event.human_attribute_name(:description)%>:</b>
+  <b>Description:</b>
   <p>
     <%= @event.description.gsub(/\n/,"<br />").html_safe %>
   </p>
 </p>
 
 <p>
-  <b><%=Event.human_attribute_name(:event_date)%>:</b>
+  <b>Event date:</b>
   <%=l @event.event_date %>
 </p>
 
 <p>
-  <b><%=Event.human_attribute_name(:hour)%>:</b>
+  <b>Hour:</b>
   <%= @event.hour %>
 </p>
 
 <p>
-  <b><%=Event.human_attribute_name(:place)%>:</b>
+  <b>Place:</b>
   <%= @event.place %>
 </p>
-<br />
-<h2>Palestras</h2>
 
-<%= render @event.lectures %>
-<br />
-<h2>Add uma Palestra:</h2>
-<%= render "lectures/form" %>
+<%= link_to 'Edit', edit_event_path(@event) %> |
+<%= link_to 'Back', events_path %>
 
