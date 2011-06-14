@@ -20,14 +20,22 @@ class EventsController < ApplicationController
 
   def create
     @event = Event.new(params[:event])
-    flash[:notice] = 'Event was successfully created.' if @event.save
-    respond_with @event
+    if @event.save
+      flash[:notice] = 'Event was successfully created.'
+      respond_with @event
+    else
+      render "new"
+    end
   end
 
   def update
     @event = Event.find_by_slug(params[:id])
-    flash[:notice] = 'Event was successfully updated.' if @event.update_attributes(params[:event])
-    respond_with @event
+    if @event.update_attributes(params[:event])
+      flash[:notice] = 'Event was successfully updated.'
+      respond_with @event
+    else
+      render "edit"
+    end
   end
 
   def destroy

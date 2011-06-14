@@ -2,13 +2,19 @@ require 'spec_helper'
 
 describe EventsController do
 
-  def valid_attributes
-    {}
+  def valid_attributes(name_sufix = Time.now)
+    {
+      name: "Event #{name_sufix}", 
+      description: "Lorem ipsum dolor sit amet", 
+      event_date: Date.today, 
+      hour: Time.now.hour + 4,
+      place: "UESPI" 
+    }
   end
 
   describe "GET index" do
     it "assigns all events as @events" do
-      event = Event.create! valid_attributes
+      event = Event.create!(valid_attributes)
       get :index
       assigns(:events).should eq([event])
     end
@@ -16,8 +22,8 @@ describe EventsController do
 
   describe "GET show" do
     it "assigns the requested event as @event" do
-      event = Event.create! valid_attributes
-      get :show, :id => event.id.to_s
+      event = Event.create!(valid_attributes)
+      get :show, :id => event.to_param
       assigns(:event).should eq(event)
     end
   end
@@ -31,8 +37,8 @@ describe EventsController do
 
   describe "GET edit" do
     it "assigns the requested event as @event" do
-      event = Event.create! valid_attributes
-      get :edit, :id => event.id.to_s
+      event = Event.create!(valid_attributes)
+      get :show, :id => event.to_param
       assigns(:event).should eq(event)
     end
   end
@@ -46,7 +52,7 @@ describe EventsController do
       end
 
       it "assigns a newly created event as @event" do
-        post :create, :event => valid_attributes
+        post :create, :event => valid_attributes()
         assigns(:event).should be_a(Event)
         assigns(:event).should be_persisted
       end
@@ -75,36 +81,36 @@ describe EventsController do
   describe "PUT update" do
     describe "with valid params" do
       it "updates the requested event" do
-        event = Event.create! valid_attributes
+        event = Event.create!(valid_attributes())
         Event.any_instance.should_receive(:update_attributes).with({'these' => 'params'})
-        put :update, :id => event.id, :event => {'these' => 'params'}
+        put :update, :id => event.to_param, :event => {'these' => 'params'}
       end
 
       it "assigns the requested event as @event" do
-        event = Event.create! valid_attributes
-        put :update, :id => event.id, :event => valid_attributes
+        event = Event.create!(valid_attributes)
+        put :update, :id => event.to_param, :event => valid_attributes
         assigns(:event).should eq(event)
       end
 
       it "redirects to the event" do
-        event = Event.create! valid_attributes
-        put :update, :id => event.id, :event => valid_attributes
+        event = Event.create!(valid_attributes(1))
+        put :update, :id => event.to_param, :event => valid_attributes(1)
         response.should redirect_to(event)
       end
     end
 
     describe "with invalid params" do
       it "assigns the event as @event" do
-        event = Event.create! valid_attributes
+        event = Event.create!(valid_attributes)
         Event.any_instance.stub(:save).and_return(false)
-        put :update, :id => event.id.to_s, :event => {}
+        put :update, :id => event.to_param, :event => {}
         assigns(:event).should eq(event)
       end
 
       it "re-renders the 'edit' template" do
-        event = Event.create! valid_attributes
+        event = Event.create!(valid_attributes)
         Event.any_instance.stub(:save).and_return(false)
-        put :update, :id => event.id.to_s, :event => {}
+        put :update, :id => event.to_param, :event => {}
         response.should render_template("edit")
       end
     end
@@ -112,15 +118,15 @@ describe EventsController do
 
   describe "DELETE destroy" do
     it "destroys the requested event" do
-      event = Event.create! valid_attributes
+      event = Event.create!(valid_attributes)
       expect {
-        delete :destroy, :id => event.id.to_s
+        delete :destroy, :id => event.to_param
       }.to change(Event, :count).by(-1)
     end
 
     it "redirects to the events list" do
-      event = Event.create! valid_attributes
-      delete :destroy, :id => event.id.to_s
+      event = Event.create!(valid_attributes)
+      delete :destroy, :id => event.to_param
       response.should redirect_to(events_url)
     end
   end

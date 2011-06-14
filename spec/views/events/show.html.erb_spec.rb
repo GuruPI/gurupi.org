@@ -7,7 +7,8 @@ describe "events/show.html.erb" do
       :description => "MyText",
       :hour => "Hour",
       :place => "Place",
-      :slug => "Slug"
+      :slug => "Slug",
+      :event_date => Date.today
     ))
   end
 
@@ -18,11 +19,12 @@ describe "events/show.html.erb" do
 
     rendered.should match(/MyText/)
 
+    rendered.should match(/Event date/)
+
     rendered.should match(/Hour/)
 
     rendered.should match(/Place/)
 
-    rendered.should match(/Slug/)
   end
 end
 

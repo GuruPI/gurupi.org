@@ -7,7 +7,7 @@ describe "events/edit.html.erb" do
       :description => "MyText",
       :hour => "MyString",
       :place => "MyString",
-      :slug => "MyString"
+      :slug => "MyString",
     ))
   end
 
@@ -19,7 +19,6 @@ describe "events/edit.html.erb" do
       assert_select "textarea#event_description", :name => "event[description]"
       assert_select "input#event_hour", :name => "event[hour]"
       assert_select "input#event_place", :name => "event[place]"
-      assert_select "input#event_slug", :name => "event[slug]"
     end
   end
 end
