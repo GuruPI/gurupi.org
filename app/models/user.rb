@@ -2,8 +2,6 @@ class User < ActiveRecord::Base
   has_many :roles
   has_many :posts
 
-  attr_reader :role
-
   def role_symbols
     (roles || []).map { |r| r.title.to_sym }
   end
@@ -21,7 +19,13 @@ class User < ActiveRecord::Base
   end
 
   def role
-    @role = admin? ? "admin" : (member? ? "member" : "guest")
+    @role = if admin?
+      "admin"
+    elsif member?
+      "member"
+    else
+      "guest"
+    end
   end
 
   def change_role(value)
