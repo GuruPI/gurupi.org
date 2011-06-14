@@ -72,7 +72,7 @@ a:hover { color:#a53b3b; }
 .container {width:960px; padding:0 10px; margin:0 auto; overflow:hidden;}
 
 #profile {background:#393939 url("/images/bg-profile.png") left bottom repeat-x; border-bottom:1px solid #646464; min-height:40px;}
-#profile p {color:#ccc; text-align:right; float:right; display:inline; padding:4px 8px; margin-top:7px; border-width:1px; border-style:solid; border-color:#111 #333 #333 #111; 
+#profile p {color:#ccc; text-align:right; float:right; display:inline; padding:4px 8px; margin-top:7px; border-width:1px; border-style:solid; border-color:#111 #333 #333 #111;
   background-color:#000; border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px;}
 #profile .user_image {width:32px; height:32px; float:right; vertical-align:top; margin:3px 0 3px 10px; border:1px solid #606060;}
 #profile .spacer {padding:0 5px;}
@@ -104,7 +104,7 @@ a:hover { color:#a53b3b; }
 #intro .topic li a:hover {background-color:#5e0101;}
 
 #content {clear:both; width:100%;}
-.list {list-style-type:none; margin:0; column-width:300px; -moz-column-width:300px; -webkit-column-width:300px; 
+.list {list-style-type:none; margin:0; column-width:300px; -moz-column-width:300px; -webkit-column-width:300px;
   column-gap:20px; -webkit-column-gap:20px; -moz-column-gap:20px;}
 .user_photo {margin:0 6px 6px 0; width:58px; height:58px; float:left; padding:3px; border:1px solid #ddd; background-color:#fff;}
 

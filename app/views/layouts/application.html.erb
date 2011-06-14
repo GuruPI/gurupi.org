@@ -5,8 +5,11 @@
 <!--[if IE 9 ]>    <html lang="pt-br" class="no-js ie9"> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--><html lang="pt-br" class="no-js"><!--<![endif]-->
   <head>
+
     <meta charset="utf-8">
     <title>GuruPI - Grupo de Usuários de Ruby do Piauí</title>
+    <%= javascript_include_tag :defaults %>
+    <%= csrf_meta_tag %>
     <link rel="stylesheet" href="/stylesheets/style.css?v=1">
     <script src="/javascripts/modernizr-2.0.js"></script>
   </head>
@@ -39,15 +42,18 @@
       <% end %>
       </div>
     </div>
+
+    <p id="notice"><%= notice %></p>
+
     <%= yield %>
     <footer id="footer">
       <div class="container">
         <div class="links fb" align="center">
           <ul>
-            <li><a href="#">Gurupi</a></li>
+            <li><a href="/">Gurupi</a></li>
             <li><a href="#">Sobre</a></li>
             <li><a href="#">Agenda</a></li>
-            <li><a href="#">Usuários</a></li>
+            <li><%= link_to %{Usuários}.html_safe, users_path %></li>
             <li><a href="#">Blogs</a></li>
             <li><a href="#">Imprensa</a></li>
             <li><a href="#" style="border: 0px none">Contatos</a></li>
