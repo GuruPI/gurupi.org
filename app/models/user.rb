@@ -2,36 +2,7 @@ class User < ActiveRecord::Base
   has_many :roles
   has_many :posts
 
-  def role_symbols
-    (roles || []).map { |r| r.title.to_sym }
-  end
-
-  def admin?
-    role_symbols.include?(:admin)
-  end
-
-  def member?
-    !admin? && role_symbols.include?(:member)
-  end
-
-  def guest?
-    !admin? && !member?
-  end
-
-  def role
-    @role = if admin?
-      "admin"
-    elsif member?
-      "member"
-    else
-      "guest"
-    end
-  end
-
-  def change_role(value)
-    role = Role.create(:title => value)
-    self.roles = [role]
-  end
+  include UserRoles
 
   def self.create_with_omniauth(auth)
     create! do |user|
