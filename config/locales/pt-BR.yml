@@ -201,6 +201,7 @@
 
     models:
       event: "Evento"
+      lecture: "Palestra"
 
   attributes:
     name: "Nome"
@@ -208,10 +209,15 @@
     place: "Local"
     hour: "Horário"
     event_date: "Data do Evento"
+    positive_vote: "Voto Posito"
+    negative_vote: "Voto Negativo"
+    user: "Usuário"
+    event: "Evento"
 
   confirm: "Apagar?"
   show: "Mostrar"
   edit: "Editar"
+  destroy_lecture: "Deletar Palestrar"
   destroy: "Deletar"
   new: "Novo"
   back: "Voltar"

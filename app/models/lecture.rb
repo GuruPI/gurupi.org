@@ -1,6 +1,7 @@
-class Event < ActiveRecord::Base
+class Lecture < ActiveRecord::Base
+  belongs_to :user
+  belongs_to :event
   before_save :slugify
-  has_many :lectures, :dependent => :destroy
   validates :name, :presence => true, :uniqueness => true
 
   def to_param

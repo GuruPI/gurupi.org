@@ -1,6 +1,10 @@
 GurupiOrg::Application.routes.draw do
 
-  resources :events
+  resources :lectures
+
+  resources :events do
+    resources :lectures
+  end
 
   match "/auth/:provider/callback" => "sessions#create"
   match "/signout"                 => "sessions#destroy", :as => :signout

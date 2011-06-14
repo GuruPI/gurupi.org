@@ -27,40 +27,22 @@
     <section id="encontros" class="column">
       <h3 class="hat"><span class="icon"></span>Próximo Encontro</h3>
       <p class="title">Vote na palestra que você deseja assistir no próximo encontro GuruPI que será realizado no dia <%=l @event.event_date unless !@event.present?  %></p>
+
       <ul>
+       <% @event.lectures.each do |lecture| %>
         <li>
+
           <p>
             <img src="http://a2.twimg.com/profile_images/534258280/Photo_46_normal.jpg" alt="Dmitry Nix" class="photo">
             <a href="http://twitter.com/dmitrynix">@dmitrynix</a> falando sobre:
           </p>
-          <h4><a href="#ruby">Ruby: do básico ao avançado</a></h4>
+          <h4><a href="#ruby"><%=lecture.name%></a></h4>
           <div>
-            <a href="#gostei" class="liked"><span class="count">11</span></a>
-            <a href="#naogostei" class="disliked"><span class="count">3</span></a>
+            <a href="#gostei" class="liked"><span class="count"><%=lecture.positive_vote%></span></a>
+            <a href="#naogostei" class="disliked"><span class="count"><%=lecture.negative_vote%></span></a>
           </div>
         </li>
-        <li>
-          <p>
-            <img src="http://a2.twimg.com/profile_images/534258280/Photo_46_normal.jpg" alt="Dmitry Nix" class="photo">
-            <a href="http://twitter.com/dmitrynix">@dmitrynix</a> falando sobre:
-          </p>
-          <h4><a href="#ruby">Ruby: do básico ao avançado</a></h4>
-          <div>
-            <a href="#gostei" class="liked"><span class="count">9</span></a>
-            <a href="#naogostei" class="disliked"><span class="count">2</span></a>
-          </div>
-        </li>
-        <li>
-          <p>
-            <img src="http://a2.twimg.com/profile_images/534258280/Photo_46_normal.jpg" alt="Dmitry Nix" class="photo">
-            <a href="http://twitter.com/dmitrynix">@dmitrynix</a> falando sobre:
-          </p>
-          <h4><a href="#ruby">Ruby: do básico ao avançado</a></h4>
-          <div>
-            <a href="#gostei" class="liked"><span class="count">10</span></a>
-            <a href="#naogostei" class="disliked"><span class="count">1</span></a>
-          </div>
-        </li>
+        <%end%>
       </ul>
       <%= link_to "Cadastrar Palestra", @event, :class => "button-add" %>
     </section>
