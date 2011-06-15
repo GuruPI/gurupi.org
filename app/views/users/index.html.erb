@@ -1,7 +1,7 @@
 <h1 class="hat title">Usuários</h1>
 
 <% if @users %>
-  <ul class="list">
+  <ul id="users" class="list">
 <% @users.each do |user| %>
   <% permitted_to? :read, user do %>
     <li class="clearfix">

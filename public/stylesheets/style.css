@@ -118,8 +118,8 @@ a:hover { color:#a53b3b; }
 #local li {display:inline;}
 .img_gallery a img {border:4px solid #dfdfdf; margin:0 2px 2px 0; width:87px; height:87px;}
 .img_gallery a:hover img {border-color:#a80000;}
-.list {list-style-type:none; margin:0; column-width:300px; -moz-column-width:300px; -webkit-column-width:300px; 
-  column-gap:20px; -webkit-column-gap:20px; -moz-column-gap:20px;}
+#users {list-style-type:none; margin:0; overflow:hidden; width:100%; clear:both;}
+#users li {border-bottom:1px solid #ccc; padding:8px 0 18px; margin:0 10px 10px; width:300px; float:left;}
 .user_photo {margin:0 6px 6px 0; width:58px; height:58px; float:left; padding:3px; border:1px solid #ddd; background-color:#fff;}
 
 #extra {clear:both; width:100%;}
