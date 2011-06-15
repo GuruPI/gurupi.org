@@ -25,7 +25,30 @@
 
     <div id="content">
       <div class="container">
-        <%= yield %>
+        <div id="wrapper">
+          <article id="main">
+            <%= yield %>
+          </article>
+        </div>
+
+        <div id="local">
+          <section id="photos">
+            <h4 class="hat"><span class="icon"></span>Fotos</h4>
+            <ul class="gallery">
+              <li class="img_gallery"><a href="#1"><img src="http://farm6.static.flickr.com/5291/5546410159_986993a38b_s.jpg" alt="Foto 1"></a></li>
+              <li class="img_gallery"><a href="#2"><img src="http://farm6.static.flickr.com/5295/5546990482_fd6132af3b_s.jpg" alt="Foto 2"></a></li>
+              <li class="img_gallery"><a href="#3"><img src="http://farm6.static.flickr.com/5029/5546990008_f27eac11c0_s.jpg" alt="Foto 3"></a></li>
+              <li class="img_gallery"><a href="#4"><img src="http://farm6.static.flickr.com/5095/5546408519_a834fb9e81_s.jpg" alt="Foto 4"></a></li>
+              <li class="img_gallery"><a href="#5"><img src="http://farm6.static.flickr.com/5018/5546407957_220868e341_s.jpg" alt="Foto 5"></a></li>
+              <li class="img_gallery"><a href="#6"><img src="http://farm6.static.flickr.com/5140/5546407353_b638967478_s.jpg" alt="Foto 6"></a></li>
+              <li class="img_gallery"><a href="#7"><img src="http://farm6.static.flickr.com/5260/5546986852_c336caf75f_s.jpg" alt="Foto 7"></a></li>
+              <li class="img_gallery"><a href="#8"><img src="http://farm6.static.flickr.com/5253/5546986248_dd5814c30b_s.jpg" alt="Foto 8"></a></li>
+              <li class="img_gallery"><a href="#9"><img src="http://farm6.static.flickr.com/5021/5546985686_c07f4f4eeb_s.jpg" alt="Foto 9"></a></li>
+            </ul>
+            <p>Veja mais fotos no <a href="http://flickr.com/gurupi">flickr</a></p>
+          </section>
+        </div>
+
       </div>
     </div>
 
