@@ -17,22 +17,7 @@
 
     <%= yield %>
 
-    <footer id="footer">
-      <div class="container">
-        <div class="links fb" align="center">
-          <ul>
-            <li><a href="#">Gurupi</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Agenda</a></li>
-            <li><a href="#">Usuários</a></li>
-            <li><a href="#">Blogs</a></li>
-            <li><a href="#">Imprensa</a></li>
-            <li><a href="#" style="border: 0px none">Contatos</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="rights">Copyright 2011 - <a href="/">Gurupi</a></div>
-    </footer>
+    <%= render "layouts/footer" %>
     <%= csrf_meta_tag %>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
     <script>window.jQuery || document.write("<script src='/javascripts/jquery-1.6.1.min.js'>\x3C/script>")</script>
