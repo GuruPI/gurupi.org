@@ -8,6 +8,7 @@ gem 'sqlite3'
 gem 'omniauth', '>= 0.2.6'
 gem 'declarative_authorization'
 gem 'jquery-rails'
+gem 'rdiscount'
 
 group :development do
   gem 'capistrano'
