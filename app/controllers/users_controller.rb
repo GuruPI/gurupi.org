@@ -3,6 +3,8 @@ class UsersController < ApplicationController
   filter_access_to :change
 
   def index
+    @breadcrumb = "Usuários"
+    @page_title = "Usuários"
     @users = User.all
   end
 

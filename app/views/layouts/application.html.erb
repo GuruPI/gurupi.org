@@ -15,7 +15,19 @@
     <%= render "layouts/top" %>
     <%= render "layouts/profile" %>
 
-    <%= yield %>
+<% if @breadcrumb.present? %>
+    <section id="breadcrumb">
+      <div class="container">
+        <h3><a href="/" class="home_link">Home</a> <span class="interpages">&raquo;</span> <span class="current_page"><%= @breadcrumb %></span></h3>
+      </div>
+    </section>
+<% end %>
+
+    <div id="content">
+      <div class="container">
+        <%= yield %>
+      </div>
+    </div>
 
     <%= render "layouts/footer" %>
     <%= csrf_meta_tag %>
