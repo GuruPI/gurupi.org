@@ -2,6 +2,7 @@ class PostsController < ApplicationController
   respond_to :html
   def show
     @post = Post.find_by_slug(params[:id])
+    @breadcrumb = "Blogs"
   end
 
   def new
