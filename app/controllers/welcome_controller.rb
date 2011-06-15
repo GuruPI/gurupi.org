@@ -1,6 +1,8 @@
 # encoding: UTF-8
 class WelcomeController < ApplicationController
+  layout "home"
+
   def index
-    @posts = Post.limit(6).order('created_at desc')  
+    @posts = Post.limit(6).order('created_at desc')
   end
 end
