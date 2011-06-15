@@ -26,6 +26,8 @@ Agora é só iniciar sua aplicação Rails
 
     $ rails server
 
+Aponte seu browser para http://localhost:3000 e divirta-se ;)
+
 ## Como Testar
 
 Prepare o Banco de Dados no ambiente de Testes
