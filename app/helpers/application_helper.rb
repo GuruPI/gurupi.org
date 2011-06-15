@@ -5,4 +5,8 @@ module ApplicationHelper
     type = (user.admin? ? ["admin", "Admin"] : (user.member? ? ["member", "Membro"] : ["guest", "Visitante"]))
     (pattern % type).html_safe
   end
+
+  def markdown(text)
+    RDiscount.new(text).to_html.html_safe
+  end
 end
