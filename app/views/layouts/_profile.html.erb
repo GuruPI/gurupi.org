@@ -1,0 +1,12 @@
+<div id="profile">
+  <div class="container">
+  <% if current_user %>
+    <div>
+      <% if current_user.image -%><img src="<%= current_user.image %>" alt="<%= current_user.name %>" class="user_image"><% end -%>
+      <p class="account">Olá, <strong><%= current_user.name %></strong> <%= user_role(current_user) %> <span class="spacer">|</span> <%= link_to "Sair", signout_path, :class => "signout" %></p>
+    </div>
+  <% else %>
+    <%= link_to "Conectar com Facebook", "/auth/facebook", :class => "login_facebook" %>
+  <% end %>
+  </div>
+</div>
