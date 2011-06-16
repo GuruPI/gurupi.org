@@ -133,7 +133,8 @@ a:hover { color:#a53b3b; }
 .hat {background-color:#444; color:#fff; font-size:1.4em; font-weight:normal; line-height:32px; padding:7px 9px 8px;}
 .hat .icon {margin-right:9px; display:inline-block; vertical-align:middle;}
 .hat.title {margin-bottom:20px; background-color:#c4c4c4; font-weight:bold; color:#444; text-shadow:0 1px 0 #eee; padding-bottom:7px; border-bottom:1px solid #999;}
-#main p {font-size:1.15em; color:#272727; margin:0.7em 0;}
+#main p, #main h2, #main li {font-size:1.15em; color:#272727; margin:0.7em 0;}
+#main h2 {font-size:1.2em;}
 #encontros .hat .icon  {background-position:-96px -64px;}
 #blogs .hat .icon      {background-position:-96px -32px;}
 #atividades .hat .icon {background-position:-96px 0;}
