@@ -7,6 +7,8 @@ GurupiOrg::Application.routes.draw do
   resources :events
   match "/users/:id/change/:role" => "users#change", :as => :change_user
 
+  match "/about"  => "welcome#about"
+
   root :to => "welcome#index"
   match '/:controller(/:action(/:id))'
 end
