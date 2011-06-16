@@ -1,18 +1,18 @@
 <div id="intro">
   <div class="container">
     <article class="topic">
-      <h2>5º Encontro do GuruPI</h2>
       <div id="slideshow">
         <img class="active" src="/images/image1.jpg" alt="Rafael Marques palestrando no 4º Encontro do GuruPI" title="" />
         <img src="/images/image2.jpg" alt="" title="" />
         <img src="/images/image3.jpg" alt="" title="" />
         <img src="/images/image4.jpg" alt="" title="" />
       </div>
-      <p>O 5º Encontro do GuruPI vai acontecer no dia 11 de junho de 2011 e será um "esquenta" para o Agile Brazil 2011 que acontecerá em Fortaleza.</p>
-      <p>Neste encontro teremos palestras sobre MVC no Browser, com o Samuel Flores, Git Basics com o Paulo Henrique Filho e Consultas por similaridade com o Dann Lucianno.</p>
-      <p>Informações sobre o local confira no link logo abaixo.</p>
+      <% if @event.present? %>
+        <h2><%= @event.name %></h2>
+        <p><%= @event.description.gsub(/\n/,"<br />").html_safe %></p>
+        <a href="http://maps.google.com/maps/place?cid=13685776032963445195&q=uespi&hl=en&sll=-6.6728,-43.298087&sspn=7.537956,3.732754&ie=UTF8&ll=-0.307616,-50.888672&spn=0,0&z=6" style="padding-left: 11px;">Localização: <%= @event.place %></a>
+      <%end%>
       <ul>
-        <li><a href="http://maps.google.com/maps/place?cid=13685776032963445195&q=uespi&hl=en&sll=-6.6728,-43.298087&sspn=7.537956,3.732754&ie=UTF8&ll=-0.307616,-50.888672&spn=0,0&z=6" style="padding-left: 11px;">Localização: UESPI - Universidade Estadual do Piauí</a></li>
         <li class="talks"><a href="http://call4paperz.com/events/5%C2%BA-encontro-gurupi"><span class="icon"></span>Palestras</a></li>
         <li class="photos"><a href="#fotos"><span class="icon"></span>Fotos</a></li>
         <li class="videos"><a href="#videos"><span class="icon"></span>Vídeos</a></li>
@@ -25,43 +25,25 @@
   <div class="container">
     <section id="encontros" class="column">
       <h3 class="hat"><span class="icon"></span>Próximo Encontro</h3>
-      <p class="title">Vote na palestra que você deseja assistir no próximo encontro GuruPI que será realizado no dia 11/06/2011</p>
-      <ul>
-        <li>
-          <p>
-            <img src="http://a2.twimg.com/profile_images/534258280/Photo_46_normal.jpg" alt="Dmitry Nix" class="photo">
-            <a href="http://twitter.com/dmitrynix">@dmitrynix</a> falando sobre:
-          </p>
-          <h4><a href="#ruby">Ruby: do básico ao avançado</a></h4>
-          <div>
-            <a href="#gostei" class="liked"><span class="count">11</span></a>
-            <a href="#naogostei" class="disliked"><span class="count">3</span></a>
-          </div>
-        </li>
-        <li>
-          <p>
-            <img src="http://a2.twimg.com/profile_images/534258280/Photo_46_normal.jpg" alt="Dmitry Nix" class="photo">
-            <a href="http://twitter.com/dmitrynix">@dmitrynix</a> falando sobre:
-          </p>
-          <h4><a href="#ruby">Ruby: do básico ao avançado</a></h4>
-          <div>
-            <a href="#gostei" class="liked"><span class="count">9</span></a>
-            <a href="#naogostei" class="disliked"><span class="count">2</span></a>
-          </div>
-        </li>
-        <li>
-          <p>
-            <img src="http://a2.twimg.com/profile_images/534258280/Photo_46_normal.jpg" alt="Dmitry Nix" class="photo">
-            <a href="http://twitter.com/dmitrynix">@dmitrynix</a> falando sobre:
-          </p>
-          <h4><a href="#ruby">Ruby: do básico ao avançado</a></h4>
-          <div>
-            <a href="#gostei" class="liked"><span class="count">10</span></a>
-            <a href="#naogostei" class="disliked"><span class="count">1</span></a>
-          </div>
-        </li>
-      </ul>
-      <a href="#cadastrar_palestra" class="button-add">Cadastrar Palestra</a>
+      <p class="title">Vote na palestra que você deseja assistir no próximo encontro GuruPI que será realizado no dia <%=l @event.event_date unless !@event.present? %></p>
+      <% if @event.present? %>
+          <ul>
+               <% @event.lectures.each do |lecture| %>
+                <li>
+                  <p>
+                    <img src="http://a2.twimg.com/profile_images/534258280/Photo_46_normal.jpg" alt="Dmitry Nix" class="photo">
+                    <a href="http://twitter.com/dmitrynix">@dmitrynix</a> falando sobre:
+                  </p>
+                  <h4><a href="#ruby"><%=lecture.name%></a></h4>
+                  <div>
+                    <a href="#gostei" class="liked"><span class="count"><%=lecture.positive_vote%></span></a>
+                    <a href="#naogostei" class="disliked"><span class="count"><%=lecture.negative_vote%></span></a>
+                  </div>
+                </li>
+                <%end%>
+          </ul>
+      <%= link_to "Cadastrar Palestra", @event, :class => "button-add" %>
+     <%end%>
     </section>
 
     <section id="blogs" class="column">
@@ -148,3 +130,4 @@
     </section>
   </div>
 </div>
+
