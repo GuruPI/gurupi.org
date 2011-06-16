@@ -36,7 +36,7 @@ Prepare o Banco de Dados no ambiente de Testes
 
 ou
 
-    $ rake db:migration RAILS_ENV=test
+    $ rake db:migrate RAILS_ENV=test
 
 Daí por diante você só precisa executar o comando `guard`.
 
