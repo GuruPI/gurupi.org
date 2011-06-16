@@ -3,7 +3,7 @@
     <h1 id="logo"><a href="/" title="GuruPI - Grupo de Usuários de Ruby do Piauí"><img src="/images/logo.gif" alt="GuruPI - Grupo de Usuários de Ruby do Piauí"></a></h1>
     <nav>
       <ul id="menu">
-        <li class="menuli about"><a href="#sobre"><span class="icon"></span>Sobre</a></li>
+        <li class="menuli about"><%= link_to %{<span class="icon"></span>Sobre}.html_safe, about_path %></li>
         <li class="menuli schedule"><a href="#agenda"><span class="icon"></span>Agenda</a></li>
         <li class="menuli users"><%= link_to %{<span class="icon"></span>Usuários}.html_safe, users_path %></li>
         <li class="menuli blogs"><a href="#blogs"><span class="icon"></span>Blogs</a></li>
