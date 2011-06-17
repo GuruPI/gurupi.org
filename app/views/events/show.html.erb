@@ -27,6 +27,10 @@
   <%= @event.place %>
 </p>
 
-<%= link_to 'Edit', edit_event_path(@event) %> |
-<%= link_to 'Back', events_path %>
+<h2>Lectures</h2>
+
+<%= render @event.lectures %>
+<br />
+<h2>Add a Lecture:</h2>
+<%= render "lectures/form" %>
 

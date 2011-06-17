@@ -4,11 +4,11 @@ describe EventsController do
 
   def valid_attributes(name_sufix = Time.now)
     {
-      name: "Event #{name_sufix}", 
-      description: "Lorem ipsum dolor sit amet", 
-      event_date: Date.today, 
+      name: "Event #{name_sufix}",
+      description: "Lorem ipsum dolor sit amet",
+      event_date: Date.today,
       hour: Time.now.hour + 4,
-      place: "UESPI" 
+      place: "UESPI"
     }
   end
 
@@ -17,14 +17,6 @@ describe EventsController do
       event = Event.create!(valid_attributes)
       get :index
       assigns(:events).should eq([event])
-    end
-  end
-
-  describe "GET show" do
-    it "assigns the requested event as @event" do
-      event = Event.create!(valid_attributes)
-      get :show, :id => event.to_param
-      assigns(:event).should eq(event)
     end
   end
 
