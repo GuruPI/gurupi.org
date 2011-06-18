@@ -59,7 +59,7 @@ a:hover { color:#a53b3b; }
 .icon {background:url("/images/sprite.png") left top no-repeat; width:32px; height:32px;}
 #menu {float:right; overflow:hidden; background:url("/images/menu.png") right center no-repeat;}
 .menuli {float:left; height:80px;}
-.menuli a {color:#3b3b3b; font-size:0.95em; text-decoration:none; font-weight:bold; text-transform:uppercase; text-align:center;
+.menuli a {color:#3b3b3b; font-size:0.95em; text-decoration:none; font-weight:bold; text-transform:uppercase; text-align:center; text-shadow:0 1px 0 #fff;
   display:block; background:url("/images/menu.png") left center no-repeat; height:65px; line-height:32px; padding:15px 28px 0 28px;}
 .menuli a:hover {color:#696969;}
 .menuli .icon   {margin:0 auto; display:block; vertical-align:top;}
