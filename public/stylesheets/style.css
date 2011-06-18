@@ -66,8 +66,8 @@ a:hover { color:#a53b3b; }
 .about .icon    {background-position:0 0;}
 .schedule .icon {background-position:-32px 0;}
 .users .icon    {background-position:-64px 0;}
-.blogs .icon    {background-position:0 -32px;}
-.contact .icon  {background-position:-64px -32px;}
+.blogs .icon    {background-position:-128px 0;}
+.contact .icon  {background-position:-192px 0;}
 
 .container {width:960px; padding:0 10px; margin:0 auto; overflow:hidden;}
 
@@ -102,9 +102,9 @@ a:hover { color:#a53b3b; }
 #intro .topic ul {list-style-type:none; margin:0;}
 #intro .topic li {font-size:1.1em; margin:5px 0;}
 #intro .topic li .icon        {margin:0 9px; display:inline-block; vertical-align:middle;}
-#intro .topic li.talks .icon  {background-position:-32px -64px;}
-#intro .topic li.photos .icon {background-position:-64px -64px;}
-#intro .topic li.videos .icon {background-position:0 -64px;}
+#intro .topic li.talks .icon  {background-position:0 -32px;}
+#intro .topic li.photos .icon {background-position:-32px -32px;}
+#intro .topic li.videos .icon {background-position:-256px 0;}
 #intro .topic a {background-color:#4e0101; color:#fff; text-decoration:none; padding:6px 0; display:block; border-radius:5px; 
   -moz-border-radius:5px; -webkit-border-radius:5px;}
 #intro .topic a:hover {background-color:#5e0101;}
@@ -135,19 +135,20 @@ a:hover { color:#a53b3b; }
 .hat.title {margin-bottom:20px; background-color:#c4c4c4; font-weight:bold; color:#444; text-shadow:0 1px 0 #eee; padding-bottom:7px; border-bottom:1px solid #999;}
 #main p, #main h2, #main li {font-size:1.15em; color:#272727; margin:0.7em 0;}
 #main h2 {font-size:1.2em;}
-#encontros .hat .icon  {background-position:-96px -64px;}
-#blogs .hat .icon      {background-position:-96px -32px;}
+#encontros .hat .icon  {background-position:-64px -32px;}
+#blogs .hat .icon      {background-position:-224px 0;}
 #atividades .hat .icon {background-position:-96px 0;}
 #atividades li {padding:10px 0;}
 #atividades p {line-height:1.5em;}
 #atividades .user {display:block;}
 .liked,.disliked {width:83px;height:48px;display:inline-block;background:url("/images/sprite.png") no-repeat;text-align:center;}
-.liked {background-position:0 -96px;margin-right:7px;}
-.disliked {background-position:-87px -96px;}
+.liked {background-position:0 -64px;margin-right:7px;}
+.disliked {background-position:-87px -64px;}
 .count {line-height:48px;font-size:1.7em;color:#fff;margin-left:35px;text-shadow:1px 1px #000;}
-.button-add {background:url("/images/sprite.png") 0 -146px no-repeat; width:215px; height:48px; display:inline-block; text-transform:lowercase;
-  margin-top:18px; font-size:1.3em;color:#fff; line-height:48px; padding-left:85px; text-shadow:1px 1px #000;}
+.button-add {background:url("/images/sprite.png") 0 -112px no-repeat; width:300px; height:48px; display:block; text-transform:lowercase;
+  margin-top:18px; font-size:1.3em;color:#fff; line-height:48px; text-shadow:1px 1px #000; text-align:center;}
 .button-add:hover {color:#ddd;}
+.button-add .icon {background-position:0 -32px; vertical-align:middle; margin-right:10px; display:inline-block;}
 
 /* slider*/
 #slideshow { float:right; position:relative; height:268px; width:485px; margin:0 auto;border:3px solid #b33236; margin-left:20px; }
@@ -164,4 +165,3 @@ a:hover { color:#a53b3b; }
 #footer .links ul { display:inline-block; margin:0 0 13px; padding:0 0 13px; }
 #footer .links ul li { float:left; list-style: none outside none; margin:0; }
 #footer .links ul li a{ border-right: 1px solid #3b3b3b; font-weight: normal; padding: 0 7px; }
-
