@@ -140,9 +140,10 @@ a:hover { color:#a53b3b; }
 .column p.title {line-height:1.5em;font-size:1.1em;}
 .column a {font-weight:bold;}
 .column h4 {margin:5px 0;font-size:1.1em;}
-.hat {background-color:#444; color:#fff; font-size:1.4em; font-weight:normal; line-height:32px; padding:7px 9px 8px;}
+.hat {background-color:#444; color:#fff; font-size:1.4em; font-weight:normal; line-height:32px; padding:6px 9px 7px;}
 .hat .icon {margin-right:9px; display:inline-block; vertical-align:middle;}
-.hat.title {margin-bottom:20px; background-color:#c4c4c4; font-weight:bold; color:#444; text-shadow:0 1px 0 #eee; padding-bottom:7px; border-bottom:1px solid #999;}
+.hat.title {margin-bottom:20px; background-color:#c4c4c4; font-weight:bold; color:#444; 
+  text-shadow:0 1px 0 #eee; padding-bottom:7px; border-bottom:1px solid #999; padding:7px 9px;}
 #main {font-size:1.15em; color:#272727;}
 #main p {margin:0.8em 0;}
 #main li {margin:0.4em 0;}
