@@ -79,6 +79,10 @@ a:hover { color:#a53b3b; }
 #profile .spacer, #profile .signout {color:#888; font:0.8em verdana, sans-serif;}
 #profile .signout:hover {color:#e0e0e0;}
 #about_info {margin-top:20px;}
+#about_info p .icon {margin:0 9px; display:inline-block; vertical-align:middle;}
+#about_info .email .icon    {background-position:-128px -32px;}
+#about_info .twitter .icon  {background-position:-224px -32px;}
+#about_info .facebook .icon {background-position:-256px -32px;}
 .login_facebook {background:url("/images/connect.png") no-repeat; width:176px; height:25px; display:block; text-indent:-999em; margin:7px 0; float:right;}
 .user_role {border-radius:2px; -moz-border-radius:2px; -webkit-border-radius:2px; padding:2px 4px; font:0.8em verdana, sans-serif; background-color:#dadada; color:#444 !important;}
 .user_role.admin {background-color:#4e8e00; color:#eee !important;}
@@ -139,6 +143,9 @@ a:hover { color:#a53b3b; }
 #encontros .hat .icon  {background-position:-64px -32px;}
 #blogs .hat .icon      {background-position:-224px 0;}
 #atividades .hat .icon {background-position:-96px 0;}
+#photos .hat .icon     {background-position:-32px -32px;}
+#social .hat .icon     {background-position:-192px -32px;}
+#contact .hat .icon    {background-position:-96px -32px;}
 #atividades li {padding:10px 0;}
 #atividades p {line-height:1.5em;}
 #atividades .user {display:block;}
