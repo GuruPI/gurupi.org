@@ -115,9 +115,14 @@ a:hover { color:#a53b3b; }
 #intro .topic a:hover {background-color:#5e0101;}
 
 #content {clear:both; width:100%; padding:20px 0;}
-#wrapper {float:left; width:100%;}
+#wrapper {float:left; width:640px; margin-right:20px;}
+#local {width:300px; float:left;}
+/* Descomente as 3 linhas abaixo se quiser que a 
+   coluna auxiliar fique do lado esquerdo */
+/*#wrapper {width:100%; margin:0;}
 #main {margin-left:320px;}
-#local {width:300px; margin-left:-960px; float:left;}
+#local {margin-left:-960px;}*/
+
 #local ul {list-style-type:none; margin:0;}
 #local .gallery {margin:20px 0;}
 #local li {display:inline;}
