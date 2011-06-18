@@ -78,6 +78,7 @@ a:hover { color:#a53b3b; }
 #profile .spacer {padding:0 5px;}
 #profile .spacer, #profile .signout {color:#888; font:0.8em verdana, sans-serif;}
 #profile .signout:hover {color:#e0e0e0;}
+#about_info {margin-top:20px;}
 .login_facebook {background:url("/images/connect.png") no-repeat; width:176px; height:25px; display:block; text-indent:-999em; margin:7px 0; float:right;}
 .user_role {border-radius:2px; -moz-border-radius:2px; -webkit-border-radius:2px; padding:2px 4px; font:0.8em verdana, sans-serif; background-color:#dadada; color:#444 !important;}
 .user_role.admin {background-color:#4e8e00; color:#eee !important;}
