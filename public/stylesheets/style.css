@@ -59,15 +59,15 @@ a:hover { color:#a53b3b; }
 .icon {background:url("/images/sprite.png") left top no-repeat; width:32px; height:32px;}
 #menu {float:right; overflow:hidden; background:url("/images/menu.png") right center no-repeat;}
 .menuli {float:left; height:80px;}
-.menuli a {color:#3b3b3b; font-size:0.95em; text-decoration:none; font-weight:bold; text-transform:uppercase; text-align:center;
+.menuli a {color:#3b3b3b; font-size:0.95em; text-decoration:none; font-weight:bold; text-transform:uppercase; text-align:center; text-shadow:0 1px 0 #fff;
   display:block; background:url("/images/menu.png") left center no-repeat; height:65px; line-height:32px; padding:15px 28px 0 28px;}
 .menuli a:hover {color:#696969;}
 .menuli .icon   {margin:0 auto; display:block; vertical-align:top;}
 .about .icon    {background-position:0 0;}
 .schedule .icon {background-position:-32px 0;}
 .users .icon    {background-position:-64px 0;}
-.blogs .icon    {background-position:0 -32px;}
-.contact .icon  {background-position:-64px -32px;}
+.blogs .icon    {background-position:-128px 0;}
+.contact .icon  {background-position:-192px 0;}
 
 .container {width:960px; padding:0 10px; margin:0 auto; overflow:hidden;}
 
@@ -78,6 +78,11 @@ a:hover { color:#a53b3b; }
 #profile .spacer {padding:0 5px;}
 #profile .spacer, #profile .signout {color:#888; font:0.8em verdana, sans-serif;}
 #profile .signout:hover {color:#e0e0e0;}
+#about_info {margin-top:20px;}
+#about_info p .icon {margin:0 9px; display:inline-block; vertical-align:middle;}
+#about_info .email .icon    {background-position:-128px -32px;}
+#about_info .twitter .icon  {background-position:-224px -32px;}
+#about_info .facebook .icon {background-position:-256px -32px;}
 .login_facebook {background:url("/images/connect.png") no-repeat; width:176px; height:25px; display:block; text-indent:-999em; margin:7px 0; float:right;}
 .user_role {border-radius:2px; -moz-border-radius:2px; -webkit-border-radius:2px; padding:2px 4px; font:0.8em verdana, sans-serif; background-color:#dadada; color:#444 !important;}
 .user_role.admin {background-color:#4e8e00; color:#eee !important;}
@@ -102,19 +107,23 @@ a:hover { color:#a53b3b; }
 #intro .topic ul {list-style-type:none; margin:0;}
 #intro .topic li {font-size:1.1em; margin:5px 0;}
 #intro .topic li .icon        {margin:0 9px; display:inline-block; vertical-align:middle;}
-#intro .topic li.talks .icon  {background-position:-32px -64px;}
-#intro .topic li.photos .icon {background-position:-64px -64px;}
-#intro .topic li.videos .icon {background-position:0 -64px;}
+#intro .topic li.talks .icon  {background-position:0 -32px;}
+#intro .topic li.photos .icon {background-position:-32px -32px;}
+#intro .topic li.videos .icon {background-position:-256px 0;}
 #intro .topic a { color:#3b3b3b; padding-left: 0px !important;}
 #intro .topic a:hover { color:#fff}
-#intro .topic li a {background-color:#4e0101; color:#fff; text-decoration:none; padding:6px 0; display:block; border-radius:5px;
-  -moz-border-radius:5px; -webkit-border-radius:5px;}
+#intro .topic li a {background-color:#4e0101; color:#fff; text-decoration:none; padding:6px 0; display:block; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;}
 #intro .topic li a:hover {background-color:#5e0101;}
 
 #content {clear:both; width:100%; padding:20px 0;}
-#wrapper {float:left; width:100%;}
+#wrapper {float:left; width:640px; margin-right:20px;}
+#local {width:300px; float:left;}
+/* Descomente as 3 linhas abaixo se quiser que a
+   coluna auxiliar fique do lado esquerdo */
+/*#wrapper {width:100%; margin:0;}
 #main {margin-left:320px;}
-#local {width:300px; margin-left:-960px; float:left;}
+#local {margin-left:-960px;}*/
+
 #local ul {list-style-type:none; margin:0;}
 #local .gallery {margin:20px 0;}
 #local li {display:inline;}
@@ -132,24 +141,31 @@ a:hover { color:#a53b3b; }
 .column p.title {line-height:1.5em;font-size:1.1em;}
 .column a {font-weight:bold;}
 .column h4 {margin:5px 0;font-size:1.1em;}
-.hat {background-color:#444; color:#fff; font-size:1.4em; font-weight:normal; line-height:32px; padding:7px 9px 8px;}
+.hat {background-color:#444; color:#fff; font-size:1.4em; font-weight:normal; line-height:32px; padding:6px 9px 7px;}
 .hat .icon {margin-right:9px; display:inline-block; vertical-align:middle;}
-.hat.title {margin-bottom:20px; background-color:#c4c4c4; font-weight:bold; color:#444; text-shadow:0 1px 0 #eee; padding-bottom:7px; border-bottom:1px solid #999;}
-#main p, #main h2, #main li {font-size:1.15em; color:#272727; margin:0.7em 0;}
-#main h2 {font-size:1.2em;}
-#encontros .hat .icon  {background-position:-96px -64px;}
-#blogs .hat .icon      {background-position:-96px -32px;}
+.hat.title {margin-bottom:20px; background-color:#c4c4c4; font-weight:bold; color:#444;
+  text-shadow:0 1px 0 #eee; padding-bottom:7px; border-bottom:1px solid #999; padding:7px 9px;}
+#main {font-size:1.15em; color:#272727;}
+#main p {margin:0.8em 0;}
+#main li {margin:0.4em 0;}
+#main h2 {font-size:1.2em; margin:1em 0;}
+#encontros .hat .icon  {background-position:-64px -32px;}
+#blogs .hat .icon      {background-position:-224px 0;}
 #atividades .hat .icon {background-position:-96px 0;}
+#photos .hat .icon     {background-position:-32px -32px;}
+#social .hat .icon     {background-position:-192px -32px;}
+#contact .hat .icon    {background-position:-96px -32px;}
 #atividades li {padding:10px 0;}
 #atividades p {line-height:1.5em;}
 #atividades .user {display:block;}
 .liked,.disliked {width:83px;height:48px;display:inline-block;background:url("/images/sprite.png") no-repeat;text-align:center;}
-.liked {background-position:0 -96px;margin-right:7px;}
-.disliked {background-position:-87px -96px;}
+.liked {background-position:0 -64px;margin-right:7px;}
+.disliked {background-position:-87px -64px;}
 .count {line-height:48px;font-size:1.7em;color:#fff;margin-left:35px;text-shadow:1px 1px #000;}
-.button-add {background:url("/images/sprite.png") 0 -146px no-repeat; width:215px; height:48px; display:inline-block; text-transform:lowercase;
-  margin-top:18px; font-size:1.3em;color:#fff; line-height:48px; padding-left:85px; text-shadow:1px 1px #000;}
+.button-add {background:url("/images/sprite.png") 0 -112px no-repeat; width:300px; height:48px; display:block; text-transform:lowercase;
+  margin-top:18px; font-size:1.3em;color:#fff; line-height:48px; text-shadow:1px 1px #000; text-align:center;}
 .button-add:hover {color:#ddd;}
+.button-add .icon {background-position:0 -32px; vertical-align:middle; margin-right:10px; display:inline-block;}
 
 /* slider*/
 #slideshow { float:right; position:relative; height:268px; width:485px; margin:0 auto;border:3px solid #b33236; margin-left:20px; }

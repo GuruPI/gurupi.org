@@ -50,3 +50,7 @@ OmniAuth.config.add_mock(:facebook, {
   :provider => 'facebook',
   :user_info => { "email"=> "gurupiaui@gmail.com", "name"=>"Gurupi Piauí", "image"=>"http://graph.facebook.com/100000161878338/picture?type=square" }
 })
+
+require 'declarative_authorization/maintenance'
+include Authorization::TestHelper
+

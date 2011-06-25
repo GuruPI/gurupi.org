@@ -1,5 +1,5 @@
 class LecturesController < ApplicationController
-
+  filter_resource_access
   respond_to :html
 
   def index
@@ -45,5 +45,11 @@ class LecturesController < ApplicationController
     flash[:notice] = 'Lecture was successfully deleted' if @lecture.destroy
     respond_with @lecture, :location => event_path(@event)
   end
+
+  protected
+  def load_lecture
+    @lecture = Lecture.find_by_slug(params[:id])
+  end
+
 end
 

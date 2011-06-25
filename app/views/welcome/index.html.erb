@@ -42,7 +42,9 @@
                 </li>
                 <%end%>
           </ul>
-      <%= link_to "Cadastrar Palestra", @event, :class => "button-add" %>
+          <% permitted_to? :show, :events do %>
+            <%= link_to "Cadastrar Palestra", @event, :class => "button-add" %>
+          <%end%>
      <%end%>
     </section>
 
