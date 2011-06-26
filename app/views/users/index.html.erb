@@ -3,14 +3,14 @@
 <% if @users %>
   <ul id="users" class="list">
 <% @users.each do |user| %>
-  <% permitted_to? :read, user do %>
+  <% permitted_to? :index, user do %>
     <li class="clearfix">
       <% if user.image -%><img src="<%= user.image %>" alt="<%= user.name %>" class="user_photo"><% end -%>
       <strong><%= user.name %></strong> <%= user_role(user) %><br>
       <%= link_to "Facebook", user.link, :class => "facebook" if user.link.present? %>
       <% permitted_to? :edit, :users do %>
       <div>
-        Mudar para: 
+        Mudar para:
         <%= link_to 'Visitante', change_user_path(user, 'guest'), :class => "user_role" if !user.guest? %>
         <%= link_to 'Membro', change_user_path(user, 'member'), :class => "user_role" if !user.member? %>
         <%= link_to 'Admin', change_user_path(user, 'admin'), :class => "user_role" if !user.admin? %>
@@ -21,3 +21,4 @@
 <% end %>
   </ul>
 <% end %>
+
