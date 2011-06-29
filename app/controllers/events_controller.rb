@@ -1,13 +1,14 @@
 class EventsController < ApplicationController
 
   respond_to :html
+  filter_resource_access
 
   def index
     @events = Event.all
   end
 
   def show
-    @event = Event.find_by_slug(params[:id])
+    load_event
   end
 
   def new
@@ -41,6 +42,11 @@ class EventsController < ApplicationController
   def destroy
     flash[:notice] = 'Event was successfully deleted' if Event.find_by_slug(params[:id]).destroy
     respond_with @event, :location => events_url
+  end
+
+  protected
+  def load_event
+    @event = Event.find_by_slug(params[:id])
   end
 
 end

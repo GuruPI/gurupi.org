@@ -72,7 +72,7 @@ a:hover { color:#a53b3b; }
 .container {width:960px; padding:0 10px; margin:0 auto; overflow:hidden;}
 
 #profile {background:#393939 url("/images/bg-profile.png") left bottom repeat-x; border-bottom:1px solid #646464; min-height:40px;}
-#profile p {color:#ccc; text-align:right; float:right; display:inline; padding:4px 8px; margin-top:7px; border-width:1px; border-style:solid; border-color:#111 #333 #333 #111; 
+#profile p {color:#ccc; text-align:right; float:right; display:inline; padding:4px 8px; margin-top:7px; border-width:1px; border-style:solid; border-color:#111 #333 #333 #111;
   background-color:#000; border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px;}
 #profile .user_image {width:32px; height:32px; float:right; vertical-align:top; margin:3px 0 3px 10px; border:1px solid #606060;}
 #profile .spacer {padding:0 5px;}
@@ -88,7 +88,7 @@ a:hover { color:#a53b3b; }
 .user_role.admin {background-color:#4e8e00; color:#eee !important;}
 .user_role.member {background-color:#a20000; color:#eee !important;}
 .user_role.guest {background-color:#0746a8; color:#eee !important;}
-#breadcrumb {background:#3f3f3f; color:#fff; height:68px; font-size:2.2em; text-transform:lowercase; 
+#breadcrumb {background:#3f3f3f; color:#fff; height:68px; font-size:2.2em; text-transform:lowercase;
   background-image:-moz-linear-gradient(top, #404040, #151515);
   background-image:-webkit-gradient(linear,left top,left bottom,color-stop(0, #404040),color-stop(1, #151515));
   filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#404040', EndColorStr='#151515');
@@ -98,7 +98,7 @@ a:hover { color:#a53b3b; }
 #breadcrumb .home_link, #breadcrumb .interpages {color:#999;}
 
 #intro {background:#3f3f3f url("/images/bg-intro.png") left bottom repeat-x; padding:20px 0;}
-#intro .topic {background:#a20000 url("/images/bg-topic.png") left bottom repeat-x; color:#fff; padding:30px; overflow:hidden; 
+#intro .topic {background:#a20000 url("/images/bg-topic.png") left bottom repeat-x; color:#fff; padding:30px; overflow:hidden;
   border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px;}
 /*#intro .topic img {float:right; border:1px solid #b33236; margin-left:20px;}*/
 #intro .topic h2, #intro .topic p, #intro .topic ul {float:left; width:380px;}
@@ -110,14 +110,15 @@ a:hover { color:#a53b3b; }
 #intro .topic li.talks .icon  {background-position:0 -32px;}
 #intro .topic li.photos .icon {background-position:-32px -32px;}
 #intro .topic li.videos .icon {background-position:-256px 0;}
-#intro .topic a {background-color:#4e0101; color:#fff; text-decoration:none; padding:6px 0; display:block; border-radius:5px; 
-  -moz-border-radius:5px; -webkit-border-radius:5px;}
-#intro .topic a:hover {background-color:#5e0101;}
+#intro .topic a { color:#3b3b3b; padding-left: 0px !important;}
+#intro .topic a:hover { color:#fff}
+#intro .topic li a {background-color:#4e0101; color:#fff; text-decoration:none; padding:6px 0; display:block; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;}
+#intro .topic li a:hover {background-color:#5e0101;}
 
 #content {clear:both; width:100%; padding:20px 0;}
 #wrapper {float:left; width:640px; margin-right:20px;}
 #local {width:300px; float:left;}
-/* Descomente as 3 linhas abaixo se quiser que a 
+/* Descomente as 3 linhas abaixo se quiser que a
    coluna auxiliar fique do lado esquerdo */
 /*#wrapper {width:100%; margin:0;}
 #main {margin-left:320px;}
@@ -142,7 +143,7 @@ a:hover { color:#a53b3b; }
 .column h4 {margin:5px 0;font-size:1.1em;}
 .hat {background-color:#444; color:#fff; font-size:1.4em; font-weight:normal; line-height:32px; padding:6px 9px 7px;}
 .hat .icon {margin-right:9px; display:inline-block; vertical-align:middle;}
-.hat.title {margin-bottom:20px; background-color:#c4c4c4; font-weight:bold; color:#444; 
+.hat.title {margin-bottom:20px; background-color:#c4c4c4; font-weight:bold; color:#444;
   text-shadow:0 1px 0 #eee; padding-bottom:7px; border-bottom:1px solid #999; padding:7px 9px;}
 #main {font-size:1.15em; color:#272727;}
 #main p {margin:0.8em 0;}
@@ -181,3 +182,4 @@ a:hover { color:#a53b3b; }
 #footer .links ul { display:inline-block; margin:0 0 13px; padding:0 0 13px; }
 #footer .links ul li { float:left; list-style: none outside none; margin:0; }
 #footer .links ul li a{ border-right: 1px solid #3b3b3b; font-weight: normal; padding: 0 7px; }
+
