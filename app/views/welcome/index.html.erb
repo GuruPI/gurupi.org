@@ -36,16 +36,23 @@
                   </p>
                   <h4><a href="#ruby"><%=lecture.name%></a></h4>
                   <div>
-                    <%=link_to "<span class='count'>#{lecture.positive_vote}</span>".html_safe, {:action => :vote_increment, :lecture_id => lecture.id, :commit => 'gostei' }, :class => "liked", :remote => true %>
-                    <%=link_to "<span class='count'>#{lecture.negative_vote}</span>".html_safe, {:action => :vote_increment, :lecture_id => lecture.id, :commit => "naogostei" }, :class => "disliked", :remote => true %>
+                    <% if current_user %>
+                      <%=link_to "<span class='count'>#{lecture.positive_vote}</span>".html_safe, {:controller => "lectures", :action => :vote_increment, :id => lecture.id, :commit => 'gostei' }, :class => "liked", :remote => true %>
+                      <%=link_to "<span class='count'>#{lecture.negative_vote}</span>".html_safe, {:controller => "lectures", :action => :vote_increment, :id => lecture.id, :commit => "naogostei" }, :class => "disliked", :remote => true %>
+                    <%end%>
                   </div>
                 </li>
                 <%end%>
           </ul>
+
           <% permitted_to? :show, :events do %>
-            <%= link_to "Cadastrar Palestra", @event, :class => "button-add" %>
+            <%= link_to "<span class='icon'></span>Cadastrar Palestra".html_safe , @event, :class => "button-add" %>
           <%end%>
+
      <%end%>
+    <% permitted_to? :new, :events do %>
+        <%= link_to "Cadastrar Evento", new_event_path, :class => "button-add" %>
+    <%end%>
     </section>
 
     <section id="blogs" class="column">
