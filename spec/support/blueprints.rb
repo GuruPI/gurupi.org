@@ -17,3 +17,7 @@ Role.blueprint(:admin) do
   title { "admin" }
 end
 
+
+VoteLecture.blueprint do
+  # Attributes here
+end
