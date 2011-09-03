@@ -9,8 +9,6 @@ gem 'omniauth', '>= 0.2.6'
 gem 'declarative_authorization'
 gem 'jquery-rails'
 gem 'rdiscount'
-gem "bluecloth", "~> 2.1.0"
-gem 'formatize'
 
 group :development do
   gem 'capistrano'

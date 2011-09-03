@@ -13,7 +13,6 @@ GIT
 GEM
   remote: http://rubygems.org/
   specs:
-    RedCloth (4.2.8)
     actionmailer (3.1.0)
       actionpack (= 3.1.0)
       mail (~> 2.3.0)
@@ -46,7 +45,6 @@ GEM
     addressable (2.2.4)
     arel (2.2.1)
     bcrypt-ruby (3.0.0)
-    bluecloth (2.1.0)
     builder (3.0.0)
     capistrano (2.8.0)
       highline
@@ -65,10 +63,6 @@ GEM
       multipart-post (~> 1.1.0)
       rack (< 2, >= 1.1.0)
     ffi (1.0.9)
-    formatize (1.0.1)
-      RedCloth (~> 4.2)
-      actionpack (~> 3.0)
-      bluecloth (~> 2.0)
     guard (0.6.3)
       thor (~> 0.14.6)
     guard-rspec (0.4.3)
@@ -213,13 +207,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bluecloth (~> 2.1.0)
   bundler
   capistrano
   capybara!
   database_cleaner
   declarative_authorization
-  formatize
   guard
   guard-rspec
   jquery-rails
