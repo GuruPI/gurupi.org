@@ -1,36 +1,11 @@
 <p id="notice"><%= notice %></p>
-
-<p>
-  <b>Name:</b>
-  <%= @event.name %>
-</p>
-
-<p>
-  <b>Description:</b>
-  <p>
-    <%= markdown @event.description %>
-  </p>
-</p>
-
-<p>
-  <b>Event date:</b>
-  <%=l @event.event_date %>
-</p>
-
-<p>
-  <b>Hour:</b>
-  <%= @event.hour %>
-</p>
-
-<p>
-  <b>Place:</b>
-  <%= @event.place %>
-</p>
-
-<h2>Lectures</h2>
+<%= markdown @event.description %>
+<p><strong>No dia <%=l @event.event_date %>, às <%= @event.hour %>, <%= @event.place %></strong></p>
+<% if @event.enable_lectures %>
+<h2>Palestras</h2>
 
 <%= render @event.lectures %>
 <br />
 <h2>Add a Lecture:</h2>
 <%= render "lectures/form" %>
-
+<% end %>

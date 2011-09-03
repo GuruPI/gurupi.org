@@ -26,30 +26,27 @@
     <section id="encontros" class="column">
       <h3 class="hat"><span class="icon"></span>Próximo Encontro</h3>
       <p class="title">Vote na palestra que você deseja assistir no próximo encontro GuruPI que será realizado no dia <%=l @event.event_date unless !@event.present? %></p>
-      <% if @event.present? %>
-          <ul>
-               <% @event.lectures.each do |lecture| %>
-                <li>
-                  <p>
-                    <img src="http://a2.twimg.com/profile_images/534258280/Photo_46_normal.jpg" alt="Dmitry Nix" class="photo">
-                    <a href="http://twitter.com/dmitrynix">@dmitrynix</a> falando sobre:
-                  </p>
-                  <h4><a href="#ruby"><%=lecture.name%></a></h4>
-                  <div>
-                    <% if current_user %>
-                      <%=link_to "<span class='count'>#{lecture.positive_vote}</span>".html_safe, {:controller => "lectures", :action => :vote_increment, :id => lecture.id, :commit => 'gostei' }, :class => "liked", :remote => true %>
-                      <%=link_to "<span class='count'>#{lecture.negative_vote}</span>".html_safe, {:controller => "lectures", :action => :vote_increment, :id => lecture.id, :commit => "naogostei" }, :class => "disliked", :remote => true %>
-                    <%end%>
-                  </div>
-                </li>
-                <%end%>
-          </ul>
-
-          <% permitted_to? :show, :events do %>
-            <%= link_to "<span class='icon'></span>Cadastrar Palestra".html_safe , @event, :class => "button-add" %>
-          <%end%>
-
-     <%end%>
+      <% if @event.present? && @event.enable_lectures %>
+        <ul>
+        <% @event.lectures.each do |lecture| %>
+          <li>
+            <p><% if lecture.user.image %><img src="<%= lecture.user.image %>" alt="<%= lecture.user.name %>" class="user_image photo"><% end %>
+            <%= link_to(lecture.user.name, lecture) %> falando sobre:
+            </p>
+            <h4><%= link_to(lecture.name, lecture) %></h4>
+            <div>
+            <% if current_user %>
+              <%= link_to "<span class='count'>#{lecture.positive_vote}</span>".html_safe, vote_path(lecture.id, commit: 'gostei'), :class => "liked", :remote => true %>
+              <%= link_to "<span class='count'>#{lecture.negative_vote}</span>".html_safe, vote_path(lecture.id, commit: 'naogostei'), :class => "disliked", :remote => true %>
+            <%end%>
+            </div>
+          </li>
+        <%end%>
+        </ul>
+        <% permitted_to? :show, :events do %>
+          <%= link_to "<span class='icon'></span>Cadastrar Palestra".html_safe , @event, :class => "button-add" %>
+        <%end%>
+     <% end %>
     </section>
 
     <section id="blogs" class="column">
@@ -59,14 +56,17 @@
           <% @posts.each do |post| %>
             <li>
               <p>
-                <img src="http://a1.twimg.com/profile_images/1293391269/cleiton_photo_2011_bigger.jpg" alt="Cleiton Francisco" class="photo">
-                <a href="http://twitter.com/cleitonfco">@cleitonfco</a> em <time title="<%=l post.created_at, format: :time_tag%>"><%=l post.created_at.to_date %></time>
+                <% if post.user.image %><img src="<%= post.user.image %>" alt="<%= post.user.name %>" class="user_image photo"><% end %>
+                <%= link_to(post.user.name, post) %> em <time title="<%=l post.created_at, format: :time_tag%>"><%=l post.created_at.to_date %></time>
               </p>
               <h4><%= link_to post.title, post %></h4>
             </li>
           <% end %>
         <% end %>
       </ul>
+      <% permitted_to? :create, :posts do %>
+        <%= link_to "<span class='icon'></span>Cadastrar Post".html_safe, new_post_path, :class => "button-add" %>
+      <%end%>
     </section>
 
     <section id="atividades" class="column">

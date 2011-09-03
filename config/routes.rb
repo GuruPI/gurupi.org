@@ -1,7 +1,7 @@
 GurupiOrg::Application.routes.draw do
   resources :lectures
 
-  match 'lectures/:id/vote_increment/', :controller => 'lectures', :action => 'vote_increment'
+  match 'lectures/:id/vote_increment/', :controller => 'lectures', :action => 'vote_increment', :as => :vote
   match "/auth/:provider/callback" => "sessions#create"
   match "/signout"                 => "sessions#destroy", :as => :signout
 

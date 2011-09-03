@@ -16,7 +16,7 @@ class PostsController < ApplicationController
   end
 
   def create
-    @post = Post.new(params[:post])
+    @post = Post.new(params[:post].merge(user: current_user))
     flash[:notice] = "Post criado com sucesso." if @post.save
     respond_with @post
   end

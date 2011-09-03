@@ -10,6 +10,7 @@ class EventsController < ApplicationController
 
   def show
     load_event
+    @breadcrumb = @event.name
   end
 
   def new
