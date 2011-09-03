@@ -6,7 +6,7 @@ GurupiOrg::Application.routes.draw do
   match "/signout"                 => "sessions#destroy", :as => :signout
 
   resources :users, only: [:index]
-  resources :posts, only: [:new, :show, :create], path_names: {new: 'novo'}
+  resources :posts, only: [:index, :new, :show, :create], path_names: {new: 'novo'}
   resources :events do
     resources :lectures
   end

@@ -11,5 +11,8 @@ describe PostsController do
     it "#create" do
       { post: '/posts'}.should route_to(controller: 'posts', action: 'create')
     end
+    it "#index" do
+      { get: '/posts'}.should route_to(controller: 'posts', action: 'index')
+    end
   end
 end

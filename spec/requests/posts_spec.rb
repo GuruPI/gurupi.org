@@ -17,7 +17,7 @@ describe "Posts" do
 
   describe "GET /this-is-my-post" do
     before(:each) do
-      @post = Post.create(title: 'This is my title', body: 'This is my body post')
+      @post = Post.make!(title: 'This is my title', body: 'This is my body post')
     end
 
     it "displays 'This is my title'" do
@@ -31,4 +31,14 @@ describe "Posts" do
     end
   end
 
+  describe "GET /posts" do
+    before(:each) do
+      @post = Post.make!(title: 'This is my title', body: 'This is my body post')
+    end
+
+    it "page should have a link to post" do
+      visit posts_path
+      page.should have_link(@post.title)
+    end
+  end
 end

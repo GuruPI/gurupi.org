@@ -17,7 +17,11 @@ Role.blueprint(:admin) do
   title { "admin" }
 end
 
-
 VoteLecture.blueprint do
   # Attributes here
+end
+
+Post.blueprint do
+  title {'My awesome title'}
+  body {'My awesome body'}
 end
