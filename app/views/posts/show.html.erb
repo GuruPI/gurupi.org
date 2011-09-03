@@ -1,3 +1,9 @@
 <h1 class="hat title"><%= @post.title%></h1>
 
 <%= markdown(@post.body) %>
+
+<% if @post.user.present? %>
+<div class="user_information">
+  <p>Criado por <%= @post.user.name %></p>
+</div>
+<% end %>

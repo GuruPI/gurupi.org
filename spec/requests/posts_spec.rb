@@ -29,6 +29,11 @@ describe "Posts" do
       visit post_path @post
       page.should have_content(@post.body)
     end
+
+    it "should display user's about" do
+      visit post_path @post
+      page.should have_content("Criado por #{@post.user.name}")
+    end
   end
 
   describe "GET /posts" do
