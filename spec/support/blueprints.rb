@@ -24,4 +24,5 @@ end
 Post.blueprint do
   title {'My awesome title'}
   body {'My awesome body'}
+  user {User.make!}
 end
