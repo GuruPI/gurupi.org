@@ -4,11 +4,13 @@ class WelcomeController < ApplicationController
 
   def index
     @posts = Post.limit(6).order('created_at desc')
+    @event = Event.last
   end
-  
+
   def about
     @breadcrumb = "Sobre"
     render :layout => "application"
   end
-  
+
 end
+

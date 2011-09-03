@@ -26,12 +26,6 @@ describe "Users" do
           end
         end
 
-        it "don't displays guests" do
-          visit users_path
-          @users.each do |user|
-            page.should_not have_content(user.name) if user.guest?
-          end
-        end
       end
 
       describe "as member" do
@@ -76,3 +70,4 @@ describe "Users" do
     end
   end
 end
+
