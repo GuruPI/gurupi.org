@@ -18,7 +18,7 @@ authorization do
   role :admin do
     includes :member
     has_permission_on [:users], :to => [:index, :edit, :update, :change]
-    has_permission_on [:events], :to => [:new, :create, :edit, :update, :destroy, :index, :show, :vote_increment ]
+    has_permission_on [:events], :to => [:new, :create, :edit, :update, :destroy, :index, :show, :vote_increment]
     has_permission_on [:welcome], :to => [:index]
   end
 end

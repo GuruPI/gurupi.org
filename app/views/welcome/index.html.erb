@@ -9,9 +9,9 @@
       </div>
       <% if @event.present? %>
         <h2><%= @event.name %></h2>
-        <p><%= @event.description.gsub(/\n/,"<br />").html_safe %></p>
-        <a href="http://maps.google.com/maps/place?cid=13685776032963445195&q=uespi&hl=en&sll=-6.6728,-43.298087&sspn=7.537956,3.732754&ie=UTF8&ll=-0.307616,-50.888672&spn=0,0&z=6" style="padding-left: 11px;">Localização: <%= @event.place %></a>
-      <%end%>
+        <%= markdown @event.description %>
+        <%= link_to("Localização: #{@event.place}", @event.place_url) if @event.place_url.present? %>
+      <% end %>
       <ul>
         <li class="talks"><a href="http://call4paperz.com/events/5%C2%BA-encontro-gurupi"><span class="icon"></span>Palestras</a></li>
         <li class="photos"><a href="#fotos"><span class="icon"></span>Fotos</a></li>
