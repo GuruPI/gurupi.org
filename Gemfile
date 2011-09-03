@@ -3,12 +3,13 @@ source 'http://rubygems.org'
 gem 'bundler'
 gem 'rake', '0.9.2'
 gem 'rails', '~> 3.1'
-
 gem 'sqlite3'
+
 gem 'omniauth', '>= 0.2.6'
 gem 'declarative_authorization'
 gem 'jquery-rails'
 gem 'rdiscount'
+gem "bluecloth", "~> 2.1.0"
 
 group :development do
   gem 'capistrano'
