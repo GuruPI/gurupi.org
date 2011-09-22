@@ -5,7 +5,7 @@ class EventsController < ApplicationController
 
   def index
     @events = Event.all
-    @breadcrumb = "Listagem dos eventos"
+    @breadcrumb = "Agenda de eventos"
   end
 
   def show

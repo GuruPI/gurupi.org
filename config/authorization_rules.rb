@@ -1,6 +1,7 @@
 authorization do
   role :guest do
     has_permission_on [:lectures], :to => [:vote_increment]
+    has_permission_on [:events], :to => [:index, :show]
     has_permission_on [:users], :to => [:index]
     has_permission_on [:users], :to => [:index, :show] do
       if_attribute :roles => { :title => is { "admin" } }
