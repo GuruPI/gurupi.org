@@ -17,9 +17,9 @@
 </p>
 
 <p>
-  <%= link_to t(:destroy_lecture), [lecture.event, lecture],
-               :confirm => t(:confirm),
-               :method => :delete %>
+<% permitted_to? :destroy, :lectures do %>
+  <%= link_to t(:destroy_lecture), [lecture.event, lecture], :confirm => t(:confirm), :method => :delete %>
+<% end %>
 </p>
 <br />
 
