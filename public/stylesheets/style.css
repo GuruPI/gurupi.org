@@ -72,7 +72,8 @@ a:hover { color:#a53b3b; }
 .container {width:960px; padding:0 10px; margin:0 auto; overflow:hidden;}
 
 #profile {background:#393939 url("/images/bg-profile.png") left bottom repeat-x; border-bottom:1px solid #646464; min-height:40px;}
-#profile p {color:#ccc; text-align:right; float:right; display:inline; padding:4px 8px; margin-top:7px; border-width:1px; border-style:solid; border-color:#111 #333 #333 #111;
+#user_account {float:right; overflow:hidden;}
+#user_account p {color:#ccc; text-align:right; float:right; display:inline; padding:4px 8px; margin-top:7px; border-width:1px; border-style:solid; border-color:#111 #333 #333 #111;
   background-color:#000; border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px;}
 #profile .user_image {width:32px; height:32px; float:right; vertical-align:top; margin:3px 0 3px 10px; border:1px solid #606060;}
 #profile .spacer {padding:0 5px;}
@@ -182,6 +183,10 @@ a:hover { color:#a53b3b; }
 #footer .links ul { display:inline-block; margin:0 0 13px; padding:0 0 13px; }
 #footer .links ul li { float:left; list-style: none outside none; margin:0; }
 #footer .links ul li a{ border-right: 1px solid #3b3b3b; font-weight: normal; padding: 0 7px; }
+#fork_me {position:fixed; bottom:0; text-align:center; width:100%; color:#ccc; text-shadow:0 1px 1px rgba(0, 0, 0, 0.8); font:bold 1em arial, sans-serif;}
+#fork_me a {background-color:rgba(109, 3, 3, 0.9); padding:6px 0; height:18px; padding-left:22px; color:#e1c4c4; display:block;}
+#fork_me a:hover {background-color:rgba(47, 162, 31, 0.9); color:#fff;}
+#fork_me a .icon {background:url("/images/fork.png") no-repeat; width:20px; height:16px; display:inline-block; vertical-align:top;}
 
 table {
     overflow:hidden;
