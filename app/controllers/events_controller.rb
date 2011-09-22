@@ -4,7 +4,7 @@ class EventsController < ApplicationController
   filter_resource_access
 
   def index
-    @events = Event.all
+    @events = Event.all(:order => 'event_date desc')
     @breadcrumb = "Agenda de eventos"
   end
 
