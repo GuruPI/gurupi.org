@@ -2,21 +2,16 @@
   <div class="container">
     <article class="topic">
       <div id="slideshow">
-        <img class="active" src="/images/image1.jpg" alt="Rafael Marques palestrando no 4º Encontro do GuruPI" title="" />
-        <img src="/images/image2.jpg" alt="" title="" />
-        <img src="/images/image3.jpg" alt="" title="" />
-        <img src="/images/image4.jpg" alt="" title="" />
+        <iframe width="485" height="268" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com.br/maps/ms?msa=0&amp;msid=205842815744288559189.0004ada153dd002cfdfca&amp;ie=UTF8&amp;t=m&amp;vpsrc=6&amp;ll=-5.07205,-42.826982&amp;spn=0.011456,0.020771&amp;z=15&amp;iwloc=0004ada158f07d5adee90&amp;output=embed"></iframe>
       </div>
       <% if @event.present? %>
         <h2><%= @event.name %></h2>
         <%= markdown @event.description %>
-        <%= link_to("Localização: #{@event.place}", @event.place_url) if @event.place_url.present? %>
+        <ul>
+          <% if @event.place_url.present? %><li class="geo"><%= link_to("<span class=\"icon\"></span>Localização: #{@event.place}".html_safe, @event.place_url) %></li><% end %>
+          <% if @event.lectures.present? %><li class="talks"><%= link_to("<span class=\"icon\"></span>Palestras".html_safe, @event.lectures) %></li><% end %>
+        </ul>
       <% end %>
-      <ul>
-        <li class="talks"><a href="http://call4paperz.com/events/5%C2%BA-encontro-gurupi"><span class="icon"></span>Palestras</a></li>
-        <li class="photos"><a href="#fotos"><span class="icon"></span>Fotos</a></li>
-        <li class="videos"><a href="#videos"><span class="icon"></span>Vídeos</a></li>
-      </ul>
     </article>
   </div>
 </div>

@@ -111,6 +111,7 @@ a:hover { color:#a53b3b; }
 #intro .topic li.talks .icon  {background-position:0 -32px;}
 #intro .topic li.photos .icon {background-position:-32px -32px;}
 #intro .topic li.videos .icon {background-position:-256px 0;}
+#intro .topic li.geo .icon    {background-position:-192px -65px;}
 #intro .topic a { color:#3b3b3b; padding-left: 0px !important;}
 #intro .topic a:hover { color:#fff}
 #intro .topic li a {background-color:#4e0101; color:#fff; text-decoration:none; padding:6px 0; display:block; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;}
