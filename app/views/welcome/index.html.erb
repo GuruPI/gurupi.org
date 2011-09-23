@@ -9,7 +9,7 @@
         <%= markdown @event.description %>
         <ul>
           <% if @event.place_url.present? %><li class="geo"><%= link_to("<span class=\"icon\"></span>Localização: #{@event.place}".html_safe, @event.place_url) %></li><% end %>
-          <% if @event.lectures.present? %><li class="talks"><%= link_to("<span class=\"icon\"></span>Palestras".html_safe, @event.lectures) %></li><% end %>
+          <% if @event.lectures.present? %><li class="talks"><%= link_to("<span class=\"icon\"></span>Palestras".html_safe, @event) %></li><% end %>
         </ul>
       <% end %>
     </article>
