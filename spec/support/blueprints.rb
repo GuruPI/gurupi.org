@@ -27,7 +27,7 @@ end
 Event.blueprint(:gurupi5) do
   name { '5 Encontro oficial do gurupi' }
   description { 'Um encontro para falarmos sobre as novidades do mundo Ruby, Site Oficial, Dojos, Horaextras, Rubyconf Brasil 2011, próximos encontros e muito mais.' }
-  event_date { 7.days.from_now }
+  event_date { Date.today + 7.days }
   hour { '14:00' }
   place { 'UESPI - Universidade Estadual do Piauí' }
   enable_lectures { true }
@@ -36,7 +36,7 @@ end
 Event.blueprint(:interaje) do
   name { 'Interaje especial com o Fábio Akita' }
   description { 'No dia 13 de Setembro vai ter um interaje com o Fábio Akita, o evangelista Ruby e Ruby On Rails do Brasil!' }
-  event_date { 7.day.ago }
+  event_date { Date.today - 7.days }
   hour { '19:00' }
   place { 'UFPI - Universidade Federal do Piauí' }
   enable_lectures { false }
