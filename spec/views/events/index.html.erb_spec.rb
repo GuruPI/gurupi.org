@@ -20,6 +20,7 @@ describe "events/index.html.erb" do
         :event_date => Date.today
       )
     ])
+    controller.stub(current_user: nil)
   end
 
   it "renders a list of events" do
