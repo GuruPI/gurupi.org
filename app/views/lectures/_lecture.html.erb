@@ -1,25 +1,18 @@
-<p>
-  <b><%=Lecture.human_attribute_name(:name)%>:</b>
-  <%= lecture.name %>
-</p>
-
-<p>
-  <b><%=Lecture.human_attribute_name(:description)%>:</b>
-  <p>
-    <%= lecture.description.gsub(/\n/,"<br />").html_safe %>
-  </p>
-</p>
-
-
-<p>
-  <b><%=Lecture.human_attribute_name(:user)%>:</b>
-  <%= lecture.user.name %>
-</p>
-
-<p>
-<% permitted_to? :destroy, :lectures do %>
-  <%= link_to t(:destroy_lecture), [lecture.event, lecture], :confirm => t(:confirm), :method => :delete %>
-<% end %>
-</p>
-<br />
-
+<li class="lecture_item" id="lecture_<%= lecture.id %>">
+  <div class="main_info">
+    <p><strong><%= lecture.name %></strong></p>
+    <div>
+    <%= markdown lecture.description %>
+    </div>
+  </div>
+  <div class="aux_info">
+    <div class="speaker">
+      <% if lecture.user.image %><%= image_tag lecture.user.image, :alt => lecture.user.name, :class => "user_image photo" %><% end %>
+      <%= link_to lecture.user.name, lecture, :class => "user_name" %>
+    </div>
+    <%= render :partial => 'layouts/vote_lecture', :locals => { :lecture => lecture, :can_login => false } %>
+    <% permitted_to? :destroy, :lectures do %>
+      <p><%= link_to t(:destroy_lecture), [lecture.event, lecture], :confirm => t(:confirm), :method => :delete %></p>
+    <% end %>
+  </div>
+</li>

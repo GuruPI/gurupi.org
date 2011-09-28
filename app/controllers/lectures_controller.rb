@@ -8,6 +8,7 @@ class LecturesController < ApplicationController
 
   def show
     @lecture = Lecture.find_by_slug(params[:id])
+    @breadcrumb = @lecture ? @lecture.name : "Palestra"
   end
 
   def new

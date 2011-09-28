@@ -7,7 +7,7 @@ if @event.enable_lectures
   if @event.lectures.present?
 %>
 <h2>Palestras</h2>
-<%= render @event.lectures %>
+<ul class="lectures"><%= render @event.lectures %></ul>
 <% end %>
 
 <% permitted_to? :create, :lectures do %>

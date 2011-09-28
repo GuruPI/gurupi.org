@@ -1,32 +1,13 @@
-<p id="notice"><%= notice %></p>
+<h3 class="lecture_name"><%= @lecture.name %></h3>
+<h4 class="event_name"><%= link_to @lecture.event.name, @lecture.event %></h4>
 
-<p>
-  <b>Name:</b>
-  <%= @lecture.name %>
-</p>
+<div class="speaker">
+<% if @lecture.user.image %><%= image_tag @lecture.user.image, :alt => @lecture.user.name, :class => "user_image photo" %><% end %>
+<%= link_to @lecture.user.name, @lecture, :class => "user_name" %>
+</div>
 
-<p>
-  <b>Description:</b>
-  <%= @lecture.description %>
-</p>
+<div class="lecture">
+<%= markdown @lecture.description %>
+</div>
 
-<p>
-  <b>Positive vote:</b>
-  <%= @lecture.positive_vote %>
-</p>
-
-<p>
-  <b>Negative vote:</b>
-  <%= @lecture.negative_vote %>
-</p>
-
-<p>
-  <b>User:</b>
-  <%= @lecture.user_id %>
-</p>
-
-<p>
-  <b>Event:</b>
-  <%= @lecture.event_id %>
-</p>
-
+<%= render :partial => 'layouts/vote_lecture', :locals => { :lecture => @lecture, :can_login => true } %>

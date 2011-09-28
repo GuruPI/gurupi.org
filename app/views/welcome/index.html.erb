@@ -29,12 +29,7 @@
             <%= link_to(lecture.user.name, lecture) %> falando sobre:
             </p>
             <h4><%= link_to(lecture.name, lecture) %></h4>
-            <div>
-            <% if current_user %>
-              <%= link_to "<span class='count'>#{lecture.positive_vote}</span>".html_safe, vote_path(lecture.id, commit: 'gostei'), :class => "liked", :remote => true %>
-              <%= link_to "<span class='count'>#{lecture.negative_vote}</span>".html_safe, vote_path(lecture.id, commit: 'naogostei'), :class => "disliked", :remote => true %>
-            <%end%>
-            </div>
+            <%= render :partial => 'layouts/vote_lecture', :locals => { :lecture => lecture, :can_login => false } %>
           </li>
         <%end%>
         </ul>

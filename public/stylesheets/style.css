@@ -169,6 +169,17 @@ a:hover { color:#a53b3b; }
 .button-add:hover {color:#ddd;}
 .button-add .icon {background-position:0 -32px; vertical-align:middle; margin-right:10px; display:inline-block;}
 
+.speaker {margin:10px 0 20px; overflow:hidden;}
+.speaker img {width:30px; height:30px; border:1px solid #dadada; padding:2px; float:left; margin-right:10px;}
+.lecture_name {font-size:2em; color:#444; margin-bottom:5px;}
+.event_name {font-size:1em; font-weight:normal; font-style:italic; color:#656565; margin-bottom:8px;}
+.user_name {line-height:34px; font-size:1em;}
+ul.lectures {margin:0; border-left:10px solid #ededed; border-top:1px solid #ccc; margin-bottom:20px;}
+.lecture {margin:20px 0; overflow:hidden;}
+#main li.lecture_item {overflow:hidden; list-style-type:none; margin-bottom:10px; margin:0; border:1px solid #ccc; padding-bottom:9px; border-top:none;}
+#main li.lecture_item .main_info {float:left; width:380px; padding-left:15px;}
+#main li.lecture_item .aux_info {float:right; width:215px;}
+
 /* slider*/
 #slideshow { float:right; position:relative; height:268px; width:485px; margin:0 auto;border:3px solid #b33236; margin-left:20px; }
 #slideshow img { position:absolute; top:0; left:0; z-index:8; }

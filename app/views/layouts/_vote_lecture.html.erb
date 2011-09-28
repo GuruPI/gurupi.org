@@ -1,0 +1,13 @@
+<% if current_user %>
+<div>
+  <%= link_to "<span class='count'>#{lecture.positive_vote}</span>".html_safe, vote_path(lecture.id, commit: 'gostei'), :class => "liked", :remote => true %>
+  <%= link_to "<span class='count'>#{lecture.negative_vote}</span>".html_safe, vote_path(lecture.id, commit: 'naogostei'), :class => "disliked", :remote => true %>
+</div>
+<% else
+if can_login %>
+<div>
+  <p style="float:left; width:400px; margin:3px 0;">Para votar nessa palestra, faça o login utilizando sua conta do Facebook:</p>
+  <%= link_to "Conectar com Facebook", "/auth/facebook", :class => "login_facebook" %>
+</div>
+<% end
+end %>
