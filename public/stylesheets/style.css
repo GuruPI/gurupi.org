@@ -164,10 +164,10 @@ a:hover { color:#a53b3b; }
 .liked {background-position:0 -64px;margin-right:7px;}
 .disliked {background-position:-87px -64px;}
 .count {line-height:48px;font-size:1.7em;color:#fff;margin-left:35px;text-shadow:1px 1px #000;}
-.button-add {background:url("/images/sprite.png") 0 -112px no-repeat; width:300px; height:48px; display:block; text-transform:lowercase;
+a.button-add {background:url("/images/sprite.png") 0 -112px no-repeat; width:300px; height:48px; display:block; text-transform:lowercase;
   margin-top:18px; font-size:1.3em;color:#fff; line-height:48px; text-shadow:1px 1px #000; text-align:center;}
-.button-add:hover {color:#ddd;}
-.button-add .icon {background-position:0 -32px; vertical-align:middle; margin-right:10px; display:inline-block;}
+a.button-add:hover {color:#ddd;}
+a.button-add .icon {background-position:0 -32px; vertical-align:middle; margin-right:10px; display:inline-block;}
 
 .speaker {margin:10px 0 20px; overflow:hidden;}
 .speaker img {width:30px; height:30px; border:1px solid #dadada; padding:2px; float:left; margin-right:10px;}
