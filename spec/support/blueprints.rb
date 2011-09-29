@@ -41,3 +41,10 @@ Event.blueprint(:interaje) do
   place { 'UFPI - Universidade Federal do Piauí' }
   enable_lectures { false }
 end
+
+Lecture.blueprint(:interaje) do
+  name { 'Mudando o mundo com Ruby on Rails' }
+  description { 'Como você pode mudar o mundo' }
+  user { User.make! }
+  event { Event.make!(:interaje) }
+end
