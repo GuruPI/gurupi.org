@@ -1,7 +1,7 @@
 class Event < ActiveRecord::Base
   before_save :slugify
   validates :name, presence: true, uniqueness: true
-  has_many :lectures, dependent: :destroy, order: 'positive_vote desc'
+  has_many :lectures, dependent: :destroy, order: 'relative_votes desc, negative_vote asc'
 
   def to_param
     slug

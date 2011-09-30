@@ -23,7 +23,7 @@
       <p class="title">Vote na palestra que você deseja assistir no próximo encontro GuruPI que será realizado no dia <%=l @event.event_date unless !@event.present? %></p>
       <% if @event.present? && @event.enable_lectures %>
         <ul>
-        <% @event.lectures.each do |lecture| %>
+        <% @event.lectures.ranking.each do |lecture| %>
           <li>
             <p><% if lecture.user.image %><img src="<%= lecture.user.image %>" alt="<%= lecture.user.name %>" class="user_image photo"><% end %>
             <%= link_to(lecture.user.name, lecture) %> falando sobre:

@@ -4,6 +4,10 @@ class Lecture < ActiveRecord::Base
   belongs_to :event
   belongs_to :user
 
+  before_save :calculate_balance
+
+  scope :ranking, :order => "relative_votes DESC, negative_vote ASC"
+
   def to_param
     slug
   end
@@ -13,5 +17,8 @@ class Lecture < ActiveRecord::Base
     self.slug = name.parameterize.to_s
   end
 
-end
+  def calculate_balance
+    self.relative_votes = positive_vote - negative_vote
+  end
 
+end
