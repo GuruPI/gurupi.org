@@ -24,6 +24,24 @@ Post.blueprint do
   user {User.make!}
 end
 
+Event.blueprint do
+  name            { "Event Name #{sn}" }
+  description     { "Event Description #{sn}" }
+  event_date      { Date.today + sn.to_i.days }
+  hour            { "#{rand(24)}:00" }
+  place           { "Event Place #{sn}" }
+  enable_lectures { true }
+end
+
+Lecture.blueprint do
+  name          { "Lecture Name #{sn}" }
+  description   { "Lecture Description #{sn}" }
+  user          { User.make! }
+  event         { Event.make! }
+  positive_vote { rand(20) }
+  negative_vote { rand(10) }
+end
+
 Event.blueprint(:gurupi5) do
   name { '5 Encontro oficial do gurupi' }
   description { 'Um encontro para falarmos sobre as novidades do mundo Ruby, Site Oficial, Dojos, Horaextras, Rubyconf Brasil 2011, próximos encontros e muito mais.' }
