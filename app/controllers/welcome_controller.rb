@@ -12,5 +12,10 @@ class WelcomeController < ApplicationController
     render :layout => "application"
   end
 
+  def contact
+    @breadcrumb = "Contato"
+    render :layout => "contact"
+  end
+
 end
 

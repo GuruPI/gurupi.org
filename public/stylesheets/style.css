@@ -259,3 +259,156 @@ tr:last-child td.last {
     -moz-border-radius-bottomright:5px;
     -webkit-border-bottom-right-radius:5px; /* Saf3-4 */
 }
+
+
+#main #formulario {
+    width: 365px;
+    float: left;
+    margin: 20px 0 0 0;
+    position:relative;
+}
+
+#main #informacoes {
+  width: 365px;
+  float: left;
+  margin: 20px 0 0 70px;
+  position:relative;
+}
+
+#main #formulario h4, #main #informacoes h4{
+    color:#4F4F4F;
+    font-size: 23px;
+
+}
+
+#main #formulario h4 span, #main #informacoes h4 span{
+    font-family: 'YanoneKaffeesatzRegular', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+#main #informacoes h4 span a{
+    font-size: 18px;
+    color: #4F4F4F;
+    text-decoration: none;
+}
+
+#main #informacoes h4 span a:hover{
+    text-decoration: underline;
+}
+
+#main #formulario form input, #main #formulario form textarea{
+    font-family: 'YanoneKaffeesatzRegular', Arial, sans-serif;
+    width: 350px;
+    background: url(/images/fundo-input.png) top left no-repeat;
+    font-size: 18px;
+    font-weight: normal;
+    color: #4f4f4f;
+    padding: 0 7px 0 7px;
+    margin-bottom: 10px;
+    display:block;
+    border: none;
+    height: 28px;
+    resize: none;
+}
+
+#main #formulario form textarea{
+    background: url(/images/fundo-textarea.png) top left no-repeat;
+    height: 165px;
+    padding: 7px 7px 0 7px;
+    margin-bottom: 0;
+    resize: none;
+}
+
+#main #formulario form button{
+    width: 99px;
+    height: 29px;
+    background: url(/images/bt-enviar.png) top left no-repeat;
+    border:none;
+    text-indent:-9000em;
+    overflow:hidden;
+    cursor:pointer;
+    float: right;
+    margin: 5px 3px 0 0;
+}
+
+#main #formulario form button:hover{
+    background: url(/images/bt-enviar-on.png) top left no-repeat;
+}
+
+#main #formulario #error{
+    font-family: 'YanoneKaffeesatzRegular', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    color: #4F4F4F;
+    margin-top:11px;
+}
+
+#main #informacoes ul#social{
+    margin: 30px 0 0 0;
+    height:54px;
+    padding: 0;
+}
+
+#main #informacoes ul#social li{
+    list-style: none;
+    width: 55px;
+    height: 54px;
+    display: block;
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+#main #informacoes ul#menuBaixo{
+    margin: 0;
+    padding:40px 0 0 0;
+    display:block;  height:60px; width: 365px;
+}
+
+#main #informacoes ul#menuBaixo li{
+
+    list-style: none;
+    display: inline;
+    
+    margin: 0 7px 0 0;
+    font-family: 'YanoneKaffeesatzRegular', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: #4F4F4F;
+}
+
+#main #informacoes ul#menuBaixo li a{
+    font-family: 'YanoneKaffeesatzRegular', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: #4F4F4F;
+    padding-right: 7px;
+}
+
+#main img.mapa1{
+    position: absolute;
+    top: 470px;
+    right: 510px;
+}
+
+.column2 {width:240px; float:left; margin-left:70px;}
+.column2 ul {margin:0; list-style-type:none;}
+.column2 li, .column2 p.title {border-bottom:1px solid #ccc; padding:18px 0; overflow:hidden;}
+.column2 p.title {line-height:1.5em;font-size:1.1em;}
+.column2 a {font-weight:bold;}
+.column2 h4 {margin:5px 0;font-size:1.1em;}
+.hat {background-color:#444; color:#fff; font-size:1.4em; font-weight:normal; line-height:32px; padding:6px 9px 7px;}
+.hat .icon {margin-right:9px; display:inline-block; vertical-align:middle;}
+.hat.title {margin-bottom:20px; background-color:#c4c4c4; font-weight:bold; color:#444;
+  text-shadow:0 1px 0 #eee; padding-bottom:7px; border-bottom:1px solid #999; padding:7px 9px;}
+
+.column3 {float:left; margin-left:25px;width:250px;}
+.column3 ul {margin:0; list-style-type:none;}
+.column3 li, .column2 p.title {border-bottom:1px solid #ccc; padding:18px 0; overflow:hidden;}
+.column3 p.title {line-height:1.5em;font-size:1.1em;}
+.column3 a {font-weight:bold;}
+.column3 h4 {margin:5px 0;font-size:1.1em;}
+
+#btn_contact { position:fixed; top: 263px; right:0; height:152px; width:23px; z-index:1000; }
+#btn_contact a#contato{background:url(/images/btn_contato.png) center no-repeat; height:230px; width:23px; display:block;}
+#btn_contact a#contato:hover{background:url(/images/btn_contato_hover.png) center no-repeat;}

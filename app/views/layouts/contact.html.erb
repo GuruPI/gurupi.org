@@ -7,21 +7,36 @@
   <head>
     <meta charset="utf-8">
     <title>GuruPI - Grupo de Usuários de Ruby do Piauí</title>
-    <link rel="stylesheet" href="/stylesheets/style.css?v=1">
+    <link rel="stylesheet" href="/stylesheets/style.css?v=2">
+    <%= javascript_include_tag :defaults %>
+    <%= csrf_meta_tag %>
     <script src="/javascripts/modernizr-2.0.js"></script>
   </head>
 
-  <body class="home">
+  <body class="application">
     <div id="btn_contact">
-      <a href="#contato" id="contato" title="Contato!"></a>
+      <a href="http://github.com/gurupi/gurupi.org" target="_blank" title="Faça um fork do site no Github" id="contato"></a>
     </div>
     <%= render "layouts/top" %>
     <%= render "layouts/profile" %>
 
-    <%= yield %>
+<% if @breadcrumb.present? %>
+    <section id="breadcrumb">
+      <div class="container">
+        <h3><a href="/" class="home_link">Home</a> <span class="interpages">&raquo;</span> <span class="current_page"><%= @breadcrumb %></span></h3>
+      </div>
+    </section>
+<% end %>
+
+    <div id="content">
+      <div class="container">
+          <article id="main">
+            <%= yield %>
+          </article>        
+      </div>
+    </div>
 
     <%= render "layouts/footer" %>
-    <%= csrf_meta_tag %>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
     <script>window.jQuery || document.write("<script src='/javascripts/jquery-1.6.1.min.js'>\x3C/script>")</script>
     <script>
@@ -45,5 +60,7 @@
       setInterval( "slideSwitch()", 5000 );
     });
     </script>
+    <%= yield(:javascripts) %>
   </body>
 </html>
+
