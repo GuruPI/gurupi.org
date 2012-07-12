@@ -14,8 +14,8 @@ group :development do
   gem 'capistrano'
 end
 
-# gem 'pg', group => :production
-gem 'sqlite3'#, group => [:test, :development]
+gem 'pg', :group => :production
+gem 'sqlite3', :group => [:test, :development]
 
 group :test do
   gem 'rspec-rails', '~> 2.4'
