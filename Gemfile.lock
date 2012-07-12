@@ -125,7 +125,6 @@ GEM
       oa-more (= 0.2.6)
       oa-oauth (= 0.2.6)
       oa-openid (= 0.2.6)
-    pg (0.14.0)
     polyglot (0.3.2)
     pyu-ruby-sasl (0.0.3.3)
     rack (1.3.2)
@@ -213,7 +212,6 @@ DEPENDENCIES
   launchy
   machinist (>= 2.0.0.beta2)
   omniauth (>= 0.2.6)
-  pg
   rails
   rdiscount
   rspec-rails (~> 2.4)
