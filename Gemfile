@@ -1,9 +1,8 @@
 source 'http://rubygems.org'
 
 gem 'bundler'
-gem 'rake', '0.9.2'
-gem 'rails', '~> 3.1'
-gem 'sqlite3'
+# gem 'rake', '0.9.2'
+gem 'rails'
 
 gem 'omniauth', '>= 0.2.6'
 gem 'declarative_authorization'
@@ -12,6 +11,14 @@ gem 'rdiscount'
 
 group :development do
   gem 'capistrano'
+end
+
+group :production do
+  gem 'pg'
+end
+
+group :test, :development do
+  gem 'sqlite3'
 end
 
 group :test do
