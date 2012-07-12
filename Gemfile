@@ -10,12 +10,9 @@ gem 'jquery-rails'
 gem 'rdiscount'
 gem 'yaml_db'
 
-group :development do
-  gem 'capistrano'
-end
-
 gem 'pg', :group => :production
 gem 'sqlite3', :group => [:test, :development]
+gem 'capistrano', :group => :development
 
 group :test do
   gem 'rspec-rails', '~> 2.4'
