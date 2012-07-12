@@ -8,6 +8,7 @@ gem 'omniauth', '>= 0.2.6'
 gem 'declarative_authorization'
 gem 'jquery-rails'
 gem 'rdiscount'
+gem 'yaml_db'
 
 group :development do
   gem 'capistrano'
