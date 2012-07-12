@@ -1,0 +1,1578 @@
+
+--- 
+users: 
+  columns: 
+  - id
+  - provider
+  - uid
+  - name
+  - email
+  - image
+  - link
+  - gender
+  - timezone
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - facebook
+    - "646490131"
+    - Cleiton Francisco
+    - cleitonfco@gmail.com
+    - http://graph.facebook.com/646490131/picture?type=square
+    - http://www.facebook.com/cleitonfco
+    - male
+    - -3
+    - 2011-06-10 11:30:20.698893
+    - 2011-06-10 11:30:20.698893
+  - - 2
+    - facebook
+    - "1681442949"
+    - Rogerio Medeiros
+    - argerim@hotmail.com
+    - http://graph.facebook.com/1681442949/picture?type=square
+    - http://www.facebook.com/profile.php?id=1681442949
+    - male
+    - -3
+    - 2011-06-10 15:03:40.231889
+    - 2011-06-10 15:03:40.231889
+  - - 3
+    - facebook
+    - "100000397888762"
+    - Paulo Henrique Filho
+    - paulinho.filho@gmail.com
+    - http://graph.facebook.com/100000397888762/picture?type=square
+    - http://www.facebook.com/paulohfilho
+    - male
+    - -3
+    - 2011-06-10 15:27:19.702173
+    - 2011-06-10 15:27:19.702173
+  - - 4
+    - facebook
+    - "100001388532360"
+    - Glauber Santana
+    - glauber.tech@gmail.com
+    - http://graph.facebook.com/100001388532360/picture?type=square
+    - http://www.facebook.com/glauber.tech
+    - male
+    - -3
+    - 2011-06-10 16:03:05.651552
+    - 2011-06-10 16:03:05.651552
+  - - 5
+    - facebook
+    - "637882816"
+    - Cairo Noleto
+    - caironoleto@gmail.com
+    - http://graph.facebook.com/637882816/picture?type=square
+    - http://www.facebook.com/caironoleto
+    - male
+    - -3
+    - 2011-06-10 16:38:29.404410
+    - 2011-06-10 16:38:29.404410
+  - - 6
+    - facebook
+    - "1673119059"
+    - Denise Ribeiro
+    - deniseribeiro.art@gmail.com
+    - http://graph.facebook.com/1673119059/picture?type=square
+    - http://www.facebook.com/Deniseribeiro.o
+    - 
+    - -3
+    - 2011-06-11 01:45:45.787885
+    - 2011-06-11 01:45:45.787885
+  - - 7
+    - facebook
+    - "1309842746"
+    - Elias Junior
+    - eliaswebdev@gmail.com
+    - http://graph.facebook.com/1309842746/picture?type=square
+    - http://www.facebook.com/eliaswebdev
+    - male
+    - -3
+    - 2011-06-11 12:43:35.896333
+    - 2011-06-11 12:43:35.896333
+  - - 8
+    - facebook
+    - "678887718"
+    - Weldys Santos
+    - weldyss@gmail.com
+    - http://graph.facebook.com/678887718/picture?type=square
+    - http://www.facebook.com/weldyss
+    - male
+    - -3
+    - 2011-06-13 13:43:25.857384
+    - 2011-06-13 13:43:25.857384
+  - - 9
+    - facebook
+    - "1487736546"
+    - Cyrus Cavalcante
+    - cyruscavalcante@gmail.com
+    - http://graph.facebook.com/1487736546/picture?type=square
+    - http://www.facebook.com/profile.php?id=1487736546
+    - male
+    - -3
+    - 2011-06-13 13:43:31.773476
+    - 2011-06-13 13:43:31.773476
+  - - 10
+    - facebook
+    - "1502371608"
+    - "Eug\xC3\xAAnio Pinto"
+    - eugenio_paccelle@hotmail.com
+    - http://graph.facebook.com/1502371608/picture?type=square
+    - http://www.facebook.com/eugeniopaccelle
+    - male
+    - -3
+    - 2011-06-13 16:01:43.652843
+    - 2011-06-13 16:01:43.652843
+  - - 11
+    - facebook
+    - "1060170595"
+    - Samuel Flores
+    - samflores@gmail.com
+    - http://graph.facebook.com/1060170595/picture?type=square
+    - http://www.facebook.com/samuel.s.flores
+    - male
+    - -3
+    - 2011-06-15 15:40:46.580509
+    - 2011-06-15 15:40:46.580509
+  - - 12
+    - facebook
+    - "1440248251"
+    - Walker Maidana
+    - walker.ufms@gmail.com
+    - http://graph.facebook.com/1440248251/picture?type=square
+    - http://www.facebook.com/walker.maidana
+    - male
+    - -4
+    - 2011-06-15 17:21:32.970449
+    - 2011-06-15 17:21:32.970449
+  - - 13
+    - facebook
+    - "100001691061802"
+    - Renato Sousa
+    - saintsirius_toxcity@hotmail.com
+    - http://graph.facebook.com/100001691061802/picture?type=square
+    - http://www.facebook.com/profile.php?id=100001691061802
+    - male
+    - -3
+    - 2011-06-16 01:20:22.614226
+    - 2011-06-16 01:20:22.614226
+  - - 14
+    - facebook
+    - "1204541323"
+    - Mateus Pontes
+    - mateuspo10@gmail.com
+    - http://graph.facebook.com/1204541323/picture?type=square
+    - http://www.facebook.com/mateuspontes
+    - male
+    - -3
+    - 2011-06-16 02:24:18.683844
+    - 2011-06-16 02:24:18.683844
+  - - 15
+    - facebook
+    - "100000565482934"
+    - "Denilson C\xC3\xA2mara Soares"
+    - denilsoncamara@hotmail.com
+    - http://graph.facebook.com/100000565482934/picture?type=square
+    - http://www.facebook.com/profile.php?id=100000565482934
+    - male
+    - -3
+    - 2011-06-16 02:45:02.739910
+    - 2011-06-16 02:45:02.739910
+  - - 16
+    - facebook
+    - "100001797759856"
+    - Gil S Silva
+    - gil_h4ck3r@hotmail.com
+    - http://graph.facebook.com/100001797759856/picture?type=square
+    - http://www.facebook.com/profile.php?id=100001797759856
+    - male
+    - -3
+    - 2011-06-17 15:54:55.471746
+    - 2011-06-17 15:54:55.471746
+  - - 17
+    - facebook
+    - "100000175631709"
+    - "Felipe Gon\xC3\xA7alves"
+    - fgs4ntos@gmail.com
+    - http://graph.facebook.com/100000175631709/picture?type=square
+    - http://www.facebook.com/profile.php?id=100000175631709
+    - male
+    - -3
+    - 2011-06-20 02:49:38.278833
+    - 2011-06-20 02:49:38.278833
+  - - 18
+    - facebook
+    - "1129271746"
+    - Paulo Gustavo
+    - paulog@gmail.com
+    - http://graph.facebook.com/1129271746/picture?type=square
+    - http://www.facebook.com/paulogustavo
+    - male
+    - -3
+    - 2011-06-20 17:59:21.132255
+    - 2011-06-20 17:59:21.132255
+  - - 19
+    - facebook
+    - "100000377314493"
+    - Elinaldo Monteiro
+    - elin.aldo.1@hotmail.com
+    - http://graph.facebook.com/100000377314493/picture?type=square
+    - http://www.facebook.com/profile.php?id=100000377314493
+    - male
+    - -3
+    - 2011-06-24 02:29:17.955738
+    - 2011-06-24 02:29:17.955738
+  - - 20
+    - facebook
+    - "100002098253158"
+    - Vitor Santos
+    - vitorfran@gmail.com
+    - http://graph.facebook.com/100002098253158/picture?type=square
+    - http://www.facebook.com/vitorfran
+    - male
+    - -3
+    - 2011-06-24 15:05:47.903319
+    - 2011-06-24 15:05:47.903319
+  - - 21
+    - facebook
+    - "100000075328014"
+    - Maycon Dgp
+    - maycondgp@yahoo.com.br
+    - http://graph.facebook.com/100000075328014/picture?type=square
+    - http://www.facebook.com/profile.php?id=100000075328014
+    - male
+    - -3
+    - 2011-06-26 17:58:58.325839
+    - 2011-06-26 17:58:58.325839
+  - - 22
+    - facebook
+    - "1344367235"
+    - Jakson Rochelly
+    - jrochelly@gmail.com
+    - http://graph.facebook.com/1344367235/picture?type=square
+    - http://www.facebook.com/jrochelly
+    - male
+    - -3
+    - 2011-06-29 23:28:38.378044
+    - 2011-06-29 23:28:38.378044
+  - - 23
+    - facebook
+    - "1845137307"
+    - "C\xC3\xA2ndido Gomes"
+    - candidosg@gmail.com
+    - http://graph.facebook.com/1845137307/picture?type=square
+    - http://www.facebook.com/candidosales
+    - male
+    - -3
+    - 2011-07-09 18:06:09.564831
+    - 2011-07-09 18:06:09.564831
+  - - 24
+    - facebook
+    - "677953005"
+    - Samuel Moraes
+    - samuelmoraes1@gmail.com
+    - http://graph.facebook.com/677953005/picture?type=square
+    - http://www.facebook.com/samuelmoraes
+    - male
+    - -3
+    - 2011-08-01 17:49:03.633526
+    - 2011-08-01 17:49:03.633526
+  - - 25
+    - facebook
+    - "1038431133"
+    - Ramon De Melo
+    - workmelo@gmail.com
+    - http://graph.facebook.com/1038431133/picture?type=square
+    - http://www.facebook.com/workmelo
+    - male
+    - -3
+    - 2011-08-29 10:29:46.688815
+    - 2011-08-29 10:29:46.688815
+  - - 26
+    - facebook
+    - "1101154431"
+    - Dann Luciano
+    - dannluciano@gmail.com
+    - http://graph.facebook.com/1101154431/picture?type=square
+    - http://www.facebook.com/dannluciano
+    - male
+    - -3
+    - 2011-09-03 13:25:29.422639
+    - 2011-09-03 13:25:29.422639
+  - - 27
+    - facebook
+    - "1614334792"
+    - Italo Veloso
+    - italoplus@gmail.com
+    - http://graph.facebook.com/1614334792/picture?type=square
+    - http://www.facebook.com/italoveloso
+    - male
+    - -3
+    - 2011-09-22 18:24:56.653591
+    - 2011-09-22 18:24:56.653591
+  - - 28
+    - facebook
+    - "100001835418558"
+    - Anderson Soares
+    - aersandersonsoares@gmail.com
+    - http://graph.facebook.com/100001835418558/picture?type=square
+    - http://www.facebook.com/soares.anderson
+    - male
+    - -3
+    - 2011-09-22 18:26:23.377216
+    - 2011-09-22 18:26:23.377216
+  - - 29
+    - facebook
+    - "100000222472026"
+    - Carlos Marx
+    - carlosmarx27@gmail.com
+    - http://graph.facebook.com/100000222472026/picture?type=square
+    - http://www.facebook.com/profile.php?id=100000222472026
+    - male
+    - -3
+    - 2011-09-22 19:44:40.619554
+    - 2011-09-22 19:44:40.619554
+  - - 30
+    - facebook
+    - "100000954942609"
+    - Carlos Filho
+    - carlosfilho88@gmail.com
+    - http://graph.facebook.com/100000954942609/picture?type=square
+    - http://www.facebook.com/profile.php?id=100000954942609
+    - male
+    - -3
+    - 2011-09-24 10:40:45.759569
+    - 2011-09-24 10:40:45.759569
+  - - 31
+    - facebook
+    - "100002445980976"
+    - Marcos Antonio
+    - marquinhoofiel88@hotmail.com
+    - http://graph.facebook.com/100002445980976/picture?type=square
+    - http://www.facebook.com/profile.php?id=100002445980976
+    - male
+    - -3
+    - 2011-09-24 12:30:13.336340
+    - 2011-09-24 12:30:13.336340
+  - - 32
+    - facebook
+    - "1519064438"
+    - Gabriel Freitas
+    - freitas.gabriel@live.com
+    - http://graph.facebook.com/1519064438/picture?type=square
+    - http://www.facebook.com/gabrielfreitas07
+    - male
+    - -3
+    - 2011-09-24 12:30:35.144370
+    - 2011-09-24 12:30:35.144370
+  - - 33
+    - facebook
+    - "1480377568"
+    - Ismael Sales
+    - memelzin@hotmail.com
+    - http://graph.facebook.com/1480377568/picture?type=square
+    - http://www.facebook.com/ismaelwd
+    - male
+    - -3
+    - 2011-09-24 12:35:23.279002
+    - 2011-09-24 12:35:23.279002
+  - - 34
+    - facebook
+    - "100002393106309"
+    - "Fl\xC3\xA1vio Martins Rodrigues"
+    - flavioluis18@hotmail.com
+    - http://graph.facebook.com/100002393106309/picture?type=square
+    - http://www.facebook.com/profile.php?id=100002393106309
+    - male
+    - -3
+    - 2011-09-24 12:35:41.037644
+    - 2011-09-24 12:35:41.037644
+  - - 35
+    - facebook
+    - "1803468748"
+    - Rafael Figueredo de Sousa
+    - jhrafael@hotmail.com
+    - http://graph.facebook.com/1803468748/picture?type=square
+    - http://www.facebook.com/profile.php?id=1803468748
+    - male
+    - -3
+    - 2011-09-24 12:39:23.689700
+    - 2011-09-24 12:39:23.689700
+  - - 36
+    - facebook
+    - "100000305863448"
+    - "R\xC3\xB4mulo Gleydson"
+    - romullo-gleidison@hotmail.com
+    - http://graph.facebook.com/100000305863448/picture?type=square
+    - http://www.facebook.com/RomuloGleydson
+    - male
+    - -3
+    - 2011-09-24 12:53:45.183239
+    - 2011-09-24 12:53:45.183239
+  - - 37
+    - facebook
+    - "100000875867126"
+    - Diego Macedo
+    - diegomacedo_cp@hotmail.com
+    - http://graph.facebook.com/100000875867126/picture?type=square
+    - http://www.facebook.com/profile.php?id=100000875867126
+    - male
+    - -3
+    - 2011-09-24 12:53:50.314649
+    - 2011-09-24 12:53:50.314649
+  - - 38
+    - facebook
+    - "100000965702194"
+    - Wellington Benario
+    - wellingtonbenario@hotmail.com
+    - http://graph.facebook.com/100000965702194/picture?type=square
+    - http://www.facebook.com/profile.php?id=100000965702194
+    - male
+    - -3
+    - 2011-09-24 12:53:58.030918
+    - 2011-09-24 12:53:58.030918
+  - - 39
+    - facebook
+    - "100002098422011"
+    - Enio Siqueira
+    - ethompis@hotmail.com
+    - http://graph.facebook.com/100002098422011/picture?type=square
+    - http://www.facebook.com/profile.php?id=100002098422011
+    - male
+    - -3
+    - 2011-09-24 12:58:52.111217
+    - 2011-09-24 12:58:52.111217
+  - - 40
+    - facebook
+    - "100001911828317"
+    - Diego Carvalho
+    - diecarv_msn@hotmail.com
+    - http://graph.facebook.com/100001911828317/picture?type=square
+    - http://www.facebook.com/profile.php?id=100001911828317
+    - male
+    - -3
+    - 2011-09-24 13:03:55.320230
+    - 2011-09-24 13:03:55.320230
+  - - 41
+    - facebook
+    - "100001281749092"
+    - Joao Eliezyo
+    - joaoeliezyo@ymail.com
+    - http://graph.facebook.com/100001281749092/picture?type=square
+    - http://www.facebook.com/profile.php?id=100001281749092
+    - male
+    - -3
+    - 2011-09-24 14:44:49.313171
+    - 2011-09-24 14:44:49.313171
+  - - 42
+    - facebook
+    - "100000267403667"
+    - Roniere Sousa
+    - roniere_sousa@hotmail.com
+    - http://graph.facebook.com/100000267403667/picture?type=square
+    - http://www.facebook.com/profile.php?id=100000267403667
+    - male
+    - -3
+    - 2011-09-24 17:01:12.925012
+    - 2011-09-24 17:01:12.925012
+  - - 43
+    - facebook
+    - "638158493"
+    - Duany Dreyton Bezerra Sousa
+    - duanyrf@yahoo.com.br
+    - http://graph.facebook.com/638158493/picture?type=square
+    - http://www.facebook.com/profile.php?id=638158493
+    - male
+    - -3
+    - 2011-09-24 19:16:37.056906
+    - 2011-09-24 19:16:37.056906
+  - - 44
+    - facebook
+    - "831863640"
+    - Torres Neto
+    - totoi_torres2@hotmail.com
+    - http://graph.facebook.com/831863640/picture?type=square
+    - http://www.facebook.com/profile.php?id=831863640
+    - male
+    - -3
+    - 2011-09-25 02:49:32.734405
+    - 2011-09-25 02:49:32.734405
+  - - 45
+    - facebook
+    - "100001226910390"
+    - Houston Armstrong Silva
+    - houston.armstrong@gmail.com
+    - http://graph.facebook.com/100001226910390/picture?type=square
+    - http://www.facebook.com/houston1984
+    - male
+    - -3
+    - 2011-09-25 02:59:52.714598
+    - 2011-09-25 02:59:52.714598
+  - - 46
+    - facebook
+    - "100001520057497"
+    - Roberta Kelly
+    - robertta-kelli@hotmail.com
+    - http://graph.facebook.com/100001520057497/picture?type=square
+    - http://www.facebook.com/RobertaKellly
+    - female
+    - -3
+    - 2011-09-25 11:41:55.626466
+    - 2011-09-25 11:41:55.626466
+  - - 47
+    - facebook
+    - "100002742167714"
+    - "Lucyelle Ara\xC3\xBAjo"
+    - lucyelle_m@hotmail.com
+    - http://graph.facebook.com/100002742167714/picture?type=square
+    - http://www.facebook.com/profile.php?id=100002742167714
+    - female
+    - -3
+    - 2011-09-25 11:44:15.443867
+    - 2011-09-25 11:44:15.443867
+  - - 48
+    - facebook
+    - "1838076585"
+    - Bruno Nascimento
+    - luisbrunu@gmail.com
+    - http://graph.facebook.com/1838076585/picture?type=square
+    - http://www.facebook.com/lbrunu
+    - male
+    - -3
+    - 2011-09-25 19:27:01.630926
+    - 2011-09-25 19:27:01.630926
+  - - 49
+    - facebook
+    - "100000192088771"
+    - Denylson Melo
+    - seijuurouhiko2000@gmail.com
+    - http://graph.facebook.com/100000192088771/picture?type=square
+    - http://www.facebook.com/denylsonmelo
+    - male
+    - -3
+    - 2011-09-26 11:32:56.275365
+    - 2011-09-26 11:32:56.275365
+  - - 50
+    - facebook
+    - "100000557937869"
+    - "J\xC3\xBAnior Lima"
+    - webjuniorlima@gmail.com
+    - http://graph.facebook.com/100000557937869/picture?type=square
+    - http://www.facebook.com/PerfilJuniorLima
+    - male
+    - -3
+    - 2011-09-26 12:14:01.273982
+    - 2011-09-26 12:14:01.273982
+  - - 51
+    - facebook
+    - "1496804256"
+    - Huoxito Luiz
+    - huoxito@hotmail.com
+    - http://graph.facebook.com/1496804256/picture?type=square
+    - http://www.facebook.com/huoxito
+    - male
+    - -3
+    - 2011-09-27 12:50:56.810969
+    - 2011-09-27 12:50:56.810969
+  - - 52
+    - facebook
+    - "100001510632400"
+    - "Losangelo Pac\xC3\xADfico"
+    - losangelo@gmail.com
+    - http://graph.facebook.com/100001510632400/picture?type=square
+    - http://www.facebook.com/profile.php?id=100001510632400
+    - male
+    - -3
+    - 2011-09-27 13:40:35.575771
+    - 2011-09-27 13:40:35.575771
+  - - 53
+    - facebook
+    - "100002454979675"
+    - Thiago Moura Oliveira
+    - thiago-oliveira1988@hotmail.com
+    - http://graph.facebook.com/100002454979675/picture?type=square
+    - http://www.facebook.com/profile.php?id=100002454979675
+    - male
+    - -3
+    - 2011-09-27 13:45:03.975105
+    - 2011-09-27 13:45:03.975105
+  - - 54
+    - facebook
+    - "100000888616485"
+    - Leandro Sales
+    - leandroasp@gmail.com
+    - http://graph.facebook.com/100000888616485/picture?type=square
+    - http://www.facebook.com/leandroasp
+    - male
+    - -3
+    - 2011-09-27 14:00:55.746335
+    - 2011-09-27 14:00:55.746335
+  - - 55
+    - facebook
+    - "100000327367831"
+    - Wan Souza
+    - wansoul@gmail.com
+    - http://graph.facebook.com/100000327367831/picture?type=square
+    - http://www.facebook.com/wan.souza
+    - male
+    - -3
+    - 2011-09-27 15:38:12.935060
+    - 2011-09-27 15:38:12.935060
+  - - 56
+    - facebook
+    - "100002258354398"
+    - Danilo Veras
+    - danilosbach@gmail.com
+    - http://graph.facebook.com/100002258354398/picture?type=square
+    - http://www.facebook.com/profile.php?id=100002258354398
+    - male
+    - -3
+    - 2011-09-27 22:59:13.223653
+    - 2011-09-27 22:59:13.223653
+  - - 57
+    - facebook
+    - "1519651382"
+    - Gabriel Vilar
+    - cogumm@gmail.com
+    - http://graph.facebook.com/1519651382/picture?type=square
+    - http://www.facebook.com/cogumm
+    - male
+    - -3
+    - 2011-09-28 03:42:45.739917
+    - 2011-09-28 03:42:45.739917
+  - - 58
+    - facebook
+    - "100002187747344"
+    - Aers Teste
+    - aersteste@gmail.com
+    - http://graph.facebook.com/100002187747344/picture?type=square
+    - http://www.facebook.com/profile.php?id=100002187747344
+    - male
+    - -3
+    - 2011-09-28 15:40:16.662305
+    - 2011-09-28 15:40:16.662305
+  - - 59
+    - facebook
+    - "100001492538970"
+    - Allan Petisco
+    - patchfinders@hotmail.com
+    - http://graph.facebook.com/100001492538970/picture?type=square
+    - http://www.facebook.com/profile.php?id=100001492538970
+    - male
+    - -3
+    - 2011-09-29 13:30:05.415985
+    - 2011-09-29 13:30:05.415985
+  - - 60
+    - facebook
+    - "100002699663408"
+    - Elinaldo Do Nascimento Monteiro
+    - elinaldo.java@gmail.com
+    - http://graph.facebook.com/100002699663408/picture?type=square
+    - http://www.facebook.com/elinaldoinfo
+    - male
+    - -3
+    - 2011-09-29 22:26:15.354311
+    - 2011-09-29 22:26:15.354311
+  - - 61
+    - facebook
+    - "100001465371287"
+    - Weslley de Sousa
+    - weslleyocara@hotmail.com
+    - http://graph.facebook.com/100001465371287/picture?type=square
+    - http://www.facebook.com/weslleydesousa
+    - male
+    - -3
+    - 2011-09-30 11:21:49.133577
+    - 2011-09-30 11:21:49.133577
+  - - 62
+    - facebook
+    - "100001573598534"
+    - Pedro Fausto
+    - pedro.fausto@hotmail.com
+    - http://graph.facebook.com/100001573598534/picture?type=square
+    - http://www.facebook.com/profile.php?id=100001573598534
+    - male
+    - -3
+    - 2011-09-30 12:57:49.359968
+    - 2011-09-30 12:57:49.359968
+  - - 63
+    - facebook
+    - "100001476405847"
+    - Silvio Ney
+    - sneycampos@gmail.com
+    - http://graph.facebook.com/100001476405847/picture?type=square
+    - http://www.facebook.com/silvioney
+    - male
+    - -3
+    - 2011-09-30 15:05:28.177748
+    - 2011-09-30 15:05:28.177748
+  - - 64
+    - facebook
+    - "100001962071702"
+    - Zoom Oferta
+    - contato@zoomnaoferta.com
+    - http://graph.facebook.com/100001962071702/picture?type=square
+    - http://www.facebook.com/zoomnaoferta
+    - male
+    - -3
+    - 2011-09-30 21:00:22.701648
+    - 2011-09-30 21:00:22.701648
+  - - 65
+    - facebook
+    - "1041864954"
+    - Marcelo Soares
+    - marcelo.rs@gmail.com
+    - http://graph.facebook.com/1041864954/picture?type=square
+    - http://www.facebook.com/marcelo.rsoares
+    - male
+    - -3
+    - 2011-09-30 21:00:51.655486
+    - 2011-09-30 21:00:51.655486
+  - - 66
+    - facebook
+    - "100001486366759"
+    - Carla Rocha
+    - cacau_sr@hotmail.com
+    - http://graph.facebook.com/100001486366759/picture?type=square
+    - http://www.facebook.com/profile.php?id=100001486366759
+    - female
+    - -3
+    - 2011-10-01 12:30:37.833370
+    - 2011-10-01 12:30:37.833370
+  - - 67
+    - facebook
+    - "1276220140"
+    - "Neyi Ca\xC3\xB1averal Londo\xC3\xB1o"
+    - mamasita_045@hotmail.com
+    - http://graph.facebook.com/1276220140/picture?type=square
+    - http://www.facebook.com/profile.php?id=1276220140
+    - female
+    - -5
+    - 2011-10-11 15:15:40.014484
+    - 2011-10-11 15:15:40.014484
+  - - 68
+    - facebook
+    - "100001325210654"
+    - Diego Silva
+    - melfre21@hotmail.com
+    - http://graph.facebook.com/100001325210654/picture?type=square
+    - http://www.facebook.com/diegosilvaweb
+    - male
+    - -3
+    - 2011-10-12 22:50:31.839023
+    - 2011-10-12 22:50:31.839023
+  - - 69
+    - facebook
+    - "100000367336927"
+    - Fagner Silva
+    - fagnerluis@gmail.com
+    - http://graph.facebook.com/100000367336927/picture?type=square
+    - http://www.facebook.com/fagnerluis
+    - male
+    - -3
+    - 2011-10-18 19:34:36.334984
+    - 2011-10-18 19:34:36.334984
+  - - 70
+    - facebook
+    - "1420190571"
+    - Amor Sincero Sincero
+    - cayma-18@hotmail.com
+    - http://graph.facebook.com/1420190571/picture?type=square
+    - http://www.facebook.com/dejasolotuhuella
+    - female
+    - -5
+    - 2011-11-01 18:40:03.102104
+    - 2011-11-01 18:40:03.102104
+  - - 71
+    - facebook
+    - "100000928621148"
+    - Daniel Romero
+    - infoslack@gmail.com
+    - http://graph.facebook.com/100000928621148/picture?type=square
+    - http://www.facebook.com/infoslack
+    - male
+    - -3
+    - 2011-11-24 21:31:48.392153
+    - 2011-11-24 21:31:48.392153
+  - - 72
+    - facebook
+    - "100002091661523"
+    - Romulo Storel
+    - romulostorel@gmail.com
+    - http://graph.facebook.com/100002091661523/picture?type=square
+    - http://www.facebook.com/profile.php?id=100002091661523
+    - male
+    - -2
+    - 2012-01-17 14:38:05.922117
+    - 2012-01-17 14:38:05.922117
+  - - 73
+    - facebook
+    - "100001921805964"
+    - Luiz Filipe Neves
+    - coxamur4@gmail.com
+    - http://graph.facebook.com/100001921805964/picture?type=square
+    - http://www.facebook.com/filipe.coxa
+    - male
+    - -3
+    - 2012-03-20 17:24:34.694934
+    - 2012-03-20 17:24:34.694934
+  - - 74
+    - facebook
+    - "100000085000874"
+    - Dmitry Rocha
+    - dmitry.nix@gmail.com
+    - http://graph.facebook.com/100000085000874/picture?type=square
+    - http://www.facebook.com/dmitry.nix
+    - male
+    - -3
+    - 2012-06-27 16:36:38.584090
+    - 2012-06-27 16:36:38.584090
+
+--- 
+posts: 
+  columns: 
+  - id
+  - title
+  - body
+  - slug
+  - created_at
+  - updated_at
+  - user_id
+  records: 
+  - - 1
+    - "O Gurupi.org est\xC3\xA1 nascendo. Contribua voc\xC3\xAA tamb\xC3\xA9m"
+    - "Ol\xC3\xA1 pessoal,\r\n\
+      \r\n\
+      O site do GuruPI ( [http://gurupi.org](http://gurupi.org) ) j\xC3\xA1 est\xC3\xA1 aceitando login atrav\xC3\xA9s do Facebook. Por enquanto, ainda n\xC3\xA3o temos atividades que possam ser feitas atrav\xC3\xA9s desse login (olha a chamada a\xC3\xAD), mas em breve ser\xC3\xA1 poss\xC3\xADvel votar nas melhores propostas de palestras/encontros, postar nos Blogs e comentar.\r\n\
+      \r\n\
+      O sistema j\xC3\xA1 t\xC3\xA1 funcionando com deploy atrav\xC3\xA9s de **Capistrano**, ou seja, aos poucos iremos dar permiss\xC3\xA3o aos commiters do projeto (basta nos enviar a chave SSH p\xC3\xBAblica) para que os mesmos possam atualizar o site a qualquer momento, s\xC3\xB3 com um \xC3\xBAnico comando."
+    - o-gurupi-org-esta-nascendo-contribua-voce-tambem
+    - 2011-06-15 22:54:58.580108
+    - 2011-09-03 11:23:40.520813
+    - 1
+
+--- 
+roles: 
+  columns: 
+  - id
+  - title
+  - user_id
+  records: 
+  - - 1
+    - admin
+    - 1
+  - - 2
+    - member
+    - 
+  - - 3
+    - member
+    - 
+  - - 4
+    - admin
+    - 5
+  - - 5
+    - member
+    - 6
+  - - 6
+    - member
+    - 7
+  - - 7
+    - member
+    - 8
+  - - 8
+    - member
+    - 9
+  - - 9
+    - admin
+    - 
+  - - 10
+    - member
+    - 
+  - - 11
+    - member
+    - 10
+  - - 12
+    - member
+    - 14
+  - - 13
+    - member
+    - 15
+  - - 14
+    - guest
+    - 
+  - - 15
+    - member
+    - 
+  - - 16
+    - member
+    - 16
+  - - 17
+    - member
+    - 26
+  - - 18
+    - admin
+    - 
+  - - 19
+    - member
+    - 30
+  - - 20
+    - member
+    - 27
+  - - 21
+    - guest
+    - 
+  - - 22
+    - member
+    - 17
+  - - 23
+    - admin
+    - 
+  - - 24
+    - member
+    - 3
+  - - 25
+    - member
+    - 54
+  - - 26
+    - member
+    - 65
+  - - 27
+    - member
+    - 62
+  - - 28
+    - admin
+    - 2
+  - - 29
+    - admin
+    - 11
+
+--- 
+events: 
+  columns: 
+  - id
+  - name
+  - description
+  - event_date
+  - hour
+  - place
+  - slug
+  - created_at
+  - updated_at
+  - place_url
+  - enable_lectures
+  records: 
+  - - 1
+    - "interaje com F\xC3\xA1bio Akita"
+    - "Ol\xC3\xA1 galera!\r\n\
+      \r\n\
+      No dia 13 de Setembro vai ter um interaje com o F\xC3\xA1bio Akita, o evangelista Ruby e Ruby On Rails do Brasil!\r\n\
+      \r\n\
+      Para mais informa\xC3\xA7\xC3\xB5es visite [interaje](http://interaje.com.br)"
+    - "2011-09-13"
+    - "19:00"
+    - "UFPI, no audit\xC3\xB3rio de F\xC3\xADsica"
+    - interaje-com-fabio-akita
+    - 2011-09-03 10:23:36.331749
+    - 2011-09-03 10:47:01.792805
+    - http://maps.google.com/maps/place?cid=535228327491017366&q=ufpi,+teresina&hl=en&vps=4&sll=-5.070165,-42.795302&sspn=0.045713,0.015182&ie=UTF8
+    - false
+  - - 2
+    - "5\xC2\xBA Encontro Oficial do GuruPI"
+    - "Um encontro para falarmos sobre as novidades do mundo Ruby, Site Oficial, Dojos, Horaextras, Rubyconf Brasil 2011, pr\xC3\xB3ximos encontros e muito mais."
+    - "2011-10-01"
+    - "14:00"
+    - UESPI
+    - 5-encontro-oficial-do-gurupi
+    - 2011-09-22 15:46:30.672503
+    - 2011-09-22 15:46:30.672503
+    - http://g.co/maps/j3sgv
+    - true
+  - - 3
+    - "6\xC2\xBA Encontro do GuruPI"
+    - "Depois de um longo per\xC3\xADodo sem encontros, retornaremos \xC3\xA0s atividades no pr\xC3\xB3ximo s\xC3\xA1bado, dia 30 de Julho, para conversar e trocar experi\xC3\xAAncia sobre Ruby e desenvolvimento em geral."
+    - "2012-06-30"
+    - 14h
+    - UESPI
+    - 6-encontro-do-gurupi
+    - 2011-11-24 02:43:28.264164
+    - 2012-06-27 15:55:42.609135
+    - ""
+    - true
+
+--- 
+lectures: 
+  columns: 
+  - id
+  - name
+  - description
+  - positive_vote
+  - negative_vote
+  - user_id
+  - event_id
+  - slug
+  - created_at
+  - updated_at
+  - relative_votes
+  records: 
+  - - 1
+    - Client Side MVC
+    - Desenvolvimento de aplicativos com JavaScript empregando a arquitetura MVC.
+    - 12
+    - 0
+    - 11
+    - 2
+    - client-side-mvc
+    - 2011-09-22 18:10:52.777316
+    - 2011-09-30 18:40:08.735451
+    - 12
+  - - 2
+    - Testes o que?
+    - "Vou falar sobre Test/Unit e RSpec, mostrar um pouco a diferen\xC3\xA7a entre os dois e os casos onde usar os testes."
+    - 17
+    - 0
+    - 5
+    - 2
+    - testes-o-que
+    - 2011-09-22 18:35:50.450823
+    - 2011-10-18 19:35:19.009575
+    - 17
+  - - 3
+    - Flash and AS2 - Step 1
+    - "Com base no Adobe Flash Creative Suite 4, pretendo demonstrar o b\xC3\xA1sico da Suite e algumas fun\xC3\xA7\xC3\xB5es em Action Script 2.0 para solu\xC3\xA7\xC3\xB5es r\xC3\xA1pidas."
+    - 16
+    - 6
+    - 16
+    - 2
+    - flash-and-as2-step-1
+    - 2011-09-22 20:25:30.806781
+    - 2011-09-30 18:40:48.198977
+    - 10
+  - - 4
+    - Rhodes - Mobilize suas apps empresariais
+    - "O Rhodes \xC3\xA9 escrito em linguagem de programa\xC3\xA7\xC3\xA3o Ruby, e permite que desenvolvedores posam criar aplica\xC3\xA7\xC3\xB5es para v\xC3\xA1rias plataformas m\xC3\xB3veis como Android, BlackBerry, iPhone/iPad, Symbian, WebOS e at\xC3\xA9 mesmo Windows Mobile.\r\n\
+      As aplica\xC3\xA7\xC3\xB5es s\xC3\xA3o desenvolvidas utilizando Ruby, assim como c\xC3\xB3digo em HTML. Com a vers\xC3\xA3o 2.0 teve a possibilidade ao suporte de streams de audio e video bi-direcionais, e inclui um framework de meta-dados que permite aos desenvolvedores criarem esquemas personalizados e bancos de dados din\xC3\xA2micos."
+    - 7
+    - 0
+    - 2
+    - 2
+    - rhodes-mobilize-suas-apps-empresariais
+    - 2011-09-23 18:07:33.944349
+    - 2011-09-30 18:40:08.792166
+    - 7
+  - - 5
+    - "Ruby on Rails 3.1 j\xC3\xA1 est\xC3\xA1 dispon\xC3\xADvel"
+    - "Sera mostrado o que mudou e o que temos de vantagens em rela\xC3\xA7ao a antiga versao."
+    - 10
+    - 0
+    - 2
+    - 2
+    - ruby-on-rails-3-1-ja-esta-disponivel
+    - 2011-09-23 18:15:45.951074
+    - 2011-09-30 18:40:08.801085
+    - 10
+  - - 6
+    - "Mobile: eu vou programar?"
+    - "Ser\xC3\xA1 apresentado um prot\xC3\xB3tipo com Sencha Touch que utiliza a infraestrutura de um servi\xC3\xA7o web existente na vis\xC3\xA3o para dispositivos m\xC3\xB3veis. \r\n\
+      \r\n\
+      Sencha Touch \xC3\xA9 um framework JavaScript m\xC3\xB3vel para o desenvolvimento de aplicativos web HTML5 que pare\xC3\xA7am ser nativas.\r\n\
+      \r\n\
+      Este framework permite que voc\xC3\xAA desenvolva aplicativos web m\xC3\xB3veis que rodem nos principais dispositivos de toque, como: iPhone, Android e BlackBerry.\r\n\
+      \r\n"
+    - 6
+    - 1
+    - 30
+    - 2
+    - mobile-eu-vou-programar
+    - 2011-09-25 15:38:39.983963
+    - 2011-09-30 19:01:55.378810
+    - 5
+  - - 7
+    - Como colaborar com o site do GuruPI
+    - "O c\xC3\xB3digo do site do GuruPI ( http://gurupi.org ) est\xC3\xA1 hospedado no Github ( https://github.com/gurupi/gurupi.org ) e \xC3\xA9 livre para que todos possam criar sua pr\xC3\xB3pria vers\xC3\xA3o.\r\n\
+      \r\n\
+      Algumas ferramentas s\xC3\xA3o necess\xC3\xA1rias para que voc\xC3\xAA possa contribuir com este projeto:\r\n\
+      \r\n\
+      * Git\r\n\
+      * Rails 3.1\r\n\
+      * Devise\r\n\
+      * Capistrano\r\n\
+      * RSpec\r\n\
+      * Capibara\r\n\
+      * Guard\r\n\
+      \r\n\
+      Neste pequeno Talk, pretendo discutir onde essas ferramentas se encaixam no projeto e mostrar que, contribuir para um projeto Rails n\xC3\xA3o \xC3\xA9 t\xC3\xA3o complicado como se imagina."
+    - 12
+    - 0
+    - 1
+    - 2
+    - como-colaborar-com-o-site-do-gurupi
+    - 2011-09-28 13:53:55.776936
+    - 2011-09-30 18:40:08.813753
+    - 12
+  - - 8
+    - "N\xC3\xA3o espere o cliente requisitar"
+    - "Comparativo entre as alternativas modernas para envio de dados para o browser sem que o cliente tenha que iniciar a requisi\xC3\xA7\xC3\xA3o."
+    - 2
+    - 0
+    - 11
+    - 3
+    - nao-espere-o-cliente-requisitar
+    - 2012-06-27 15:45:55.576804
+    - 2012-06-27 16:37:19.540594
+    - 2
+
+--- 
+vote_lectures: 
+  columns: 
+  - id
+  - lecture_id
+  - user_id
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - 1
+    - 1
+    - 2011-09-22 18:24:33.738977
+    - 2011-09-22 18:24:33.738977
+  - - 2
+    - 1
+    - 15
+    - 2011-09-22 18:31:34.018239
+    - 2011-09-22 18:31:34.018239
+  - - 3
+    - 2
+    - 5
+    - 2011-09-22 18:36:18.784130
+    - 2011-09-22 18:36:18.784130
+  - - 4
+    - 2
+    - 29
+    - 2011-09-22 19:45:12.264251
+    - 2011-09-22 19:45:12.264251
+  - - 5
+    - 1
+    - 26
+    - 2011-09-22 20:18:01.140952
+    - 2011-09-22 20:18:01.140952
+  - - 6
+    - 2
+    - 26
+    - 2011-09-22 20:18:06.160506
+    - 2011-09-22 20:18:06.160506
+  - - 7
+    - 3
+    - 16
+    - 2011-09-22 20:26:09.801132
+    - 2011-09-22 20:26:09.801132
+  - - 8
+    - 3
+    - 2
+    - 2011-09-22 20:26:24.259206
+    - 2011-09-22 20:26:24.259206
+  - - 9
+    - 2
+    - 2
+    - 2011-09-22 20:26:39.231651
+    - 2011-09-22 20:26:39.231651
+  - - 10
+    - 1
+    - 2
+    - 2011-09-22 20:26:45.123848
+    - 2011-09-22 20:26:45.123848
+  - - 11
+    - 3
+    - 7
+    - 2011-09-22 20:27:50.278543
+    - 2011-09-22 20:27:50.278543
+  - - 12
+    - 2
+    - 1
+    - 2011-09-22 21:19:26.855979
+    - 2011-09-22 21:19:26.855979
+  - - 13
+    - 3
+    - 1
+    - 2011-09-22 21:19:35.695828
+    - 2011-09-22 21:19:35.695828
+  - - 14
+    - 4
+    - 2
+    - 2011-09-23 18:16:06.498795
+    - 2011-09-23 18:16:06.498795
+  - - 15
+    - 5
+    - 2
+    - 2011-09-23 18:16:12.626942
+    - 2011-09-23 18:16:12.626942
+  - - 16
+    - 5
+    - 1
+    - 2011-09-23 19:19:47.183555
+    - 2011-09-23 19:19:47.183555
+  - - 17
+    - 5
+    - 8
+    - 2011-09-23 20:36:27.694276
+    - 2011-09-23 20:36:27.694276
+  - - 18
+    - 1
+    - 8
+    - 2011-09-23 20:36:38.743393
+    - 2011-09-23 20:36:38.743393
+  - - 19
+    - 5
+    - 29
+    - 2011-09-23 21:04:09.413564
+    - 2011-09-23 21:04:09.413564
+  - - 20
+    - 1
+    - 27
+    - 2011-09-23 21:05:05.297213
+    - 2011-09-23 21:05:05.297213
+  - - 21
+    - 3
+    - 27
+    - 2011-09-23 21:05:51.461543
+    - 2011-09-23 21:05:51.461543
+  - - 22
+    - 4
+    - 7
+    - 2011-09-24 12:19:23.027752
+    - 2011-09-24 12:19:23.027752
+  - - 23
+    - 2
+    - 7
+    - 2011-09-24 12:19:52.353137
+    - 2011-09-24 12:19:52.353137
+  - - 24
+    - 5
+    - 7
+    - 2011-09-24 12:20:08.741358
+    - 2011-09-24 12:20:08.741358
+  - - 25
+    - 4
+    - 16
+    - 2011-09-24 12:27:55.812476
+    - 2011-09-24 12:27:55.812476
+  - - 26
+    - 5
+    - 16
+    - 2011-09-24 12:28:03.109206
+    - 2011-09-24 12:28:03.109206
+  - - 27
+    - 2
+    - 16
+    - 2011-09-24 12:28:23.226582
+    - 2011-09-24 12:28:23.226582
+  - - 28
+    - 1
+    - 16
+    - 2011-09-24 12:28:31.063049
+    - 2011-09-24 12:28:31.063049
+  - - 29
+    - 2
+    - 32
+    - 2011-09-24 12:30:52.559331
+    - 2011-09-24 12:30:52.559331
+  - - 30
+    - 3
+    - 32
+    - 2011-09-24 12:30:57.094714
+    - 2011-09-24 12:30:57.094714
+  - - 31
+    - 3
+    - 31
+    - 2011-09-24 12:31:02.309654
+    - 2011-09-24 12:31:02.309654
+  - - 32
+    - 3
+    - 33
+    - 2011-09-24 12:35:30.966289
+    - 2011-09-24 12:35:30.966289
+  - - 33
+    - 3
+    - 34
+    - 2011-09-24 12:36:03.986797
+    - 2011-09-24 12:36:03.986797
+  - - 34
+    - 3
+    - 35
+    - 2011-09-24 12:39:35.284956
+    - 2011-09-24 12:39:35.284956
+  - - 35
+    - 3
+    - 36
+    - 2011-09-24 12:54:01.011150
+    - 2011-09-24 12:54:01.011150
+  - - 36
+    - 3
+    - 38
+    - 2011-09-24 12:54:19.271582
+    - 2011-09-24 12:54:19.271582
+  - - 37
+    - 3
+    - 37
+    - 2011-09-24 12:56:57.949087
+    - 2011-09-24 12:56:57.949087
+  - - 38
+    - 3
+    - 39
+    - 2011-09-24 12:59:00.291608
+    - 2011-09-24 12:59:00.291608
+  - - 39
+    - 2
+    - 15
+    - 2011-09-24 14:03:09.933855
+    - 2011-09-24 14:03:09.933855
+  - - 40
+    - 5
+    - 15
+    - 2011-09-24 14:03:21.093959
+    - 2011-09-24 14:03:21.093959
+  - - 41
+    - 3
+    - 15
+    - 2011-09-24 14:03:28.476910
+    - 2011-09-24 14:03:28.476910
+  - - 42
+    - 3
+    - 46
+    - 2011-09-25 11:42:40.630896
+    - 2011-09-25 11:42:40.630896
+  - - 43
+    - 3
+    - 47
+    - 2011-09-25 11:44:29.880006
+    - 2011-09-25 11:44:29.880006
+  - - 44
+    - 6
+    - 1
+    - 2011-09-25 15:41:21.787398
+    - 2011-09-25 15:41:21.787398
+  - - 45
+    - 6
+    - 2
+    - 2011-09-25 22:27:21.832276
+    - 2011-09-25 22:27:21.832276
+  - - 46
+    - 4
+    - 49
+    - 2011-09-26 11:35:32.283134
+    - 2011-09-26 11:35:32.283134
+  - - 47
+    - 6
+    - 49
+    - 2011-09-26 11:35:37.423074
+    - 2011-09-26 11:35:37.423074
+  - - 48
+    - 6
+    - 16
+    - 2011-09-26 19:49:16.729256
+    - 2011-09-26 19:49:16.729256
+  - - 49
+    - 1
+    - 51
+    - 2011-09-27 12:51:04.943251
+    - 2011-09-27 12:51:04.943251
+  - - 50
+    - 2
+    - 51
+    - 2011-09-27 12:51:13.915462
+    - 2011-09-27 12:51:13.915462
+  - - 51
+    - 5
+    - 51
+    - 2011-09-27 12:51:28.894421
+    - 2011-09-27 12:51:28.894421
+  - - 52
+    - 6
+    - 51
+    - 2011-09-27 12:51:32.213948
+    - 2011-09-27 12:51:32.213948
+  - - 53
+    - 3
+    - 53
+    - 2011-09-27 13:45:51.251218
+    - 2011-09-27 13:45:51.251218
+  - - 54
+    - 2
+    - 54
+    - 2011-09-27 14:04:25.744260
+    - 2011-09-27 14:04:25.744260
+  - - 55
+    - 1
+    - 54
+    - 2011-09-27 14:04:29.578047
+    - 2011-09-27 14:04:29.578047
+  - - 56
+    - 5
+    - 5
+    - 2011-09-28 00:32:44.780737
+    - 2011-09-28 00:32:44.780737
+  - - 57
+    - 7
+    - 1
+    - 2011-09-28 13:55:18.227613
+    - 2011-09-28 13:55:18.227613
+  - - 58
+    - 7
+    - 8
+    - 2011-09-28 13:59:24.984788
+    - 2011-09-28 13:59:24.984788
+  - - 59
+    - 7
+    - 2
+    - 2011-09-28 15:32:58.623963
+    - 2011-09-28 15:32:58.623963
+  - - 60
+    - 7
+    - 11
+    - 2011-09-28 15:33:09.434872
+    - 2011-09-28 15:33:09.434872
+  - - 61
+    - 3
+    - 11
+    - 2011-09-28 15:33:46.842831
+    - 2011-09-28 15:33:46.842831
+  - - 62
+    - 2
+    - 11
+    - 2011-09-28 15:33:57.696908
+    - 2011-09-28 15:33:57.696908
+  - - 63
+    - 7
+    - 51
+    - 2011-09-28 15:41:16.965936
+    - 2011-09-28 15:41:16.965936
+  - - 64
+    - 1
+    - 28
+    - 2011-09-28 16:10:48.570814
+    - 2011-09-28 16:10:48.570814
+  - - 65
+    - 7
+    - 28
+    - 2011-09-28 16:11:07.445939
+    - 2011-09-28 16:11:07.445939
+  - - 66
+    - 3
+    - 8
+    - 2011-09-28 16:31:19.755263
+    - 2011-09-28 16:31:19.755263
+  - - 67
+    - 7
+    - 26
+    - 2011-09-28 16:52:58.650140
+    - 2011-09-28 16:52:58.650140
+  - - 68
+    - 6
+    - 26
+    - 2011-09-28 16:53:05.609595
+    - 2011-09-28 16:53:05.609595
+  - - 69
+    - 1
+    - 9
+    - 2011-09-28 17:17:45.909239
+    - 2011-09-28 17:17:45.909239
+  - - 70
+    - 7
+    - 9
+    - 2011-09-28 17:17:56.879379
+    - 2011-09-28 17:17:56.879379
+  - - 71
+    - 2
+    - 9
+    - 2011-09-28 17:19:13.594918
+    - 2011-09-28 17:19:13.594918
+  - - 72
+    - 1
+    - 45
+    - 2011-09-28 17:26:46.632501
+    - 2011-09-28 17:26:46.632501
+  - - 73
+    - 7
+    - 45
+    - 2011-09-28 17:27:11.041152
+    - 2011-09-28 17:27:11.041152
+  - - 74
+    - 7
+    - 15
+    - 2011-09-28 17:52:54.866785
+    - 2011-09-28 17:52:54.866785
+  - - 75
+    - 4
+    - 1
+    - 2011-09-28 20:53:56.929560
+    - 2011-09-28 20:53:56.929560
+  - - 76
+    - 7
+    - 5
+    - 2011-09-29 10:36:45.705695
+    - 2011-09-29 10:36:45.705695
+  - - 77
+    - 4
+    - 61
+    - 2011-09-30 11:22:31.599552
+    - 2011-09-30 11:22:31.599552
+  - - 78
+    - 7
+    - 7
+    - 2011-09-30 12:54:25.191484
+    - 2011-09-30 12:54:25.191484
+  - - 79
+    - 3
+    - 62
+    - 2011-09-30 12:59:12.306561
+    - 2011-09-30 12:59:12.306561
+  - - 80
+    - 2
+    - 62
+    - 2011-09-30 12:59:57.607975
+    - 2011-09-30 12:59:57.607975
+  - - 81
+    - 5
+    - 62
+    - 2011-09-30 13:00:48.015158
+    - 2011-09-30 13:00:48.015158
+  - - 82
+    - 4
+    - 62
+    - 2011-09-30 13:00:56.337573
+    - 2011-09-30 13:00:56.337573
+  - - 83
+    - 2
+    - 63
+    - 2011-09-30 15:05:41.970252
+    - 2011-09-30 15:05:41.970252
+  - - 84
+    - 3
+    - 5
+    - 2011-09-30 18:40:48.209655
+    - 2011-09-30 18:40:48.209655
+  - - 85
+    - 6
+    - 8
+    - 2011-09-30 19:01:55.383129
+    - 2011-09-30 19:01:55.383129
+  - - 86
+    - 2
+    - 65
+    - 2011-09-30 21:01:05.272550
+    - 2011-09-30 21:01:05.272550
+  - - 87
+    - 2
+    - 69
+    - 2011-10-18 19:35:19.022265
+    - 2011-10-18 19:35:19.022265
+  - - 88
+    - 8
+    - 8
+    - 2012-06-27 16:24:53.979115
+    - 2012-06-27 16:24:53.979115
+  - - 89
+    - 8
+    - 74
+    - 2012-06-27 16:37:19.542840
+    - 2012-06-27 16:37:19.542840
