@@ -11,6 +11,7 @@ gem 'declarative_authorization'
 gem 'jquery-rails'
 gem 'rdiscount'
 gem 'yaml_db'
+gem 'draper'
 
 group :development do
   gem 'capistrano'
