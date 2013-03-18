@@ -5,6 +5,7 @@ gem 'bundler'
 gem 'rails'
 
 gem 'omniauth', '~> 1.0'
+gem 'omniauth-facebook'
 gem 'declarative_authorization'
 gem 'jquery-rails'
 gem 'rdiscount'
