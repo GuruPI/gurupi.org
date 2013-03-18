@@ -98,6 +98,9 @@ GEM
       rack
     omniauth-facebook (1.4.1)
       omniauth-oauth2 (~> 1.1.0)
+    omniauth-github (1.1.0)
+      omniauth (~> 1.0)
+      omniauth-oauth2 (~> 1.1)
     omniauth-oauth2 (1.1.1)
       oauth2 (~> 0.8.0)
       omniauth (~> 1.0)
@@ -180,6 +183,7 @@ DEPENDENCIES
   machinist (>= 2.0.0.beta2)
   omniauth (~> 1.0)
   omniauth-facebook
+  omniauth-github
   pg
   rails
   rdiscount
