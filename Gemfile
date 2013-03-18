@@ -4,7 +4,7 @@ gem 'bundler'
 # gem 'rake', '0.9.2'
 gem 'rails'
 
-gem 'omniauth', '>= 0.2.6'
+gem 'omniauth', '~> 1.0'
 gem 'declarative_authorization'
 gem 'jquery-rails'
 gem 'rdiscount'
