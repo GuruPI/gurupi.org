@@ -9,3 +9,5 @@ Rails.application.config.middleware.use OmniAuth::Builder do
     provider :github, 'ce4651e4408a4ab23d7f', '09bb99877399a43c9fae6714c07ae1469f462cdf'
   end
 end
+
+OmniAuth.config.on_failure = SessionsController.action(:failure)
