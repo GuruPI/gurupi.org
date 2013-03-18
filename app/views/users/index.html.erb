@@ -4,10 +4,12 @@
   <ul id="users" class="list">
 <% @users.each do |user| %>
   <% permitted_to? :index, user do %>
+    <% user = user.decorate %>
+
     <li class="clearfix">
       <% if user.image -%><img src="<%= user.image %>" alt="<%= user.name %>" class="user_photo"><% end -%>
       <strong><%= user.name %></strong> <%= user_role(user) %><br>
-      <%= link_to "Facebook", user.link, :class => "facebook" if user.link.present? %>
+      <%= user.link %>
       <% permitted_to? :edit, :users do %>
       <div>
         Mudar para:
