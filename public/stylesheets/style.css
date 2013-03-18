@@ -85,6 +85,7 @@ a:hover { color:#a53b3b; }
 #about_info .twitter .icon  {background-position:-224px -32px;}
 #about_info .facebook .icon {background-position:-256px -32px;}
 .login_facebook {background:url("/images/connect.png") no-repeat; width:176px; height:25px; display:block; text-indent:-999em; margin:7px 0; float:right;}
+.login_github {background:url("/images/connect-github.png") no-repeat; width:176px; height:25px; display:block; text-indent:-999em; margin:7px 0; float:right;}
 .user_role {border-radius:2px; -moz-border-radius:2px; -webkit-border-radius:2px; padding:2px 4px; font:0.8em verdana, sans-serif; background-color:#dadada; color:#444 !important;}
 .user_role.admin {background-color:#4e8e00; color:#eee !important;}
 .user_role.member {background-color:#a20000; color:#eee !important;}
@@ -212,49 +213,49 @@ table {
     -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
     -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
 }
- 
+
 th, td {padding:18px 28px 18px; text-align:center; }
- 
+
 th {padding-top:22px; text-shadow: 1px 1px 1px #fff; background:#e8eaeb;}
- 
+
 td {border-top:1px solid #e0e0e0; border-right:1px solid #e0e0e0;}
- 
+
 tr.odd-row td {background:#f6f6f6;}
- 
+
 td.first, th.first {text-align:left}
- 
+
 td.last {border-right:none;}
- 
+
 td {
     background: -moz-linear-gradient(100% 25% 90deg, #fefefe, #f9f9f9);
     background: -webkit-gradient(linear, 0% 0%, 0% 25%, from(#f9f9f9), to(#fefefe));
 }
- 
+
 tr.odd-row td {
     background: -moz-linear-gradient(100% 25% 90deg, #f6f6f6, #f1f1f1);
     background: -webkit-gradient(linear, 0% 0%, 0% 25%, from(#f1f1f1), to(#f6f6f6));
 }
- 
+
 th {
     background: -moz-linear-gradient(100% 20% 90deg, #e8eaeb, #ededed);
     background: -webkit-gradient(linear, 0% 0%, 0% 20%, from(#ededed), to(#e8eaeb));
 }
- 
+
 tr:first-child th.first {
     -moz-border-radius-topleft:5px;
     -webkit-border-top-left-radius:5px; /* Saf3-4 */
 }
- 
+
 tr:first-child th.last {
     -moz-border-radius-topright:5px;
     -webkit-border-top-right-radius:5px; /* Saf3-4 */
 }
- 
+
 tr:last-child td.first {
     -moz-border-radius-bottomleft:5px;
     -webkit-border-bottom-left-radius:5px; /* Saf3-4 */
 }
- 
+
 tr:last-child td.last {
     -moz-border-radius-bottomright:5px;
     -webkit-border-bottom-right-radius:5px; /* Saf3-4 */
@@ -369,7 +370,7 @@ tr:last-child td.last {
 
     list-style: none;
     display: inline;
-    
+
     margin: 0 7px 0 0;
     font-family: 'YanoneKaffeesatzRegular', Arial, sans-serif;
     font-size: 18px;
