@@ -14,6 +14,7 @@ gem 'yaml_db'
 
 group :development do
   gem 'capistrano'
+  gem 'debugger'
 end
 
 gem 'pg', :group => :production
