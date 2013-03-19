@@ -6,6 +6,9 @@ class UsersController < ApplicationController
     @breadcrumb = "Usuários"
     @page_title = "Usuários"
     @users = User.all
+
+    # FIXME fazer funcionar com o declarative_authorization
+    # @users = UserDecorator.decorate_collection(User.all)
   end
 
   def change
