@@ -48,7 +48,12 @@ OmniAuth.config.test_mode = true
 OmniAuth.config.add_mock(:facebook, {
   :uid => '100000161878338',
   :provider => 'facebook',
-  :user_info => { "email"=> "gurupiaui@gmail.com", "name"=>"Gurupi Piauí", "image"=>"http://graph.facebook.com/100000161878338/picture?type=square" }
+  :info => { "email"=> "gurupiaui@gmail.com", "name"=>"Gurupi Piauí", "image"=>"http://graph.facebook.com/100000161878338/picture?type=square" }
+})
+OmniAuth.config.add_mock(:github, {
+  :uid => 'github-123456',
+  :provider => 'github',
+  :info => { "email"=> "gurupiaui@gmail.com", "name"=>"Gurupi Piauí", "image"=>"http://postview.rubyforge.org/images/logos/github_octocat.png" }
 })
 
 require 'declarative_authorization/maintenance'

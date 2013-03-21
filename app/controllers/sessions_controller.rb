@@ -11,4 +11,8 @@ class SessionsController < ApplicationController
     session[:user_id] = nil
     redirect_to root_url, :notice => "Volte sempre… :)"
   end
+
+  def failure
+    redirect_to root_url, :error => 'Falha na autenticação.'
+  end
 end

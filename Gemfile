@@ -4,14 +4,18 @@ gem 'bundler'
 # gem 'rake', '0.9.2'
 gem 'rails'
 
-gem 'omniauth', '>= 0.2.6'
+gem 'omniauth', '~> 1.0'
+gem 'omniauth-facebook'
+gem 'omniauth-github'
 gem 'declarative_authorization'
 gem 'jquery-rails'
 gem 'rdiscount'
 gem 'yaml_db'
+gem 'draper'
 
 group :development do
   gem 'capistrano'
+  gem 'debugger'
 end
 
 gem 'pg', :group => :production
