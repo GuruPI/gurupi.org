@@ -18,6 +18,7 @@ describe "Posts" do
   describe "GET /this-is-my-post" do
     before(:each) do
       @post = Post.make!(title: 'This is my title', body: 'This is my body post')
+      @post.user.identities << Identity.make!
     end
 
     it "displays 'This is my title'" do
@@ -32,7 +33,7 @@ describe "Posts" do
 
     it "should display user's about" do
       visit post_path @post
-      page.should have_content("Criado por #{@post.user.name}")
+      page.should have_content("Criado por #{@post.user.identities.first.name}")
     end
   end
 

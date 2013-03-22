@@ -2,8 +2,8 @@
   <div class="container">
   <% if current_user %>
     <div id="user_account">
-      <% if current_user.image -%><img src="<%= current_user.image %>" alt="<%= current_user.name %>" class="user_image"><% end -%>
-      <p class="account">Olá, <strong><%= current_user.name %></strong> <%= user_role(current_user) %> <%= link_to " <span class=\"spacer\">|</span>Eventos".html_safe, events_path, class: :signout if permitted_to?(:new, :events) %> <span class="spacer">|</span> <%= link_to "Sair", signout_path, class: :signout %></p>
+      <% if current_user_provider.image -%><img src="<%= current_user_provider.image %>" alt="<%= current_user_provider.name %>" class="user_image"><% end -%>
+      <p class="account">Olá, <strong><%= current_user_provider.name %></strong> <%= user_role(current_user) %> <%= link_to " <span class=\"spacer\">|</span>Eventos".html_safe, events_path, class: :signout if permitted_to?(:new, :events) %> <span class="spacer">|</span> <%= link_to "Sair", signout_path, class: :signout %></p>
     </div>
   <% else %>
     <%= link_to "Conectar com Facebook", "/auth/facebook", :class => "login_facebook" %>

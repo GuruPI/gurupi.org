@@ -2,7 +2,6 @@
 require 'machinist/active_record'
 
 User.blueprint do
-  name  { "Name #{sn}" }
   email { "email#{sn}@example.com" }
 end
 
@@ -65,4 +64,13 @@ Lecture.blueprint(:interaje) do
   description { 'Como você pode mudar o mundo' }
   user { User.make! }
   event { Event.make!(:interaje) }
+end
+
+Identity.blueprint do
+  name  { "Name #{sn}" }
+  user { User.make! }
+  provider { "facebook" }
+  uid { "121321#{sn}31231" }
+  image { "http://profile.ak.fbcdn.net/hprofile-ak-sn#{sn}/260670_1681442949_224808880_q.jpg" }
+  link { "https://www.facebook.com/rogerio.medeiros.{sn}" }
 end

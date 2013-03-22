@@ -12,8 +12,11 @@ describe "Users" do
       before(:each) do
         @users = User.make!(10)
         @users.each { |user| user.roles.create(:title => ['guest', 'member', 'admin'].shuffle[0]) }
+        @users.each { |user| user.identities << Identity.make! }
         @member = User.make!
+        @member.identities << Identity.make!
         @admin  = User.make!
+        @admin.identities << Identity.make!
         @member.roles = [Role.make!(:member)]
         @admin.roles  = [Role.make!(:admin)]
       end
@@ -22,7 +25,7 @@ describe "Users" do
         it "displays members and admins" do
           visit users_path
           @users.each do |user|
-            page.should have_content(user.name) unless user.guest?
+            page.should have_content(user.identities.first.name) unless user.guest?
           end
         end
 
@@ -33,7 +36,7 @@ describe "Users" do
           with_user(@member) do
             visit users_path
             @users.each do |user|
-              page.should have_content(user.name)
+              page.should have_content(user.identities.first.name)
             end
           end
         end
@@ -53,7 +56,7 @@ describe "Users" do
           with_user(@admin) do
             visit users_path
             @users.each do |user|
-              page.should have_content(user.name)
+              page.should have_content(user.identities.first.name)
             end
           end
         end

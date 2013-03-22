@@ -25,8 +25,8 @@
         <ul>
         <% @event.lectures.each do |lecture| %>
           <li>
-            <p><% if lecture.user.image %><img src="<%= lecture.user.image %>" alt="<%= lecture.user.name %>" class="user_image photo"><% end %>
-            <%= link_to(lecture.user.name, lecture) %> falando sobre:
+            <p><% if lecture.user.identities.first.image %><img src="<%= lecture.user.identities.first.image %>" alt="<%= lecture.user.identities.first.name %>" class="user_image photo"><% end %>
+            <%= link_to(lecture.user.identities.first.name, lecture) %> falando sobre:
             </p>
             <h4><%= link_to(lecture.name, lecture) %></h4>
             <%= render :partial => 'layouts/vote_lecture', :locals => { :lecture => lecture, :can_login => false } %>
@@ -46,8 +46,8 @@
           <% @posts.each do |post| %>
             <li>
               <p>
-                <% if post.user.image %><img src="<%= post.user.image %>" alt="<%= post.user.name %>" class="user_image photo"><% end %>
-                <%= link_to(post.user.name, post) %> em <time title="<%=l post.created_at, format: :time_tag%>"><%=l post.created_at.to_date %></time>
+                <% if post.user.identities.first.image %><img src="<%= post.user.identities.first.image %>" alt="<%= post.user.identities.first.name %>" class="user_image photo"><% end %>
+                <%= link_to(post.user.identities.first.name, post) %> em <time title="<%=l post.created_at, format: :time_tag%>"><%=l post.created_at.to_date %></time>
               </p>
               <h4><%= link_to post.title, post %></h4>
             </li>

@@ -30,3 +30,7 @@ group :test do
   gem 'guard'
   gem 'guard-rspec'
 end
+
+group :development, :test do
+  gem 'pry'
+end

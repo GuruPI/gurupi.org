@@ -7,8 +7,8 @@
   </div>
   <div class="aux_info">
     <div class="speaker">
-      <% if lecture.user.image %><%= image_tag lecture.user.image, :alt => lecture.user.name, :class => "user_image photo" %><% end %>
-      <%= link_to lecture.user.name, lecture, :class => "user_name" %>
+      <% if lecture.user.identities.first.image %><%= image_tag lecture.user.identities.first.image, :alt => lecture.user.identities.first.name, :class => "user_image photo" %><% end %>
+      <%= link_to lecture.user.identities.first.name, lecture, :class => "user_name" %>
     </div>
     <%= render :partial => 'layouts/vote_lecture', :locals => { :lecture => lecture, :can_login => false } %>
     <% permitted_to? :destroy, :lectures do %>

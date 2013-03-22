@@ -4,12 +4,17 @@
   <ul id="users" class="list">
 <% @users.each do |user| %>
   <% permitted_to? :index, user do %>
-    <% user = user.decorate %>
 
     <li class="clearfix">
-      <% if user.image -%><img src="<%= user.image %>" alt="<%= user.name %>" class="user_photo"><% end -%>
-      <strong><%= user.name %></strong> <%= user_role(user) %><br>
-      <%= user.link %>
+      <% if user.identities.first %>
+      <% if user.identities.first.image -%>
+        <img src="<%= user.identities.first.image %>" alt="<%= user.identities.first.name %>" class="user_photo">
+      <% end -%>
+      
+      <strong><%= user.identities.first.name %></strong> <%= user_role(user) %><br>
+      <% user.identities.each do |identity| %>
+        <%= link_to identity.provider.capitalize, identity.link %><br/>
+      <% end %>
       <% permitted_to? :edit, :users do %>
       <div>
         Mudar para:
@@ -17,6 +22,7 @@
         <%= link_to 'Membro', change_user_path(user, 'member'), :class => "user_role" if !user.member? %>
         <%= link_to 'Admin', change_user_path(user, 'admin'), :class => "user_role" if !user.admin? %>
       </div>
+      <% end %>
       <% end %>
     </li>
   <% end %>
