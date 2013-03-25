@@ -3,7 +3,7 @@ source 'http://rubygems.org'
 gem 'bundler'
 # gem 'rake', '0.9.2'
 gem 'rails'
-
+gem 'heroku'
 gem 'omniauth', '~> 1.0'
 gem 'omniauth-facebook'
 gem 'omniauth-github'

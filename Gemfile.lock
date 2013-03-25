@@ -64,6 +64,7 @@ GEM
       activesupport (>= 3.0)
       request_store (~> 1.0.3)
     erubis (2.7.0)
+    excon (0.16.10)
     faraday (0.8.6)
       multipart-post (~> 1.1)
     ffi (1.0.9)
@@ -72,6 +73,14 @@ GEM
     guard-rspec (0.4.3)
       guard (>= 0.4.0)
     hashie (1.2.0)
+    heroku (2.35.0)
+      heroku-api (~> 0.3.7)
+      launchy (>= 0.3.2)
+      netrc (~> 0.7.7)
+      rest-client (~> 1.6.1)
+      rubyzip
+    heroku-api (0.3.7)
+      excon (~> 0.16.10)
     highline (1.6.2)
     hike (1.2.1)
     httpauth (0.2.0)
@@ -99,6 +108,7 @@ GEM
     net-ssh (2.2.1)
     net-ssh-gateway (1.1.0)
       net-ssh (>= 1.99.1)
+    netrc (0.7.7)
     nokogiri (1.4.7)
     oauth2 (0.8.1)
       faraday (~> 0.8)
@@ -151,6 +161,8 @@ GEM
     rdiscount (1.6.8)
     rdoc (3.9.4)
     request_store (1.0.5)
+    rest-client (1.6.7)
+      mime-types (>= 1.16)
     rspec (2.6.0)
       rspec-core (~> 2.6.0)
       rspec-expectations (~> 2.6.0)
@@ -199,6 +211,7 @@ DEPENDENCIES
   draper
   guard
   guard-rspec
+  heroku
   jquery-rails
   launchy
   machinist (>= 2.0.0.beta2)
