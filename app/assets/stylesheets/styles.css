@@ -1,0 +1,165 @@
+body {
+  color: #f00;
+}
+a {
+  text-decoration: none;
+}
+.splash {
+  background-color: #aa1608;
+  height: 394px;
+  border-top: 6px solid #550a04;
+}
+header {
+  height: 90px;
+  padding: 22px 0 23px;
+  border-bottom: 3px solid #b8271d;
+  background-color: #fff;
+  width: 100%;
+}
+header h1 {
+  border: 0;
+  font: 0/0 serif;
+  text-shadow: none;
+  color: transparent;
+  background: url("/assets/gurupi-logo.gif");
+  display: block;
+  width: 254px;
+  height: 90px;
+}
+.container {
+  width: 940px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.span4 {
+  width: 300px;
+  float: left;
+}
+.row,
+.clearfix {
+  *zoom: 1;
+}
+.row::before,
+.row::after,
+.clearfix::before,
+.clearfix::after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.row::after,
+.clearfix::after {
+  clear: both;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+header nav {
+  padding-top: 30px;
+}
+header nav li {
+  float: left;
+  font-size: 0.84em;
+  text-transform: uppercase;
+  margin: 0 1px;
+  letter-spacing: -1px;
+}
+header nav li a {
+  color: #565656;
+  padding: 10px;
+  border-bottom: 2px solid #ccc;
+}
+header nav li a:hover {
+  color: #ff0102;
+  border-bottom: 2px solid #ff5152;
+}
+.logins {
+  float: right;
+  margin-top: 15px;
+}
+.logins p {
+  color: #a5a5a5;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  margin-top: 15px;
+  margin-left: 100px;
+  display: inline-block;
+}
+.logins ul {
+  float: right;
+}
+.logins ul li {
+  float: left;
+  margin-left: 4px;
+}
+.logins a {
+  border: 0;
+  font: 0/0 serif;
+  text-shadow: none;
+  color: transparent;
+  background: url("/assets/social-icons.gif");
+  display: block;
+  width: 43px;
+  height: 42px;
+}
+.logins li a.facebook {
+  background-position: 0 42px;
+}
+.logins li a.github {
+  background-position: 43px 42px;
+}
+.logins li a.linkedin {
+  background-position: 86px 42px;
+}
+.logins li a.facebook:hover {
+  background-position: 0 0;
+}
+.logins li a.github:hover {
+  background-position: 43px 0;
+}
+.logins li a.linkedin:hover {
+  background-position: 86px 0;
+}
+#main {
+  height: 800px;
+}
+.topic {
+  padding-top: 50px;
+}
+.topic h2 {
+  color: #6a6a6a;
+}
+.topic .icon {
+  width: 42px;
+  height: 42px;
+  background: url("/assets/icons.gif");
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+
+
+.scrolled header {
+  height: 55px;
+  padding: 12px 0 13px;
+  border-bottom: 2px solid #b8271d;
+  position: fixed;
+  top: 0;
+}
+.scrolled header h1 {
+  background: url("/assets/gurupi-logo-mini.gif");
+  width: 155px;
+  height: 55px;
+}
+.scrolled header nav {
+  padding-top: 15px;
+}
+.scrolled .topic {
+  padding-top: 100px;
+}
+.scrolled .logins {
+  margin-top: 6px;
+}
+
