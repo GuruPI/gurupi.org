@@ -13,6 +13,8 @@ gem 'rdiscount'
 gem 'yaml_db'
 gem 'draper'
 
+gem 'prawn'
+
 group :development do
   gem 'capistrano'
   gem 'debugger'
