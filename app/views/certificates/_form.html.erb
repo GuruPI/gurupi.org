@@ -1,0 +1,9 @@
+<div class="blank">
+	<%= form_tag("/certificados", {:id => "certificate-form"}) do %>
+		<%= hidden_field :certificate, :user_id, :value => current_user.id %>
+		<%= hidden_field :certificate, :event_id, :value => @event.id %>
+		<div class="actions">
+			<%= button_tag "Eu Vou !", :class => "btn" %>
+		</div>
+	<% end %>
+</div>

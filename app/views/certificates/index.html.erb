@@ -1,0 +1,21 @@
+<h1 class="hat title">Meus Certificados</h1>
+
+<table>
+  <thead>
+    <th>Evento</th>
+    <th>Data do evento</th>
+    <th>Ação</th>
+  </thead>
+
+  <tbody>
+  <% @certificates.each do |certificate| %>
+    <tr>
+      <td>
+      	<%= link_to certificate.event.name, event_path(certificate.event) %>
+      </td>
+      <td><%=l certificate.event.event_date %></td>
+      <td><%= link_to image_tag("icn_pdf.gif", :title => "Gerar PDF"), certificate_path(certificate, :format => "pdf"), {:target => "_new"} %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>

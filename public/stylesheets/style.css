@@ -421,11 +421,18 @@ form select {
 #btn_contact a#contato:hover{background:url(/images/btn_contato_hover.png) center no-repeat;}
 
 
-/* My Custon CSS by Gesiel Rios */
+/* My Custon CSS - certificates */
 
 .actions button {
-	
 	float: left !important;
+}
+
+.blank {
+	overflow: hidden;
+}
+
+.certificate li {
+	list-style: none;
 }
 
 .btn {
