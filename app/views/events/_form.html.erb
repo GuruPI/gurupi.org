@@ -1,5 +1,4 @@
 <div id="formulario">
-
 	<%= form_for(@event) do |f| %>
   		<% if @event.errors.any? %>
     		<div id="error_explanation">
@@ -11,26 +10,17 @@
       			</ul>
     		</div>
   		<% end %>
-
 		<%= f.text_field :name, :placeholder => "Nome:" %>
-  		
     	<%= f.text_area :description, :placeholder => "Descrição:" %>
-  		 		
     	<%= f.label :event_date %><br />
     	<%= f.date_select :event_date %><br />
-
   		<%= f.text_field :hour, :placeholder => "Horário:" %>
-
     	<%= f.text_field :place, :placeholder => "Local:" %>
-
    		<%= f.text_field :place_url, :placeholder => "URL da localização:" %>
-
     	<%= f.label :enable_lectures, "Permitir palestras?" %>
     	<%= f.check_box :enable_lectures %>
-		
 		<div class="actions">
 			<%= button_tag "Enviar"%>
 		<div>
 	<% end %>
-
 </div>

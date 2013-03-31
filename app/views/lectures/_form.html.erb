@@ -1,10 +1,8 @@
 <div id="formulario">
 	<%= form_for([@event, @event.lectures.build]) do |f| %>
-  		
     	<%= f.text_field :name, :placeholder => "Nome:" %>
     	<%= f.text_area :description, :placeholder => "Descrição:" %>
 		<%= f.hidden_field :user_id, :value => current_user.id %>
-  	
 		<div class="actions">
 			<%= button_tag "Enviar"%>
 		</div>
