@@ -9,21 +9,20 @@ class Event < ActiveRecord::Base
   end
   
   def user_go?(user_id)
-    Certificate.joins(:event).where("user_id = ? and event_id = ? and go = ?", user_id, self.id, true).present? ? true : false
+    certificates.going.where(:user_id => user_id).any?
   end
   
   def going
-    Certificate.where("event_id = ? and go = ?", self.id, true)
+    certificates.going
   end
   
   def confirmed
-    Certificate.where("event_id = ? and confirmed = ?", self.id, true)
+    certificates.confirmed
   end
 
   private
   def slugify
     self.slug = name.parameterize.to_s
   end
-
 end
 

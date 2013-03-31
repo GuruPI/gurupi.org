@@ -1,7 +1,7 @@
 class CreateCertificates < ActiveRecord::Migration
   def change
     create_table :certificates do |t|
-      t.boolean    :go
+      t.boolean    :go, :default => false
       t.boolean    :confirmed, :default => false
       t.string     :token
       t.references :event
