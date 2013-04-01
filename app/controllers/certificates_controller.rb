@@ -19,7 +19,7 @@ class CertificatesController < ApplicationController
   end
   
   def update
-    @certificate = Certificate.find_by_token(params[:token])
+    @certificate = Certificate.find(params[:id])
     if @certificate.update_attributes(:confirmed => true)
       flash[:notice] = 'Certificate was successfully updated.'
       respond_with @certificate.event

@@ -4,7 +4,7 @@
 			<div class="speaker">
 				<%= image_tag certificate.user.identities.first.image, :alt => certificate.user.identities.first.name, :class => "user_image photo" if certificate.user.identities.first.image %>
 				<%= label_tag nil, certificate.user.identities.first.name, :class => "user_name" %>
-				<%= link_to "Confirmar Presença", certificate_path(certificate, :token => certificate.token), :method => :put, :class => "user_name" if permitted_to?(:update, :certificates) && !certificate.confirmed? %>
+				<%= link_to "Confirmar Presença", certificate_path(certificate), :method => :put, :class => "user_name" if permitted_to?(:update, :certificates) && !certificate.confirmed? %>
 			</div>
 		</li>
 	<% end %>
