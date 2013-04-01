@@ -13,6 +13,9 @@ gem 'rdiscount'
 gem 'yaml_db'
 gem 'draper'
 
+gem 'prawn'
+gem "pdf-inspector", :group => [:test, :development]
+
 group :development do
   gem 'capistrano'
   gem 'debugger'
@@ -20,6 +23,7 @@ end
 
 gem 'pg', :group => :production
 gem 'sqlite3', :group => [:test, :development]
+
 
 group :test do
   gem 'rspec-rails', '~> 2.4'

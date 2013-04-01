@@ -19,5 +19,7 @@ GurupiOrg::Application.routes.draw do
 
   root :to => "welcome#index"
   match '/:controller(/:action(/:id))'
+  
+  resources :certificates, :path => "certificados", :only => [:index, :create, :update, :show]
 end
 

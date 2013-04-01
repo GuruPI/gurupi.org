@@ -1,46 +1,26 @@
-<%= form_for(@event) do |f| %>
-  <% if @event.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@event.errors.count, "error") %> prohibited this event from being saved:</h2>
-
-      <ul>
-      <% @event.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :description %><br />
-    <%= f.text_area :description %>
-  </div>
-  <div class="field">
-    <%= f.label :event_date %><br />
-    <%= f.date_select :event_date %>
-  </div>
-  <div class="field">
-    <%= f.label :hour %><br />
-    <%= f.text_field :hour %>
-  </div>
-  <div class="field">
-    <%= f.label :place %><br />
-    <%= f.text_field :place %>
-  </div>
-  <div class="field">
-    <%= f.label :place_url, "URL da localização" %><br />
-    <%= f.text_field :place_url %>
-  </div>
-  <div class="field">
-    <%= f.label :enable_lectures, "Permitir palestras?" %><br />
-    <%= f.check_box :enable_lectures %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
-
+<div id="formulario">
+	<%= form_for(@event) do |f| %>
+  		<% if @event.errors.any? %>
+    		<div id="error_explanation">
+      			<h2><%= pluralize(@event.errors.count, "error") %> prohibited this event from being saved:</h2>
+      			<ul>
+      				<% @event.errors.full_messages.each do |msg| %>
+        			<li><%= msg %></li>
+      				<% end %>
+      			</ul>
+    		</div>
+  		<% end %>
+		<%= f.text_field :name, :placeholder => "Nome:" %>
+    	<%= f.text_area :description, :placeholder => "Descrição:" %>
+    	<%= f.label :event_date %><br />
+    	<%= f.date_select :event_date %><br />
+  		<%= f.text_field :hour, :placeholder => "Horário:" %>
+    	<%= f.text_field :place, :placeholder => "Local:" %>
+   		<%= f.text_field :place_url, :placeholder => "URL da localização:" %>
+    	<%= f.label :enable_lectures, "Permitir palestras?" %>
+    	<%= f.check_box :enable_lectures %>
+		<div class="actions">
+			<%= button_tag "Enviar"%>
+		<div>
+	<% end %>
+</div>

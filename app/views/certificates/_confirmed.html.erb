@@ -1,0 +1,10 @@
+<ul id="confirmed" class="certificate">
+	<% @event.confirmed.each do |certificate| %>
+		<li>
+			<div class="speaker">
+				<%= image_tag certificate.user.identities.first.image, :alt => certificate.user.identities.first.name, :class => "user_image photo" if certificate.user.identities.first.image %>
+				<%= label_tag nil, certificate.user.identities.first.name, :class => "user_name" %>
+			</div>
+		</li>
+	<% end %>
+</ul>

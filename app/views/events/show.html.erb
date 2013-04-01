@@ -1,19 +1,38 @@
 <p id="notice"><%= notice %></p>
 <%= markdown @event.description %>
-<p><strong>No dia <%=l @event.event_date %>, às <%= @event.hour %>, <%= @event.place %></strong></p>
+<p>
+	<strong>No dia <%=l @event.event_date %>, às <%= @event.hour %>, <%= @event.place %></strong>
+</p>
+
+<% if current_user && Date.current <= @event.event_date %>
+	<% unless @event.user_go?(current_user.id) %>
+		<%= render "certificates/form"%>
+	<% end %>
+<% end %>
+
+
+<% if ((current_user && current_user.admin? && @event.going.present?) || (@event.going.present? && Date.current <= @event.event_date)) %>
+	<h2>Quem vai</h2>
+	<%= render "certificates/going", :object => @event %>
+<% end %>
+
+<% if @event.confirmed.present? && @event.event_date < Date.current  %>
+	<h2>Quem foi</h2>
+	<%= render "certificates/confirmed", :object => @event %>
+<% end %>
 
 <% 
 if @event.enable_lectures
-  if @event.lectures.present?
+	if @event.lectures.present?
 %>
-<h2>Palestras</h2>
-<ul class="lectures"><%= render @event.lectures %></ul>
-<% end %>
+		<h2>Palestras</h2>
+		<ul class="lectures"><%= render @event.lectures %></ul>
+	<% end %>
 
-<% permitted_to? :create, :lectures do %>
-<h2>Add a Lecture:</h2>
-<%= render "lectures/form" %>
-<% end %>
+	<% permitted_to? :create, :lectures do %>
+		<h2>Adicionar Palestras:</h2>
+		<%= render "lectures/form" %>
+	<% end %>
 <% end %>
 
 <div id="disqus_thread"></div>
