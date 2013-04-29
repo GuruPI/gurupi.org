@@ -16,6 +16,11 @@ describe "Sessions" do
       visit root_path
       page.should have_content(button_login_github)
     end
+   
+    it "displays '#{button_login_twitter}'" do
+      visit root_path
+      page.should have_content(button_login_twitter)
+    end
 
     it "displays User name and image when sign in via Facebook" do
       visit root_path
@@ -50,6 +55,14 @@ describe "Sessions" do
       click_on 'Sair'
       page.should have_content(button_login_github)
     end
+   
+    it "exit and displays '#{button_login_twitter}' again" do
+      visit root_path
+      click_on button_login_twitter
+      click_on "Sair"
+      page.should have_content(button_login_twitter)
+    end
+   
   end
 
   describe "POST /login/auth" do
