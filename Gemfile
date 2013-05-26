@@ -16,6 +16,7 @@ gem 'draper'
 group :development do
   gem 'capistrano'
   gem 'debugger'
+  gem 'thin'
 end
 
 gem 'pg', :group => :production
