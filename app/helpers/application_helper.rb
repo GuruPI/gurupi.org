@@ -9,4 +9,13 @@ module ApplicationHelper
   def markdown(text)
     RDiscount.new(text).to_html.html_safe
   end
+
+  def page_title
+    t page_title_translation_key
+  end
+
+  def page_title_translation_key
+    :"title.#{controller_name}.#{action_name}"
+  end
+
 end
