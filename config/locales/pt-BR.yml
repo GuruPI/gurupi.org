@@ -221,4 +221,10 @@
   destroy: "Deletar"
   new: "Novo"
   back: "Voltar"
-
+  title:
+    events:
+      new: "Novo Evento"
+      edit: "Editando Evento"
+    lectures:
+      new: "Nova Palestra"
+      edit: "Editando Palestra"

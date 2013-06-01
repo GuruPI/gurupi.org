@@ -2,7 +2,7 @@
 <%= markdown @event.description %>
 <p><strong>No dia <%=l @event.event_date %>, às <%= @event.hour %>, <%= @event.place %></strong></p>
 
-<% 
+<%
 if @event.enable_lectures
   if @event.lectures.present?
 %>
@@ -11,7 +11,7 @@ if @event.enable_lectures
 <% end %>
 
 <% permitted_to? :create, :lectures do %>
-<h2>Add a Lecture:</h2>
+<h2>Adicionar Palestra:</h2>
 <%= render "lectures/form" %>
 <% end %>
 <% end %>
