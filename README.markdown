@@ -2,6 +2,16 @@
 
 Grupo de Usuários de Ruby do Piauí
 
+
+## Twitter Omniaauth
+No arquivo config/omniauth.rb adicionei o provider do twitter.
+    provider :twitter, "{PROVIDER_KEY}", "{PROVIDER_SECRET}"
+
+Adicionei o arquivo omniauth.rb em spec/support com um método que retorna uma hash de usuário para ser usada no teste
+
+Adicionei alguns testes em spec/requests/sessions_spec.rb
+
+
 ## Primeiros Passos
 
 Crie um clone do projeto

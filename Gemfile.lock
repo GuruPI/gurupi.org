@@ -112,6 +112,7 @@ GEM
       net-ssh (>= 1.99.1)
     netrc (0.7.7)
     nokogiri (1.4.7)
+    oauth (0.4.7)
     oauth2 (0.8.1)
       faraday (~> 0.8)
       httpauth (~> 0.1)
@@ -126,9 +127,14 @@ GEM
     omniauth-github (1.1.0)
       omniauth (~> 1.0)
       omniauth-oauth2 (~> 1.1)
+    omniauth-oauth (1.0.1)
+      oauth
+      omniauth (~> 1.0)
     omniauth-oauth2 (1.1.1)
       oauth2 (~> 0.8.0)
       omniauth (~> 1.0)
+    omniauth-twitter (0.0.9)
+      omniauth-oauth (~> 1.0)
     pg (0.14.0)
     polyglot (0.3.2)
     pry (0.9.12)
@@ -224,6 +230,7 @@ DEPENDENCIES
   omniauth (~> 1.0)
   omniauth-facebook
   omniauth-github
+  omniauth-twitter
   pg
   pry
   rails

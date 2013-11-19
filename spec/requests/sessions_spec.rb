@@ -4,6 +4,7 @@ require 'spec_helper'
 describe "Sessions" do
   button_login_facebook = 'Conectar com Facebook'
   button_login_github = 'Conectar com Github'
+  button_login_twitter = 'Conectar com Twitter'
 
   describe "GET /" do
     it "displays '#{button_login_facebook}'" do
@@ -14,6 +15,11 @@ describe "Sessions" do
     it "displays '#{button_login_github}'" do
       visit root_path
       page.should have_content(button_login_github)
+    end
+   
+    it "displays '#{button_login_twitter}'" do
+      visit root_path
+      page.should have_content(button_login_twitter)
     end
 
     it "displays User name and image when sign in via Facebook" do
@@ -48,6 +54,26 @@ describe "Sessions" do
       click_on button_login_github
       click_on 'Sair'
       page.should have_content(button_login_github)
+    end
+   
+    it "exit and displays '#{button_login_twitter}' again" do
+      visit root_path
+      click_on button_login_twitter
+      click_on "Sair"
+      page.should have_content(button_login_twitter)
+    end
+   
+  end
+
+  describe "POST /login/auth" do
+    it "authenticate and displays user when sign in Twitter" do
+      visit root_path
+      page.should have_content(button_login_twitter)
+      set_omniauth_twitter()
+      user_name  = OmniAuth.config.mock_auth[:twitter][:info][:name]
+      click_link button_login_twitter
+      page.should have_content 'Sair'
+      page.should have_content user_name
     end
   end
 end
