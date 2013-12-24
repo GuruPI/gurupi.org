@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "FontAwesome";
+  src: url("/assets/fontawesome-webfont.eot?v=3.0.1");
+  src: url("/assets/fontawesome-webfont.eot?#iefix&v=3.0.1") format("embedded-opentype"),
+       url("/assets/fontawesome-webfont.woff?v=3.0.1") format("woff"),
+       url("/assets/fontawesome-webfont.ttf?v=3.0.1") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DroidSansRegular";
+  src: url("/assets/DroidSans-webfont.eot");
+  src: url("/assets/DroidSans-webfont.eot?#iefix") format("embedded-opentype"),
+       url("/assets/DroidSans-webfont.woff") format("woff"),
+       url("/assets/DroidSans-webfont.ttf") format("truetype"),
+       url("/assets/DroidSans-webfont.svg#DroidSansRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DroidSansBold";
+  src: url("/assets/DroidSans-Bold-webfont.eot");
+  src: url("/assets/DroidSans-Bold-webfont.eot?#iefix") format("embedded-opentype"),
+       url("/assets/DroidSans-Bold-webfont.woff") format("woff"),
+       url("/assets/DroidSans-Bold-webfont.ttf") format("truetype"),
+       url("/assets/DroidSans-Bold-webfont.svg#DroidSansBold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,273 @@
+// @import "mixins";
+.clearfix {
+  *zoom: 1;
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+    // Fixes Opera/contenteditable bug:
+    // http://nicolasgallagher.com/micro-clearfix-hack/#comment-36952
+    line-height: 0;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+/* Styles */
+body {
+  font: 14px/1.35em "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #fff;
+  color: #777;
+}
+a {
+  color: #e90600;
+  text-decoration: none;
+}
+.splash {
+  background-color: #aa1608;
+  height: 394px;
+  border-top: 6px solid #550a04;
+}
+header {
+  border-bottom: 3px solid #b8271d;
+  background: #fff url("/assets/bg-top.jpg") center bottom repeat-x;
+  nav {
+    color: #fff;
+    border-top: 4px solid #860000;
+    border-bottom: 2px solid #cc0507;
+    background-color: #b60d10;
+    background-image: -webkit-linear-gradient(top, #b60d10, #940306);
+    background-image:    -moz-linear-gradient(top, #b60d10, #940306);
+    background-image:     -ms-linear-gradient(top, #b60d10, #940306);
+    background-image:      -o-linear-gradient(top, #b60d10, #940306);
+    background-image:         linear-gradient(top, #b60d10, #940306);
+    height: 46px;
+    padding: 10px 0;
+    font: 1.2em "DroidSansRegular", sans-serif;
+    li {
+      float: left;
+      font-size: 0.84em;
+      text-transform: uppercase;
+      margin: 0 1px;
+      letter-spacing: -1px;
+      a {
+        color: #F0D8D8;
+        text-shadow: 2px 2px 0 #6f0406;
+        padding: 10px;
+        &:hover { color: #fff; }
+      }
+    }
+  }
+}
+.logins {
+  margin-top: 40px;
+  p {
+    color: #a52a2a;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    margin-top: 15px;
+    margin-right: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    float: left;
+  }
+  ul {
+    float: right;
+    li {
+      float: left;
+      margin-left: 4px;
+    }
+  }
+  a {
+    border: 0;
+    font: 0/0 serif;
+    text-shadow: none;
+    color: transparent;
+    background: url("/assets/social-icons.gif");
+    display: block;
+    width: 43px;
+    height: 42px;
+  }
+  li {
+    > a {
+      &.facebook {
+        background-position: 0 42px;
+        &:hover { background-position: 0 0; }
+      }
+      &.github {
+        background-position: 43px 42px;
+        &:hover { background-position: 43px 0; }
+      }
+      &.linkedin {
+        background-position: 86px 42px;
+        &:hover { background-position: 86px 0; }
+      }
+    }
+  }
+}
+#main {
+  height: 800px;
+}
+section {
+  padding-top: 30px;
+}
+.title {
+  color: #e40000;
+  text-transform: uppercase;
+  text-align: center;
+  font: 1.8em "DroidSansRegular", sans-serif;
+  background-image: url("/assets/shadow-left.gif"), url("/assets/shadow-right.gif");
+  background-position: left center, right center;
+  background-repeat: no-repeat;
+}
+.image-round {
+  padding: 6px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+}
+
+.events {
+  h2 {
+    color: #e40000;
+    text-transform: uppercase;
+    font: 1.2em "DroidSansRegular", sans-serif;
+    padding-left: 12px;
+    background-color: #f7f7f7;
+    span {
+      background-color: #fff;
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+  }
+}
+#main-event {
+  padding: 2.083%;
+  margin-bottom: 30px;
+  background-color: #f7f7f7;
+  border: 1px solid #d7d7d7;
+  position: relative;
+  overflow: hidden;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  .plus {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    background-color: #cc0507;
+    background-image: -webkit-linear-gradient(135deg, #cc0507, #990508);
+    background-image:    -moz-linear-gradient(135deg, #cc0507, #990508);
+    background-image:     -ms-linear-gradient(135deg, #cc0507, #990508);
+    background-image:      -o-linear-gradient(135deg, #cc0507, #990508);
+    background-image:         linear-gradient(135deg, #cc0507, #990508);
+    -webkit-transform: rotate(45deg) translate(0, -70px);
+       -moz-transform: rotate(45deg) translate(0, -70px);
+            transform: rotate(45deg) translate(0, -70px);
+    a {
+      color: #fff;
+      display: block;
+      text-align: center;
+      font-family: FontAwesome;
+      font-size: 20px;
+      height: 100%;
+      padding-top: 70%;
+      -webkit-font-smoothing: antialiased;
+      &::before { content: "\f00d"; }
+    }
+  }
+}
+.event {
+  width: 48%;
+  float: left;
+  padding-right: 2%;
+  margin-right: 2%;
+  -webkit-box-shadow: 10px 0 25px -15px rgba(0, 0, 0, 0.3);
+     -moz-box-shadow: 10px 0 25px -15px rgba(0, 0, 0, 0.3);
+          box-shadow: 10px 0 25px -15px rgba(0, 0, 0, 0.3);
+  h1 {
+    font: 1.35em/1.4em "DroidSansRegular", sans-serif;
+    text-transform: uppercase;
+    color: #e40000;
+    margin-top: 0;
+  }
+  .time {
+    font-weight: normal;
+    font-size: 1em;
+    margin-top: 0;
+    line-height: 1.2;
+  }
+  .local {
+    font-size: 1em;
+    line-height: 1.2;
+    margin-top: 0;
+  }
+}
+.lectures {
+  width: 50%;
+  float: left;
+  padding-left: 1%;
+  margin-top: 15px;
+}
+.lecture {
+  .clearfix();
+}
+.lecture h1 {
+  margin-top: 0;
+  font-size: 1.35em;
+  line-height: 1.4em;
+}
+.lecture img {
+  float: left;
+  margin-right: 20px;
+  width: 120px;
+  height: 120px;
+}
+.user {
+  width: 31.914893617021278%;
+  *width: 31.861702127659576%;
+  margin-bottom: 30px;
+}
+.user img {
+  float: left;
+  margin-right: 20px;
+  width: 90px;
+  height: 90px;
+  padding: 0;
+  border: 4px solid #d7d7d7;
+}
+.user .name {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.user .info {
+  font-size: 1em;
+}
+
+.scrolled header {
+  height: 55px;
+  padding: 12px 0 13px;
+  border-bottom: 2px solid #b8271d;
+  position: fixed;
+  top: 0;
+}
+.scrolled header h1 {
+  background: url("/assets/gurupi-logo-mini.gif");
+  width: 155px;
+  height: 55px;
+}
+.scrolled header nav {
+  padding-top: 15px;
+}
+.scrolled .agenda {
+  padding-top: 100px;
+}
+.scrolled .logins {
+  margin-top: 6px;
+}
+
