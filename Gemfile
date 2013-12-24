@@ -12,6 +12,7 @@ gem 'jquery-rails'
 gem 'rdiscount'
 gem 'yaml_db'
 gem 'draper'
+gem 'thin'
 
 group :development do
   gem 'capistrano'
@@ -19,7 +20,6 @@ group :development do
 end
 
 gem 'pg', :group => :production
-gem 'sqlite3', :group => [:test, :development]
 
 group :test do
   gem 'rspec-rails', '~> 2.4'
@@ -33,4 +33,5 @@ end
 
 group :development, :test do
   gem 'pry'
+  gem 'sqlite3'
 end
