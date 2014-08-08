@@ -2,9 +2,7 @@ require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
 
-# If you have a Gemfile, require the gems listed there, including any gems
-# you've limited to :test, :development, or :production.
-Bundler.require(:default, Rails.env) if defined?(Bundler)
+Bundler.require(*Rails.groups)
 
 module GurupiOrg
   class Application < Rails::Application
@@ -29,9 +27,6 @@ module GurupiOrg
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     config.i18n.default_locale = 'pt-BR'.to_sym
-
-    # JavaScript files you want as :defaults (application.js is always included).
-    config.action_view.javascript_expansions[:defaults] = %w(jquery jquery_ujs)
 
     # Configure the default encoding used in templates for Ruby 1.9.
     config.encoding = "utf-8"
