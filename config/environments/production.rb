@@ -33,6 +33,15 @@ GurupiOrg::Application.configure do
   # In production, Apache or nginx will already do this
   config.serve_static_assets = false
 
+  # Compress JavaScript and CSS
+  config.assets.compress = true
+
+  # Don't fallback to assets pipeline
+  config.assets.compile = false
+
+  # Generate digests for assets URLs
+  config.assets.digest = true
+
   # Enable serving of images, stylesheets, and javascripts from an asset server
   # config.action_controller.asset_host = "http://assets.example.com"
 
