@@ -1,7 +1,6 @@
 source 'http://rubygems.org'
 
 gem 'bundler'
-# gem 'rake', '0.9.2'
 gem 'rails', '4.0.7'
 gem 'heroku'
 gem 'omniauth', '~> 1.0'
@@ -12,6 +11,7 @@ gem 'jquery-rails'
 gem 'rdiscount'
 gem 'yaml_db'
 gem 'draper'
+gem 'react-rails', '~> 0.11.1.0'
 
 group :development do
   gem 'capistrano'
