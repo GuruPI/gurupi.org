@@ -56,11 +56,11 @@ a:hover { color:#a53b3b; }
 /* Custom CSS Start Here */
 #top {background-color:#e8e8e8; padding:20px 0 26px; overflow:hidden;}
 #logo {margin:15px 0 7px; float:left;}
-.icon {background:url("/assets/sprite.png") left top no-repeat; width:32px; height:32px;}
-#menu {float:right; overflow:hidden; background:url("/assets/menu.png") right center no-repeat;}
+.icon {background:url("<%= asset_path('sprite.png') %>") left top no-repeat; width:32px; height:32px;}
+#menu {float:right; overflow:hidden; background:url("<%= asset_path('menu.png') %>") right center no-repeat;}
 .menuli {float:left; height:80px;}
 .menuli a {color:#3b3b3b; font-size:0.95em; text-decoration:none; font-weight:bold; text-transform:uppercase; text-align:center; text-shadow:0 1px 0 #fff;
-  display:block; background:url("/assets/menu.png") left center no-repeat; height:65px; line-height:32px; padding:15px 28px 0 28px;}
+  display:block; background:url("<%= asset_path('menu.png') %>") left center no-repeat; height:65px; line-height:32px; padding:15px 28px 0 28px;}
 .menuli a:hover {color:#696969;}
 .menuli .icon   {margin:0 auto; display:block; vertical-align:top;}
 .about .icon    {background-position:0 0;}
@@ -71,7 +71,7 @@ a:hover { color:#a53b3b; }
 
 .container {width:960px; padding:0 10px; margin:0 auto; overflow:hidden;}
 
-#profile {background:#393939 url("/assets/bg-profile.png") left bottom repeat-x; border-bottom:1px solid #646464; min-height:40px;}
+#profile {background:#393939 url("<%= asset_path('bg-profile.png') %>") left bottom repeat-x; border-bottom:1px solid #646464; min-height:40px;}
 #user_account {float:right; overflow:hidden;}
 #user_account p {color:#ccc; text-align:right; float:right; display:inline; padding:4px 8px; margin-top:7px; border-width:1px; border-style:solid; border-color:#111 #333 #333 #111;
   background-color:#000; border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px;}
@@ -84,8 +84,8 @@ a:hover { color:#a53b3b; }
 #about_info .email .icon    {background-position:-128px -32px;}
 #about_info .twitter .icon  {background-position:-224px -32px;}
 #about_info .facebook .icon {background-position:-256px -32px;}
-.login_facebook {background:url("/assets/connect.png") no-repeat; width:176px; height:25px; display:block; text-indent:-999em; margin:7px 0; float:right;}
-.login_github {background:url("/assets/connect-github.png") no-repeat; width:176px; height:25px; display:block; text-indent:-999em; margin:7px 0; float:right;}
+.login_facebook {background:url("<%= asset_path('connect.png') %>") no-repeat; width:176px; height:25px; display:block; text-indent:-999em; margin:7px 0; float:right;}
+.login_github {background:url("<%= asset_path('connect-github.png') %>") no-repeat; width:176px; height:25px; display:block; text-indent:-999em; margin:7px 0; float:right;}
 .user_role {border-radius:2px; -moz-border-radius:2px; -webkit-border-radius:2px; padding:2px 4px; font:0.8em verdana, sans-serif; background-color:#dadada; color:#444 !important;}
 .user_role.admin {background-color:#4e8e00; color:#eee !important;}
 .user_role.member {background-color:#a20000; color:#eee !important;}
@@ -99,8 +99,8 @@ a:hover { color:#a53b3b; }
 #breadcrumb h3 {font-weight:normal; line-height:67px;}
 #breadcrumb .home_link, #breadcrumb .interpages {color:#999;}
 
-#intro {background:#3f3f3f url("/assets/bg-intro.png") left bottom repeat-x; padding:20px 0;}
-#intro .topic {background:#a20000 url("/assets/bg-topic.png") left bottom repeat-x; color:#fff; padding:30px; overflow:hidden;
+#intro {background:#3f3f3f url("<%= asset_path('bg-intro.png') %>") left bottom repeat-x; padding:20px 0;}
+#intro .topic {background:#a20000 url("<%= asset_path('bg-topic.png') %>") left bottom repeat-x; color:#fff; padding:30px; overflow:hidden;
   border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px;}
 /*#intro .topic img {float:right; border:1px solid #b33236; margin-left:20px;}*/
 #intro .topic h2, #intro .topic p, #intro .topic ul {float:left; width:380px;}
@@ -161,11 +161,11 @@ a:hover { color:#a53b3b; }
 #atividades li {padding:10px 0;}
 #atividades p {line-height:1.5em;}
 #atividades .user {display:block;}
-.liked,.disliked {width:83px;height:48px;display:inline-block;background:url("/assets/sprite.png") no-repeat;text-align:center;}
+.liked,.disliked {width:83px;height:48px;display:inline-block;background:url("<%= asset_path('sprite.png') %>") no-repeat;text-align:center;}
 .liked {background-position:0 -64px;margin-right:7px;}
 .disliked {background-position:-87px -64px;}
 .count {line-height:48px;font-size:1.7em;color:#fff;margin-left:35px;text-shadow:1px 1px #000;}
-a.button-add {background:url("/assets/sprite.png") 0 -112px no-repeat; width:300px; height:48px; display:block; text-transform:lowercase;
+a.button-add {background:url("<%= asset_path('sprite.png') %>") 0 -112px no-repeat; width:300px; height:48px; display:block; text-transform:lowercase;
   margin-top:18px; font-size:1.3em;color:#fff; line-height:48px; text-shadow:1px 1px #000; text-align:center;}
 a.button-add:hover {color:#ddd;}
 a.button-add .icon {background-position:0 -32px; vertical-align:middle; margin-right:10px; display:inline-block;}
@@ -199,7 +199,7 @@ ul.lectures {margin:0; border-left:10px solid #ededed; border-top:1px solid #ccc
 #fork_me {position:fixed; bottom:0; text-align:center; width:100%; color:#ccc; text-shadow:0 1px 1px rgba(0, 0, 0, 0.8); font:bold 1em arial, sans-serif;}
 #fork_me a {background-color:rgba(109, 3, 3, 0.9); padding:6px 0; height:18px; padding-left:22px; color:#e1c4c4; display:block;}
 #fork_me a:hover {background-color:rgba(47, 162, 31, 0.9); color:#fff;}
-#fork_me a .icon {background:url("/assets/fork.png") no-repeat; width:20px; height:16px; display:inline-block; vertical-align:top;}
+#fork_me a .icon {background:url("<%= asset_path('fork.png') %>") no-repeat; width:20px; height:16px; display:inline-block; vertical-align:top;}
 
 table {
 	overflow:hidden;
@@ -301,7 +301,7 @@ tr:last-child td.last {
 #main #formulario form input, #main #formulario form textarea{
     font-family: 'YanoneKaffeesatzRegular', Arial, sans-serif;
     width: 350px;
-    background: url("/assets/fundo-input.png") top left no-repeat;
+    background: url("<%= asset_path('fundo-input.png') %>") top left no-repeat;
     font-size: 18px;
     font-weight: normal;
     color: #4f4f4f;
@@ -314,7 +314,7 @@ tr:last-child td.last {
 }
 
 #main #formulario form textarea{
-    background: url("/assets/fundo-textarea.png") top left no-repeat;
+    background: url("<%= asset_path('fundo-textarea.png') %>") top left no-repeat;
     height: 165px;
     padding: 7px 7px 0 7px;
     margin-bottom: 0;
@@ -324,7 +324,7 @@ tr:last-child td.last {
 #main #formulario form button{
     width: 99px;
     height: 29px;
-    background: url("/assets/bt-enviar.png") top left no-repeat;
+    background: url("<%= asset_path('bt-enviar.png') %>") top left no-repeat;
     border:none;
     text-indent:-9000em;
     overflow:hidden;
@@ -334,7 +334,7 @@ tr:last-child td.last {
 }
 
 #main #formulario form button:hover{
-    background: url("/assets/bt-enviar-on.png") top left no-repeat;
+    background: url("<%= asset_path('bt-enviar-on.png') %>") top left no-repeat;
 }
 
 #main #formulario #error{
@@ -411,8 +411,8 @@ tr:last-child td.last {
 .column3 h4 {margin:5px 0;font-size:1.1em;}
 
 #btn_contact { position:fixed; top: 263px; right:0; height:152px; width:23px; z-index:1000; }
-#btn_contact a#contato{background:url("/assets/btn_contato.png") center no-repeat; height:230px; width:23px; display:block;}
-#btn_contact a#contato:hover{background:url("/assets/btn_contato_hover.png") center no-repeat;}
+#btn_contact a#contato{background:url("<%= asset_path('btn_contato.png') %>") center no-repeat; height:230px; width:23px; display:block;}
+#btn_contact a#contato:hover{background:url("<%= asset_path('btn_contato_hover.png') %>") center no-repeat;}
 
 
 
