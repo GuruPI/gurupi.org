@@ -1,25 +1,30 @@
 source 'http://rubygems.org'
 
 gem 'bundler'
-# gem 'rake', '0.9.2'
-gem 'rails'
+gem 'rails', '4.0.7'
+gem 'rb-readline', :require => false
 gem 'heroku'
 gem 'omniauth', '~> 1.0'
 gem 'omniauth-facebook'
 gem 'omniauth-github'
 gem 'declarative_authorization'
+gem 'json'
 gem 'jquery-rails'
 gem 'rdiscount'
 gem 'yaml_db'
 gem 'draper'
-gem 'thin'
+gem 'react-rails', '~> 0.11.1.0'
+
+gem 'pg', :group => :production
+
+# assets
+gem 'uglifier', '>= 1.3.0'
 
 group :development do
+  gem 'thin'
   gem 'capistrano'
   gem 'debugger'
 end
-
-gem 'pg', :group => :production
 
 group :test do
   gem 'rspec-rails', '~> 2.4'
@@ -32,6 +37,6 @@ group :test do
 end
 
 group :development, :test do
-  gem 'pry'
   gem 'sqlite3'
+  gem 'pry'
 end

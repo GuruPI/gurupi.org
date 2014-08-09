@@ -7,8 +7,9 @@
   <head>
     <meta charset="utf-8">
     <title>GuruPI - Grupo de Usuários de Ruby do Piauí</title>
-    <link rel="stylesheet" href="/stylesheets/style.css?v=1">
-    <script src="/javascripts/modernizr-2.0.js"></script>
+    <%= csrf_meta_tag %>
+    <%= stylesheet_link_tag "application" %>  
+    <%= javascript_include_tag "/assets/modernizr-2.0" %>  
   </head>
 
   <body class="home">
@@ -19,10 +20,11 @@
     <%= yield %>
 
     <%= render "layouts/footer" %>
-    <%= csrf_meta_tag %>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write("<script src='/javascripts/jquery-1.6.1.min.js'>\x3C/script>")</script>
-    <script>
+    <%= javascript_include_tag "application" %>
+    <script async="true">
+<% if protect_against_forgery? -%>
+var AUTH_TOKEN = "<%= form_authenticity_token %>";
+<% end %>
     function slideSwitch() {
         var $active = $('#slideshow img.active');
       $active.addClass('last-active');

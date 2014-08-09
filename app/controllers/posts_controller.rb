@@ -1,3 +1,4 @@
+# encoding: UTF-8
 class PostsController < ApplicationController
   respond_to :html
 
@@ -16,8 +17,14 @@ class PostsController < ApplicationController
   end
 
   def create
-    @post = Post.new(params[:post].merge(user: current_user))
+    @post = Post.new(post_params)
+    @post.user = current_user
     flash[:notice] = "Post criado com sucesso." if @post.save
     respond_with @post
   end
+
+  private
+    def post_params
+      params.require(:post).permit(:title, :body)
+    end
 end

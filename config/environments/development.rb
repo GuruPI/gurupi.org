@@ -6,8 +6,13 @@ GurupiOrg::Application.configure do
   # since you don't have to restart the webserver when you make code changes.
   config.cache_classes = false
 
-  # Log error messages when you accidentally call methods on nil.
-  config.whiny_nils = true
+  config.eager_load = false
+
+  # Do not compress assets  
+  config.assets.compress = false
+
+  # Expands the lines which load the assets
+  config.assets.debug = true
 
   # Show full error reports and disable caching
   config.consider_all_requests_local       = true
@@ -22,20 +27,12 @@ GurupiOrg::Application.configure do
   # Only use best-standards-support built into browsers
   config.action_dispatch.best_standards_support = :builtin
 
+  config.react.variant = :development
+
   # Do not compress assets
   # config.assets.compress = false
   # config.serve_static_assets = true
   # config.assets.compress = true
   # config.assets.compile = false
   # config.assets.precompile = [ Proc.new{ |path| !File.extname(path).in?(['.js', '.css', '']) }, /(?:\/|\\|\A)application\.(css|js)$/ ]
-
-# Disable Rails's static asset server (Apache or nginx will already do this)
-config.serve_static_assets = false
-# Compress JavaScripts and CSS
-config.assets.compress = true
-# Fallback to assets pipeline if a precompiled asset is missed
-config.assets.compile = true
-
-  # Expands the lines which load the assets
-  config.assets.debug = true
 end

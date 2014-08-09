@@ -74,3 +74,10 @@ Identity.blueprint do
   image { "http://profile.ak.fbcdn.net/hprofile-ak-sn#{sn}/260670_1681442949_224808880_q.jpg" }
   link { "https://www.facebook.com/rogerio.medeiros.{sn}" }
 end
+
+Comment.blueprint do
+  name    { "Name #{sn}" }
+  body    { "Comment Body #{sn}" }
+  post_id { Post.make! }
+  user_id { User.make! }
+end
