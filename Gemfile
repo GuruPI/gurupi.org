@@ -21,6 +21,7 @@ gem 'pg', :group => :production
 gem 'uglifier', '>= 1.3.0'
 
 group :development do
+  gem 'thin'
   gem 'capistrano'
   gem 'debugger'
 end
