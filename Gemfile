@@ -20,7 +20,6 @@ gem 'react-rails', '~> 0.11.1.0'
 gem 'uglifier', '>= 1.3.0'
 
 gem 'pg', :group => :production
-gem 'sqlite3', :group => [:test, :development]
 
 group :development do
   gem 'thin'
