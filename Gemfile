@@ -16,8 +16,6 @@ gem 'yaml_db'
 gem 'draper'
 gem 'react-rails', '~> 0.11.1.0'
 
-gem 'pg', :group => :production
-
 # assets
 gem 'uglifier', '>= 1.3.0'
 
@@ -41,3 +39,8 @@ group :development, :test do
   gem 'sqlite3'
   gem 'pry'
 end
+
+group :production do
+  gem 'pg'
+end
+
