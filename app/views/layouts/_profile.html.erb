@@ -5,9 +5,15 @@
       <% if current_user_provider.image -%><img src="<%= current_user_provider.image %>" alt="<%= current_user_provider.name %>" class="user_image"><% end -%>
       <p class="account">Olá, <strong><%= current_user_provider.name %></strong> <%= user_role(current_user) %> <%= link_to " <span class=\"spacer\">|</span>Eventos".html_safe, events_path, class: :signout if permitted_to?(:new, :events) %> <span class="spacer">|</span> <%= link_to "Sair", signout_path, class: :signout %></p>
     </div>
+<script>
+var userData = { login: true, uid: <%= current_user_provider.id %>, name: '<%= current_user_provider.name %>', image: '<%= current_user_provider.image %>' };
+</script>
   <% else %>
     <%= link_to "Conectar com Facebook", "/auth/facebook", :class => "login_facebook" %>
     <%= link_to "Conectar com Github", "/auth/github", :class => "login_github" %>
+<script>
+var userData = { login: false };
+</script>
   <% end %>
   </div>
 </div>

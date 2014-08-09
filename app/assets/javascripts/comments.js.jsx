@@ -1,41 +1,30 @@
 /** @jsx React.DOM */
 
-var LinkLogin = React.createClass({
+var RequireLogin = React.createClass({
   render: function() {
     return (
-      <form className="comment-form">
-        <a href="#signin-modal" data-toggle="modal">
-          <img src="http://st.navj.us/assets/default-avatar-m.jpg" />
-          <div className="form-group">
-            <textarea placeholder="Coloque aqui seu comentário" className="form-control comment-input" ref="text"></textarea>
-          </div>
-        </a>
-      </form>
+      <div>
+        <p>Para postar comentários é necessário efetuar Login no site</p>
+      </div>
     );
   }
 });
 
 var Comment = React.createClass({
   render: function() {
-    var commentId = 'new-comment-' + this.props.key
-      , postTime = dateFormat(this.props.date, "dd/mm/yyyy HH:MM");
+    var commentId = 'new-comment-' + this.props.key;
 
     return (
       <li>
         <article id={commentId} className="comment new-comment">
-          <header>
-            <a href={this.props.author.url} className="comment-avatar">
-              <img src={this.props.author.image} />
-            </a>
-            <h4 className="comment-author">
-              <a href={this.props.author.url} className="author-name">{this.props.author.name}</a>
+          <img src={this.props.user.image} className="comment-avatar" />
+          <div className="comment-content">
+            <h4 className="comment-user">
+              {this.props.user.name}
             </h4>
-            <p className="comment-date">
-              <a href={'#' + commentId}>{postTime}</a>
-            </p>
-          </header>
-          <div className="comment-body">
-            {this.props.children}
+            <div className="comment-body">
+              {this.props.children}
+            </div>
           </div>
         </article>
       </li>
@@ -46,7 +35,7 @@ var Comment = React.createClass({
 var CommentList = React.createClass({
   render: function() {
     var commentNodes = this.props.data.map(function (comment, index) {
-      return <Comment key={comment.key} author={comment.author} date={comment.date}>{comment.text}</Comment>;
+      return <Comment key={index} user={comment.user}>{comment.body}</Comment>;
     });
     return <ul className="comment-list">{commentNodes}</ul>;
   }
@@ -55,56 +44,30 @@ var CommentList = React.createClass({
 var CommentForm = React.createClass({
   submitToServer: function(comment) {
     $.ajax({
-      url: '/comentarios/' + this.props.article,
+      url: '/posts/' + this.props.post + '/comentarios',
       type: 'POST',
       dataType: 'json',
       data: comment,
       success: function(data) {
-        var comment_element = $('#new-comment-' + comment.key);
-        var cc = $('#comment_count');
-        comment_element.removeClass('new-comment');
-
-        if (data.error == true) {
-          comment_element.find('header').remove();
-          comment_element.find('.comment-body').text('Erro ao tentar enviar esse comentário. Favor tentar novamente.').addClass('error');
-        } else {
-          cci = parseInt(cc.text());
-          if (!isNaN(cci)) cc.text(cci + 1);
-          comment_element.find('.comment-avatar').attr('href', data.author.profile);
-          comment_element.find('.comment-avatar img').attr('src', data.author.image);
-          comment_element.find('.author-name').text(data.comment.name).attr('href', data.author.profile);
-          comment_element.find('.comment-date a').text(data.comment.date).attr('href', '#comment-' + data.comment.id);
-          comment_element.find('.comment-body').html(data.comment.body);
-          comment_element.attr('id', 'comment-' + data.comment.id);
-        }
+        console.log(data);
       }.bind(this)
     });
   }, 
-  randomKey: function() {
-    var r = [Math.random(), Math.random(), Math.random(), Math.random()];
-    var s = r.map(function (n) {
-      return n.toString(36).slice(2, 7);
-    })
-    return s.join('-');
-  }, 
-  handleSubmit: function() {
-    var name = this.props.author.name;
-    var uid = this.props.author.uid;
-    var picture = this.props.author.image;
-    var profile = this.props.author.profile_url;
-    var text = this.refs.text.getDOMNode().value.trim();
+  handleSubmit: function(e) {
+    e.preventDefault();
+    var name = this.props.user.name
+      , uid = this.props.user.uid
+      , picture = this.props.user.image
+      , text = this.refs.text.getDOMNode().value.trim();
 
     if (text != '') {
       var comment = {
-        key: this.randomKey(),
-        author: {
+        user: {
           uid: uid, 
           name: name, 
-          url: profile, 
           image: picture
         }, 
-        text: text, 
-        date: new Date()
+        body: text
       }
       this.submitToServer(comment);
       this.props.onCommentSubmit(comment);
@@ -115,12 +78,12 @@ var CommentForm = React.createClass({
   render: function() {
     return (
       <form className="comment-form" onSubmit={this.handleSubmit}>
-        <img src={this.props.author.image} />
-        <div className="form-group">
-          <textarea placeholder="Coloque aqui seu comentário" className="comment-input form-control" ref="text"></textarea>
-        </div>
-        <h4><small>comentar como</small> {this.props.author.name}</h4>
-        <input type="submit" value="Comentar" className="btn btn-primary" />
+        <h4>
+          <img src={this.props.user.image} className="image-user" />
+          <span className="user-name">{this.props.user.name}</span>
+        </h4>
+        <textarea className="comment-input" ref="text"></textarea>
+        <input type="submit" value="Comentar" className="send-btn" />
       </form>
     );
   }
@@ -129,27 +92,47 @@ var CommentForm = React.createClass({
 var CommentBox = React.createClass({
   getInitialState: function() {
     return {
-      author: userData, 
-      article: articleData.aid, 
+      user: userData, 
       data: []
     };
   },
+  loadCommentsFromServer: function() {
+    var url = '/posts/' + this.props.post + '/comentarios';
+    $.ajax({
+      url: url,
+      dataType: 'json',
+      success: function(data) {
+        data.map(function (comment, index) {
+          comment.user_id = comment.identity_id;
+          return comment;
+        });
+        this.setState({data: data});
+      }.bind(this),
+      error: function(xhr, status, err) {
+        console.error(url, status, err.toString());
+      }.bind(this)
+    });
+  },
+  componentDidMount: function() {
+    this.loadCommentsFromServer();
+    setInterval(this.loadCommentsFromServer, 5000);
+  },
   handleCommentSubmit: function(comment) {
-    new_comments = [comment].concat(this.state.data);
+    new_comments = this.state.data.concat([comment]);
     this.setState({data: new_comments});
   },
   render: function() {
     return (
       <div className="comment-wrapper">
-        <CommentForm author={this.state.author} article={this.state.article} onCommentSubmit={this.handleCommentSubmit} />
         <CommentList data={this.state.data} />
+        <CommentForm user={this.state.user} post={this.props.post} onCommentSubmit={this.handleCommentSubmit} />
       </div>
     );
   }
 });
 
 if (userData.login) {
-  React.renderComponent(<CommentBox />, document.getElementById('comment-action'));
+  React.renderComponent(<CommentBox post={postData.id} />, document.getElementById('comment_block'));
 } else {
-  React.renderComponent(<LinkLogin />, document.getElementById('comment-action'));
+  React.renderComponent(<RequireLogin />, document.getElementById('comment_block'));
 }
