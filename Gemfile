@@ -19,6 +19,9 @@ gem 'react-rails', '~> 0.11.1.0'
 # assets
 gem 'uglifier', '>= 1.3.0'
 
+gem 'pg', :group => :production
+gem 'sqlite3', :group => [:test, :development]
+
 group :development do
   gem 'thin'
   gem 'capistrano'
@@ -36,11 +39,5 @@ group :test do
 end
 
 group :development, :test do
-  gem 'sqlite3'
   gem 'pry'
 end
-
-group :production do
-  gem 'pg'
-end
-
