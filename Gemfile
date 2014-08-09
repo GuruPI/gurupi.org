@@ -15,6 +15,7 @@ gem 'rdiscount'
 gem 'yaml_db'
 gem 'draper'
 gem 'react-rails', '~> 0.11.1.0'
+gem 'thin'
 
 # assets
 gem 'uglifier', '>= 1.3.0'
@@ -22,7 +23,6 @@ gem 'uglifier', '>= 1.3.0'
 gem 'pg', :group => :production
 
 group :development do
-  gem 'thin'
   gem 'capistrano'
   gem 'debugger'
 end
