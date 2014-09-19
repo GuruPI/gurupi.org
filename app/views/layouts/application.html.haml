@@ -1,7 +1,7 @@
 !!!
-/[if lt IE 7 ] <html lang="pt-br" class="no-js ie6">
-/[if IE 7 ] <html lang="pt-br" class="no-js ie7">
-/[if IE 8 ] <html lang="pt-br" class="no-js ie8">
+/[if lt IE 7 ] <html lang="pt-br 6">
+/[if IE 7 ] <html lang="pt-br 7">
+/[if IE 8 ] <html lang="pt-br 8">
 / [if (gte IE 9)|!(IE)]><!
 %html.no-js{lang: :"pt-br"}
   / <![endif]
@@ -24,22 +24,22 @@
             %nav.span4
               %ul
                 %li
-                  %a{:href => "#agenda"} Agenda
+                  %a{ href: "#schedule" } Agenda
                 %li
-                  %a{:href => "#users"} Usuários
+                  %a{ href: "#users" } Usuários
                 %li
-                  %a{:href => "#about"} Sobre
+                  %a{ href: "#about" } Sobre
                 %li
-                  %a{:href => "#contact"} Contato
+                  %a{ href: "#contact" } Contato
             .logins.span4
-              %p Login
+              %p Conecte-se
               %ul
                 %li
-                  %a.facebook{:href => "#facebook"} Facebook
+                  %a.facebook{ href: "#facebook"} Facebook
                 %li
-                  %a.github{:href => "#github"} Github
+                  %a.github{ href: "#github"} Github
                 %li
-                  %a.linkedin{:href => "#linkedin"} Linkedin
+                  %a.linkedin{ href: "#linkedin"} Linkedin
       #main
         .container
           = yield

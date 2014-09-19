@@ -1,4 +1,75 @@
-%section.topic
+%section.topic#schedule
   %h2
-    %i.icon>
+    %i.icon.schedule
     Agenda
+.row.box-radius
+  .col-2
+    %h3  Próximo evento
+  .col-2
+    %h3 Como colaborar com o site do GuruPI
+
+%section.topic#users
+  %h2
+    %i.icon.users
+    Usuários
+.row
+  .col-3
+    %h3  Próximo evento
+  .col-3
+    %h3  Próximo evento
+  .col-3
+    %h3  Próximo evento
+
+%section.topic#about
+  %h2
+    %i.icon.users
+    O GuruPI
+.row
+  .col-3
+    = image_tag("gurupi-logo.gif")
+    %br
+    = image_tag("gurupi-logo.gif")
+  .col-3
+    %h3  A História
+    %p A ideia do #{link_to "GuruPI", root_url} nasceu durante o evento Oxente Rails 2010, realizado em Natal. A caravana do Piauí foi a que mais se destacou no evento, recebendo inclusive uma menção do palestrante #{link_to "Vinícius Manhães Teles", "https://twitter.com/viniciusteles/", target: "_blank"} que chamou toda a galera ao palco durante sua apresentação.
+    %p O nome GuruPI surgiu na viagem de volta, mais precisamente entre a cidade de Campo Maior e Teresina, quando decidimos dar um nome ao Grupo de Usuários. Todos os membros da #CaravanaPI ajudaram a escolher o nome do nosso Grupo.
+    %p Daí marcamos a primeira reunião para o dia 16 de agosto, feriado na cidade, no Boteco (Carvalho da Homero). E assim nasceu o GuruPI.
+  .col-3
+    %h3 Objetivos do grupo
+    %p O grupo de usuários de Ruby do Piauí (GuruPI) tem como objetivos:
+    %ul
+      %li Divulgar e promover a linguagem de programação Ruby no estado do Piauí através de eventos como palestras, discussões, apresentações de projetos e afins.
+      %li Reuniões presenciais entre os membros do grupo para que estes possam discutir, ensinar e aprender sobre a linguagem Ruby e aspectos relacionados a programação e desenvolvimento de software.
+      %li Colaborar com a comunidade Ruby nacional com a criação e tradução de conteúdos em língua portuguesa.
+      %li Colaborar com a comunidade Ruby global com a criação e manutenção de projetos de código fonte aberto.
+
+%section.topic#contact
+  %h2
+    %i.icon.contact
+    Contato
+.row
+  .col-3    
+    = form_tag "/" do
+      = text_field_tag :nome, "", placeholder: "NOME"
+      = text_field_tag :email, "", placeholder: "E-MAIL"
+      = text_field_tag :assunto, "", placeholder: "ASSUNTO"
+      = text_area_tag :mensagem,"", cols: 19, rows: 8, placeholder: "MENSAGEM"
+      %br
+      = button_tag "Enviar Mensagem"
+  .col-3
+    %h3 Local
+    %p UESPI - Pirajá
+    %p Última sala após os Laboratórios de Computação. Próximo aos Caixas Eletônicos e à Biblioteca.
+    %h3 Outras formas de Contato
+    %p
+      %a{ href: "http://twitter.com/gurupi_", target: "_blank"}        
+        twitter.com/gurupi_
+    %p
+      %a{ href: "http://fb.com/gurupi", target: "blank_"}
+        fb.com/gurupi
+    %p Canal do IRC: ##gurupi
+    %p
+      E-mail: 
+      %a{ href: "mailto:contato@gurupi.org"} contato@gurupi.org
+  .col-3
+    %h3

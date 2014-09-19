@@ -84,7 +84,7 @@ header nav li a:hover {
   font-size: 0.8em;
   text-transform: uppercase;
   margin-top: 15px;
-  margin-left: 100px;
+  margin-left: 70px;
   display: inline-block;
 }
 .logins ul {
@@ -124,6 +124,24 @@ header nav li a:hover {
 }
 #main {
   height: 800px;
+  .row {
+    float: left;    
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .box-radius {
+    background: none repeat scroll 0 0 #eeeeee;
+    border-radius: 5px;
+    box-shadow: 0 0 2px #888888;
+  }
+  .col-2 {
+    float: left;
+    width: 46%;
+  }
+  .col-3 {
+    float: left;
+    width: 33.333%;
+  }
 }
 .topic {
   padding-top: 50px;
@@ -131,15 +149,24 @@ header nav li a:hover {
 .topic h2 {
   color: #6a6a6a;
 }
-.topic .icon {
-  width: 42px;
-  height: 42px;
-  background: asset-url("icons.gif");
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 15px;
+.topic {
+  .icon {
+    width: 42px;
+    height: 42px;    
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+  }
+  .schedule {
+    background: asset-url("icons.gif") 0 0;
+  }
+  .contact {
+    background: asset-url("icons.gif") 42px 0;
+  }
+  .users {
+   background: asset-url("icons.gif") 86px 0; 
+  }
 }
-
 
 .scrolled header {
   height: 55px;
@@ -147,15 +174,16 @@ header nav li a:hover {
   border-bottom: 2px solid #b8271d;
   position: fixed;
   top: 0;
+  h1 {
+    background: asset-url("gurupi-logo-mini.gif");
+    width: 155px;
+    height: 55px;
+  }
+  nav {
+    padding-top: 15px;
+  }
 }
-.scrolled header h1 {
-  background: asset-url("gurupi-logo-mini.gif");
-  width: 155px;
-  height: 55px;
-}
-.scrolled header nav {
-  padding-top: 15px;
-}
+
 .scrolled .topic {
   padding-top: 100px;
 }

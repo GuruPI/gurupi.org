@@ -2,7 +2,6 @@ var Common = {
 
   StartApp: function() {
     try {
-      window.onscroll = scroll;
       this.InterfaceActions();
     } catch (e) {
       console.log('Error: ' + e);
@@ -10,7 +9,7 @@ var Common = {
   },
 
   InterfaceActions: function() {
-    scroll();
+    scroll();    
   },
 
 };
