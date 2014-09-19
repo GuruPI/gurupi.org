@@ -1,37 +1,30 @@
 source 'http://rubygems.org'
+ruby "2.1.1"
 
-gem 'bundler'
-# gem 'rake', '0.9.2'
-gem 'rails'
-gem 'heroku'
-gem 'omniauth', '~> 1.0'
-gem 'omniauth-facebook'
-gem 'omniauth-github'
-gem 'declarative_authorization'
-gem 'jquery-rails'
-gem 'rdiscount'
-gem 'yaml_db'
-gem 'draper'
 
 group :development do
-  gem 'capistrano'
-  gem 'debugger'
-  gem 'thin'
-end
-
-gem 'pg', :group => :production
-gem 'sqlite3', :group => [:test, :development]
-
-group :test do
-  gem 'rspec-rails', '~> 2.4'
-  gem 'capybara'
-  gem 'launchy'
-  gem 'machinist', '>= 2.0.0.beta2'
-  gem 'database_cleaner'
-  gem 'guard'
-  gem 'guard-rspec'
+  gem 'quiet_assets'
+  gem 'spring'
 end
 
 group :development, :test do
+  gem 'rspec-rails', '~> 3.0.0.beta'
+  gem 'factory_girl_rails'
   gem 'pry'
 end
+
+group :test do
+  gem 'shoulda-matchers'  
+end
+
+gem 'rails', '4.1.6'
+gem 'pg'
+gem 'sass-rails', '~> 4.0.3'
+gem 'uglifier', '>= 1.3.0'
+gem 'jquery-rails'
+gem 'jbuilder', '~> 2.0'
+gem 'sdoc', '~> 0.4.0',          group: :doc
+gem 'rails_12factor',            group: :production
+gem 'thin'
+gem 'react-rails', '~> 0.11.1.0'
+gem 'haml-rails'
