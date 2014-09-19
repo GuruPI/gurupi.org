@@ -1,0 +1,1 @@
+GurupiOrg::Application.config.react.variant = Rails.env.to_sym
