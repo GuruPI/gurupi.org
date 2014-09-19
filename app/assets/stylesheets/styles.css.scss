@@ -21,7 +21,7 @@ header h1 {
   font: 0/0 serif;
   text-shadow: none;
   color: transparent;
-  background: url("/assets/gurupi-logo.gif");
+  background: asset-url("gurupi-logo.gif");
   display: block;
   width: 254px;
   height: 90px;
@@ -99,7 +99,7 @@ header nav li a:hover {
   font: 0/0 serif;
   text-shadow: none;
   color: transparent;
-  background: url("/assets/social-icons.gif");
+  background: asset-url("social-icons.gif");
   display: block;
   width: 43px;
   height: 42px;
@@ -134,7 +134,7 @@ header nav li a:hover {
 .topic .icon {
   width: 42px;
   height: 42px;
-  background: url("/assets/icons.gif");
+  background: asset-url("icons.gif");
   display: inline-block;
   vertical-align: middle;
   margin-right: 15px;
@@ -149,7 +149,7 @@ header nav li a:hover {
   top: 0;
 }
 .scrolled header h1 {
-  background: url("/assets/gurupi-logo-mini.gif");
+  background: asset-url("gurupi-logo-mini.gif");
   width: 155px;
   height: 55px;
 }
