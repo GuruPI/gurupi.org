@@ -42,9 +42,7 @@
                   %a.linkedin{:href => "#linkedin"} Linkedin
       #main
         .container
-          %section.topic
-            %h2
-              %i.icon>
-              Agenda
+          = yield
+
     = javascript_include_tag "application.js"
     = analytics_code()    
