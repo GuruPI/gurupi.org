@@ -15,7 +15,7 @@ gem 'rdiscount'
 gem 'yaml_db'
 gem 'draper'
 gem 'react-rails', '~> 0.11.1.0'
-gem 'thin'
+gem 'puma'
 
 # assets
 gem 'uglifier', '>= 1.3.0'
