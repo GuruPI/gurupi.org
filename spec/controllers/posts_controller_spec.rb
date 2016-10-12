@@ -45,7 +45,7 @@ describe PostsController do
       end
 
       it "assigns a newly created but unsaved post as @post" do
-        post :create, post: {}
+        post :create, post: { title: 'post1' }
         assigns(:post).should be_a_new(Post)
       end
     end
