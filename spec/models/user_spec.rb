@@ -16,7 +16,7 @@ describe User do
   it "should return roles array" do
     role = Role.make!
     @user.roles << role
-    @user.roles.should eql [role]
+    @user.roles.to_a.should eql [role]
   end
 
   it "should return roles in symbol format" do

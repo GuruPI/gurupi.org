@@ -42,15 +42,8 @@ GEM
       timers (~> 1.1.0)
     coderay (1.1.0)
     colorize (0.7.3)
-    columnize (0.8.9)
     daemons (1.1.9)
     database_cleaner (1.3.0)
-    debugger (1.6.8)
-      columnize (>= 0.3.1)
-      debugger-linecache (~> 1.2.0)
-      debugger-ruby_core_source (~> 1.3.5)
-    debugger-linecache (1.2.0)
-    debugger-ruby_core_source (1.3.5)
     declarative_authorization (0.5.7)
     diff-lcs (1.2.5)
     draper (1.3.1)
@@ -238,7 +231,6 @@ DEPENDENCIES
   capistrano
   capybara
   database_cleaner
-  debugger
   declarative_authorization
   draper
   guard
