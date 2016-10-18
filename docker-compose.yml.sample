@@ -1,0 +1,16 @@
+db:
+  image: postgres:9.3
+  volumes:
+    - db:/var/lib/postgresql/data
+  expose:
+    - "5432"
+
+web:
+  build: .
+  command: foreman start
+  volumes:
+    - ".:/app"
+  ports:
+    - "3000:5000"
+  links:
+    - db
