@@ -34,14 +34,20 @@ Go to [http://localhost:3000](http://localhost:3000).
 1. Install [Docker](https://www.docker.com/) and
 [docker-compose](https://docs.docker.com/compose/).
 
-2. Copy `config/database.yml`, it is ready to run with docker:
+2. Copy `docker-compose.yml` and `config/database.yml`, they are ready to run
+with docker:
 
-    $ cp config/database.yml.example config/database.yml
+```
+$ cp docker-compose.yml.example docker-compose.yml
+$ cp config/database.yml.example config/database.yml
+```
 
-3. Run your commands using docker-compose:
+3. Run your commands using `docker-compose`:
 
-    $ docker-compose run web rake db:setup
-    $ docker-compose run web
+```
+$ docker-compose run web rake db:setup
+$ docker-compose up web
+```
 
 Go to [http://localhost:3000](http://localhost:3000).
 
