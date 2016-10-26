@@ -1,15 +1,14 @@
 class EventsController < ApplicationController
-
   respond_to :html
-  filter_resource_access
+  filter_access_to :all
 
   def index
-    @events = Event.all(:order => 'event_date desc')
+    @events = Event.order(event_date: :desc)
     @breadcrumb = "Agenda de eventos"
   end
 
   def show
-    load_event
+    @event = Event.find_by_slug(params[:id])
     @breadcrumb = @event.name
   end
 
@@ -22,7 +21,7 @@ class EventsController < ApplicationController
   end
 
   def create
-    @event = Event.new(params[:event])
+    @event = Event.new(event_params)
     if @event.save
       flash[:notice] = 'Event was successfully created.'
       respond_with @event
@@ -33,7 +32,7 @@ class EventsController < ApplicationController
 
   def update
     @event = Event.find_by_slug(params[:id])
-    if @event.update_attributes(params[:event])
+    if @event.update_attributes(event_params)
       flash[:notice] = 'Event was successfully updated.'
       respond_with @event
     else
@@ -41,15 +40,8 @@ class EventsController < ApplicationController
     end
   end
 
-  def destroy
-    flash[:notice] = 'Event was successfully deleted' if Event.find_by_slug(params[:id]).destroy
-    respond_with @event, :location => events_url
-  end
-
   protected
-  def load_event
-    @event = Event.find_by_slug(params[:id])
+  def event_params
+    params.require(:event).permit(:name, :description, :hour, :event_date, :place, :place_url, :enable_lectures)
   end
-
 end
-
